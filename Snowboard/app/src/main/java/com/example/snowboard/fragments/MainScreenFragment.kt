@@ -5,12 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.snowboard.Adapters.NewsAdapter
 import com.example.snowboard.Lists.NewsList
 import com.example.snowboard.R
 import com.example.snowboard.databinding.FragmentMainScreenBinding
+import kotlinx.android.synthetic.main.fragment_main_screen.*
 
 class MainScreenFragment : Fragment() {
 
@@ -33,15 +35,22 @@ class MainScreenFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        showToolbar()
         getArrayListNews()
+        getRecyclerView()
+        getUserData()
+    }
 
-        newsRecyclerView = view.findViewById(R.id.recycler_view)
+    private fun showToolbar() {
+        (activity as AppCompatActivity?)?.supportActionBar?.show()
+    }
+
+    private fun getRecyclerView() {
+        newsRecyclerView = recycler_view
         newsRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         newsRecyclerView.setHasFixedSize(true)
 
         newsArrayList = arrayListOf<NewsList>()
-
-        getUserData()
     }
 
     private fun getArrayListNews() {

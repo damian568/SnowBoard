@@ -15,11 +15,14 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         containerViewFragments()
+
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
     }
 
     private fun containerViewFragments() {
@@ -27,5 +30,9 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager
                 .findFragmentById(R.id.navHostFragment) as NavHostFragment
         navController = navHostFragment.findNavController()
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp() || super.onSupportNavigateUp()
     }
 }

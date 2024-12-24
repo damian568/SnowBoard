@@ -14,5 +14,5 @@
     <fragment
         android:id="@+id/mainScreenFragment"
         android:name="com.example.snowboard.fragments.MainScreenFragment"
-        android:label="MainScreenFragment" />
+        android:label="Home" />
 </navigation>
