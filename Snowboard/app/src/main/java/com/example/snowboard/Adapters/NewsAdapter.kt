@@ -14,7 +14,7 @@ class NewsAdapter(private val newsList: ArrayList<NewsList>) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(
-            R.layout.list_news,
+            R.layout.list_info,
             parent, false
         )
 
@@ -26,8 +26,6 @@ class NewsAdapter(private val newsList: ArrayList<NewsList>) :
 
         holder.imageView.setImageResource(currentItem.imageResource)
         holder.textName.text = currentItem.title
-        holder.textComment.text = currentItem.comment
-        holder.textNewsDate.text = currentItem.newsDate
     }
 
     override fun getItemCount(): Int {
@@ -35,9 +33,7 @@ class NewsAdapter(private val newsList: ArrayList<NewsList>) :
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val imageView: ImageView = itemView.findViewById(R.id.image_view_news)
+        val imageView: ImageView = itemView.findViewById(R.id.icon_info)
         val textName: TextView = itemView.findViewById(R.id.title)
-        val textComment: TextView = itemView.findViewById(R.id.comment)
-        val textNewsDate: TextView = itemView.findViewById(R.id.news_date)
     }
 }
