@@ -10,9 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.snowboard.Adapters.NewsAdapter
 import com.example.snowboard.Lists.NewsList
-import com.example.snowboard.R
 import com.example.snowboard.databinding.FragmentVideosScreenBinding
-import kotlinx.android.synthetic.main.fragment_videos_screen.*
 
 class VideosScreenFragment : Fragment() {
 
@@ -46,7 +44,7 @@ class VideosScreenFragment : Fragment() {
     }
 
     private fun getRecyclerView() {
-        newsRecyclerView = recycler_view
+        newsRecyclerView = binding.recyclerView
         newsRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         newsRecyclerView.setHasFixedSize(true)
 

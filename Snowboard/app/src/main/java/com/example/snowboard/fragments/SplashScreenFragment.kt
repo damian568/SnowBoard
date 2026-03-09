@@ -1,16 +1,17 @@
 package com.example.snowboard.fragments
 
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.snowboard.databinding.FragmentSplashScreenBinding
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class SplashScreenFragment : Fragment() {
 
@@ -44,14 +45,19 @@ class SplashScreenFragment : Fragment() {
     }
 
     private fun slowFragment() {
-        Handler(Looper.getMainLooper()).postDelayed({
-            goToMainScreen()
-        }, delayMills.toLong())
+        viewLifecycleOwner.lifecycleScope.launch {
+            delay(delayMills.toLong())
+
+            if (isAdded) {
+                goToMainScreen()
+            }
+        }
     }
 
     private fun goToMainScreen() {
-        val action =
-            SplashScreenFragmentDirections.actionSplashScreenFragmentToMainScreenFragment()
-        findNavController().navigate(action)
+        if (isAdded) {
+            val action = SplashScreenFragmentDirections.actionSplashScreenFragmentToMainScreenFragment()
+            findNavController().navigate(action)
+        }
     }
 }

@@ -26,9 +26,27 @@
             android:layout_height="match_parent"
             app:defaultNavHost="true"
             app:navGraph="@navigation/nav_graph"
+            app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
             app:layout_constraintTop_toBottomOf="@id/toolbar"
             tools:layout_editor_absoluteX="0dp"
             tools:layout="@layout/fragment_splash_screen" />
 
+        <!-- Bottom Navigation -->
+        <com.qamar.curvedbottomnaviagtion.CurvedBottomNavigation
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cbn_background="@color/lavender"
+            app:cbn_curve_radius="26dp"
+            app:cbn_fabColor="@color/purple_200"
+            app:cbn_height="76dp"
+            app:cbn_iconColor="@color/white"
+            app:cbn_icon_size="24dp"
+            app:cbn_selectedIconColor="@color/white"
+            app:cbn_selected_icon_size="48dp"
+            app:cbn_titleColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
