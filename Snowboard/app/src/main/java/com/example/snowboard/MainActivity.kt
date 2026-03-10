@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.NavController
+import androidx.navigation.NavDestination
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -29,11 +30,19 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
         setupActionBarWithNavController(navController, binding.drawerLayout)
 
+        drawerMenu()
+        handleDrawerMenuClicks()
+        navControllerDestinationChanged()
+    }
+
+    private fun drawerMenu() {
         // 1. Open Drawer when BottomAppBar menu icon is clicked
         binding.bottomAppBar.setNavigationOnClickListener {
             binding.drawerLayout.openDrawer(GravityCompat.START)
         }
+    }
 
+    private fun handleDrawerMenuClicks() {
         // 2. Handle Drawer Item Clicks
         binding.navView.setNavigationItemSelectedListener { item ->
             when (item.itemId) {
@@ -47,17 +56,31 @@ class MainActivity : AppCompatActivity() {
             binding.drawerLayout.closeDrawer(GravityCompat.START)
             true
         }
+    }
 
-        // Hide BottomAppBar and FAB when on Splash Screen
+    private fun navControllerDestinationChanged() {
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            if (destination.id == R.id.splashScreenFragment) {
+            behaviorBottomAppBar(destination)
+        }
+    }
+
+    private fun behaviorBottomAppBar(destination: NavDestination) {
+        when (destination.id) {
+            R.id.splashScreenFragment -> {
                 binding.bottomAppBar.visibility = View.GONE
-                binding.fab.visibility = View.GONE
-                supportActionBar?.hide()
-            } else {
+                binding.fab.hide()
+            }
+
+            R.id.historyScreenFragment -> {
                 binding.bottomAppBar.visibility = View.VISIBLE
-                binding.fab.visibility = View.VISIBLE
-                supportActionBar?.show()
+                binding.bottomAppBar.performShow()
+                binding.fab.hide() // Hide ONLY the FAB
+            }
+
+            else -> {
+                binding.bottomAppBar.visibility = View.VISIBLE
+                binding.fab.show()
+                binding.bottomAppBar.performShow()
             }
         }
     }

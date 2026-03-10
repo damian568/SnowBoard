@@ -38,6 +38,10 @@
                 android:layout_gravity="bottom"
                 app:backgroundTint="@color/lavender"
                 app:fabAlignmentMode="center"
+                app:fabCradleMargin="10dp"
+                app:fabCradleRoundedCornerRadius="10dp"
+                app:fabCradleVerticalOffset="0dp"
+                app:hideOnScroll="true"
                 app:navigationIcon="@drawable/ic_menu" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -45,7 +49,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_add"
-                app:layout_anchor="@id/bottomAppBar" />
+                app:layout_anchor="@id/bottomAppBar"
+                android:visibility="visible"/>
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
