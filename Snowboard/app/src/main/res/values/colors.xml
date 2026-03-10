@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="lavender">#8692f7</color>
+    <color name="cinder">#1E2B2F</color>
+    <color name="flame">#FF7F50</color>
+    <color name="blush">#F2DFD8</color>
+    <color name="midnight">#211D2D</color>
+    <color name="shadow_black">#1A1A1A</color>
+    <color name="crimson_red">#A4133C</color>
 </resources>

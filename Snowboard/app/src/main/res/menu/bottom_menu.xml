@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/ic_history"
+        android:title="History" />
+    <item
+        android:id="@+id/tips"
+        android:icon="@drawable/ic_tips"
+        android:title="Tips" />
+
+    <item
+        android:id="@+id/skiSlopes"
+        android:icon="@drawable/ic_slopes"
+        android:title="Ski Slopes" />
+    <item
+        android:id="@+id/videos"
+        android:icon="@drawable/ic_video"
+        android:title="Videos" />
+    <item
+        android:id="@+id/weather"
+        android:icon="@drawable/ic_weather"
+        android:title="Weather" />
+
+</menu>

@@ -5,14 +5,15 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/crimson_red"
         android:fitsSystemWindows="true"
         tools:context=".fragments.SplashScreenFragment">
 
         <ImageView
+            android:id="@+id/imageLogo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="center"
-            android:src="@drawable/splash_screen" />
+            android:src="@drawable/ic_snowboard_logo" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
