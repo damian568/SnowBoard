@@ -15,11 +15,6 @@
         android:title="Tips" />
 
     <item
-        android:id="@+id/add"
-        android:enabled="false"
-        android:title="" />
-
-    <item
         android:id="@+id/skiSlopes"
         android:icon="@drawable/ic_slopes"
         android:title="Ski Slopes" />

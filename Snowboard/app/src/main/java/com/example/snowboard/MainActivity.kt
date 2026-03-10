@@ -1,20 +1,15 @@
 package com.example.snowboard
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.snowboard.databinding.ActivityMainBinding
-import com.example.snowboard.fragments.HistoryScreenFragment
-import com.example.snowboard.fragments.MainScreenFragment
-import com.example.snowboard.fragments.SkiSlopesScreenFragment
-import com.example.snowboard.fragments.TipsScreenFragment
-import com.example.snowboard.fragments.VideosScreenFragment
-import com.example.snowboard.fragments.WeatherScreenFragment
-import com.qamar.curvedbottomnaviagtion.CurvedBottomNavigation
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,65 +19,54 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        containerViewFragments()
 
+        // Setup NavController
+        val navHostFragment = supportFragmentManager
+            .findFragmentById(R.id.navHostFragment) as NavHostFragment
+        navController = navHostFragment.navController
+
+        // Set Toolbar
         setSupportActionBar(binding.toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setDisplayShowHomeEnabled(true)
-        bottomNavigation()
-    }
+        setupActionBarWithNavController(navController, binding.drawerLayout)
 
-    private fun containerViewFragments() {
-        val navHostFragment =
-            supportFragmentManager
-                .findFragmentById(R.id.navHostFragment) as NavHostFragment
-        navController = navHostFragment.findNavController()
+        // 1. Open Drawer when BottomAppBar menu icon is clicked
+        binding.bottomAppBar.setNavigationOnClickListener {
+            binding.drawerLayout.openDrawer(GravityCompat.START)
+        }
+
+        // 2. Handle Drawer Item Clicks
+        binding.navView.setNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.home -> navController.navigate(R.id.mainScreenFragment)
+                R.id.history -> navController.navigate(R.id.historyScreenFragment)
+                R.id.tips -> navController.navigate(R.id.tipsScreenFragment)
+                R.id.skiSlopes -> navController.navigate(R.id.skiSlopesScreenFragment)
+                R.id.videos -> navController.navigate(R.id.videosScreenFragment)
+                R.id.weather -> navController.navigate(R.id.weatherScreenFragment)
+            }
+            binding.drawerLayout.closeDrawer(GravityCompat.START)
+            true
+        }
+
+        // Hide BottomAppBar and FAB when on Splash Screen
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            if (destination.id == R.id.splashScreenFragment) {
+                binding.bottomAppBar.visibility = View.GONE
+                binding.fab.visibility = View.GONE
+                supportActionBar?.hide()
+            } else {
+                binding.bottomAppBar.visibility = View.VISIBLE
+                binding.fab.visibility = View.VISIBLE
+                supportActionBar?.show()
+            }
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        return navController.navigateUp() || super.onSupportNavigateUp()
-    }
-
-    fun bottomNavigation() {
-        binding.bottomNavigation.add(
-            CurvedBottomNavigation.Model(1, "Home", R.drawable.ic_home)
-        )
-        binding.bottomNavigation.add(
-            CurvedBottomNavigation.Model(2, "History", R.drawable.ic_history)
-        )
-        binding.bottomNavigation.add(
-            CurvedBottomNavigation.Model(3, "Tips", R.drawable.ic_tips)
-        )
-        binding.bottomNavigation.add(
-            CurvedBottomNavigation.Model(4, "Ski Slopes", R.drawable.ic_slopes)
-        )
-        binding.bottomNavigation.add(
-            CurvedBottomNavigation.Model(5, "Videos", R.drawable.ic_video)
-        )
-        binding.bottomNavigation.add(
-            CurvedBottomNavigation.Model(6, "Weather", R.drawable.ic_weather)
-        )
-
-        binding.bottomNavigation.setOnClickMenuListener {
-            when (it.id) {
-                1 -> replaceFragment(MainScreenFragment())
-                2 -> replaceFragment(HistoryScreenFragment())
-                3 -> replaceFragment(TipsScreenFragment())
-                4 -> replaceFragment(SkiSlopesScreenFragment())
-                5 -> replaceFragment(VideosScreenFragment())
-                6 -> replaceFragment(WeatherScreenFragment())
-            }
-        }
-
-        //default fragment
-        replaceFragment(MainScreenFragment())
-        binding.bottomNavigation.show(2)
-    }
-
-    private fun replaceFragment(fragment: Fragment) {
-        supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.navHostFragment, fragment)
-            .commit()
+        // This allows the drawer hamburger icon to work with the NavController
+        return NavigationUI.navigateUp(
+            navController,
+            binding.drawerLayout
+        ) || super.onSupportNavigateUp()
     }
 }
