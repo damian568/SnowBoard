@@ -41,4 +41,8 @@
         android:name="com.example.snowboard.fragments.EquipmentScreenFragment"
         android:label="fragment_equipment_screen"
         tools:layout="@layout/fragment_equipment_screen" />
+    <fragment
+        android:id="@+id/tipDetailFragment"
+        android:name="com.example.snowboard.fragments.TipDetailFragment"
+        android:label="TipDetailFragment" />
 </navigation>

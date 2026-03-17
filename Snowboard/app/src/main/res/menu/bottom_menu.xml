@@ -15,6 +15,11 @@
         android:title="Tips" />
 
     <item
+        android:id="@+id/equipment"
+        android:icon="@drawable/ic_equipment"
+        android:title="Equipment" />
+
+    <item
         android:id="@+id/skiSlopes"
         android:icon="@drawable/ic_slopes"
         android:title="Ski Slopes" />

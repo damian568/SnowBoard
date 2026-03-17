@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.home -> navController.navigate(R.id.mainScreenFragment)
                 R.id.history -> navController.navigate(R.id.historyScreenFragment)
                 R.id.tips -> navController.navigate(R.id.tipsScreenFragment)
+                R.id.equipment -> navController.navigate(R.id.equipmentScreenFragment)
                 R.id.skiSlopes -> navController.navigate(R.id.skiSlopesScreenFragment)
                 R.id.videos -> navController.navigate(R.id.videosScreenFragment)
                 R.id.weather -> navController.navigate(R.id.weatherScreenFragment)
@@ -66,7 +67,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun behaviorBottomAppBar(destination: NavDestination) {
         when (destination.id) {
-            R.id.splashScreenFragment -> {
+            R.id.splashScreenFragment, R.id.tipDetailFragment -> {
                 binding.bottomAppBar.visibility = View.GONE
                 binding.fab.hide()
             }
