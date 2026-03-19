@@ -52,4 +52,161 @@
     <string name="description_detail_tip_10">We can’t end this article without the most important part of your snowboarding experience. Just have fun. There’s a reason Never Summer lives, breathes, and eats the snowboarding life. We love it. And so will you. Once the ski lift brings you to the top of your first mountain, and you see the panoramic views as you’re floating down the pow—you’re going to be hooked. We’re excited to bring you into the boarding family, and we’ll be looking out for you on the slopes in your Never Summer gear.
         \n \nAs a new rider, it’s normal to feel overwhelmed and unsure about yourself. Just remember, the only thing between where you are today and where the pros are is just how much time they’ve spent on the slopes.
         \n \nGet out there and start practicing, and you’ll be running up and down the slopes in no time.</string>
+
+    //Equipment Screen
+    <string name="equipment_instruction">Click to see details</string>
+
+    <string name="equipment_title_1">Snowboard</string>
+    <string name="equipment_title_2">Bindings</string>
+    <string name="equipment_title_3">Boots</string>
+    <string name="equipment_title_4">Helmet</string>
+    <string name="equipment_title_5">Goggles</string>
+    <string name="equipment_title_6">Jacket</string>
+    <string name="equipment_title_7">Pants</string>
+    <string name="equipment_title_8">Gloves</string>
+    <string name="equipment_title_9">Base Layers</string>
+    <string name="equipment_title_10">Socks</string>
+
+    <string name="equipment_desc_detail_1"></string>
+    <string name="equipment_desc_detail_2"></string>
+    <string name="equipment_desc_detail_3"></string>
+    <string name="equipment_desc_detail_4"></string>
+    <string name="equipment_desc_detail_5"></string>
+    <string name="equipment_desc_detail_6"></string>
+    <string name="equipment_desc_detail_7"></string>
+    <string name="equipment_desc_detail_8"></string>
+    <string name="equipment_desc_detail_9"></string>
+    <string name="equipment_desc_detail_10"></string>
+
+    //Brands
+        //Snowboards
+    <string name="brands_snowboards">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: &lt;a href="https://www.lib-tech.com/snowboard"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        GNU: &lt;a href="https://www.gnu.com/snowboard"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-bg/c/snowboards/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: &lt;br&gt;
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboards/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Jones: &lt;br&gt;
+        Capita: &lt;a href="https://www.capitasnowboarding.com/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Arbor: &lt;br&gt;
+        Nitro: &lt;br&gt;
+    </string>
+        //Bindings
+    <string name="brands_bindings">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboarding-bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: &lt;a href="https://www.lib-tech.com/snowboard"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        GNU: &lt;a href="https://www.gnu.com/snowboard"&gt;Sourcing Link&lt;/a&gt; \n
+        Salomon: &lt;a href="https://www.salomon.com/en-bg/c/snowboards/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: &lt;br&gt;
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboards/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Jones: &lt;br&gt;
+        Capita: &lt;a href="https://www.capitasnowboarding.com/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Arbor: &lt;br&gt;
+        Nitro: &lt;br&gt;
+    </string>
+        //Boots
+    <string name="brands_boots">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboarding-boots"&gt;Sourcing Link&lt;/a&gt; \n
+        Lib Tech: &lt;a href="https://www.lib-tech.com/snowboard"&gt;Sourcing Link&lt;/a&gt; \n
+        GNU: &lt;a href="https://www.gnu.com/snowboard"&gt;Sourcing Link&lt;/a&gt; \n
+        Salomon: &lt;a href="https://www.salomon.com/en-bg/c/snowboards/"&gt; \n
+        Ride: \n
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboards/"&gt;Sourcing Link&lt;/a&gt; \n
+        Jones: \n
+        Capita: &lt;a href="https://www.capitasnowboarding.com/"&gt;Sourcing Link&lt;/a&gt; \n
+        Arbor: \n
+        Nitro: \n
+    </string>
+        //Helmets
+    <string name="brands_helmets">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/anon-optics-helmets"&gt;Sourcing Link&lt;/a&gt; \n
+        Lib Tech: &lt;a href="https://www.lib-tech.com/snowboard"&gt;Sourcing Link&lt;/a&gt; \n
+        GNU: &lt;a href="https://www.gnu.com/snowboard"&gt;Sourcing Link&lt;/a&gt; \n
+        Salomon: &lt;a href="https://www.salomon.com/en-bg/c/snowboards/"&gt; \n
+        Ride: \n
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboards/"&gt;Sourcing Link&lt;/a&gt; \n
+        Jones: \n
+        Capita: &lt;a href="https://www.capitasnowboarding.com/"&gt;Sourcing Link&lt;/a&gt; \n
+        Arbor: \n
+        Nitro: \n
+    </string>
+        //Goggles
+    <string name="brands_goggles">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/anon-optics-goggles"&gt;Burton&lt;/a&gt; \n
+        Lib Tech: &lt;a href="https://www.lib-tech.com/snowboard"&gt;Lib Tech&lt;/a&gt; \n
+        GNU: &lt;a href="https://www.gnu.com/snowboard"&gt;GNU&lt;/a&gt; \n
+        Salomon: &lt;a href="https://www.salomon.com/en-bg/c/snowboards/"&gt; \n
+        Ride: \n
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboards/"&gt;K2&lt;/a&gt; \n
+        Jones: \n
+        Capita: &lt;a href="https://www.capitasnowboarding.com/"&gt;Capita&lt;/a&gt; \n
+        Arbor: \n
+        Nitro: \n
+    </string>
+        //Jackets
+    <string name="brands_jackets">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/jackets"&gt;Burton&lt;/a&gt; \n
+        Lib Tech: &lt;a href="https://www.lib-tech.com/snowboard"&gt;Lib Tech&lt;/a&gt; \n
+        GNU: &lt;a href="https://www.gnu.com/snowboard"&gt;GNU&lt;/a&gt; \n
+        Salomon: &lt;a href="https://www.salomon.com/en-bg/c/snowboards/"&gt; \n
+        Ride: \n
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboards/"&gt;K2&lt;/a&gt; \n
+        Jones: \n
+        Capita: &lt;a href="https://www.capitasnowboarding.com/"&gt;Capita&lt;/a&gt; \n
+        Arbor: \n
+        Nitro: \n
+    </string>
+        //Pants
+    <string name="brands_pants">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboard-pants"&gt;Burton&lt;/a&gt; \n
+        Lib Tech: &lt;a href="https://www.lib-tech.com/snowboard"&gt;Lib Tech&lt;/a&gt; \n
+        GNU: &lt;a href="https://www.gnu.com/snowboard"&gt;GNU&lt;/a&gt; \n
+        Salomon: &lt;a href="https://www.salomon.com/en-bg/c/snowboards/"&gt; \n
+        Ride: \n
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboards/"&gt;K2&lt;/a&gt; \n
+        Jones: \n
+        Capita: &lt;a href="https://www.capitasnowboarding.com/"&gt;Capita&lt;/a&gt; \n
+        Arbor: \n
+        Nitro: \n
+    </string>
+        //Gloves
+    <string name="brands_gloves">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/gloves"&gt;Burton&lt;/a&gt; \n
+        Lib Tech: &lt;a href="https://www.lib-tech.com/snowboard"&gt;Lib Tech&lt;/a&gt; \n
+        GNU: &lt;a href="https://www.gnu.com/snowboard"&gt;GNU&lt;/a&gt; \n
+        Salomon: &lt;a href="https://www.salomon.com/en-bg/c/snowboards/"&gt; \n
+        Ride: \n
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboards/"&gt;K2&lt;/a&gt; \n
+        Jones: \n
+        Capita: &lt;a href="https://www.capitasnowboarding.com/"&gt;Capita&lt;/a&gt; \n
+        Arbor: \n
+        Nitro: \n
+    </string>
+        //Base Layers
+    <string name="brands_base_layers">
+        Burton: &lt;a href="https://www.burton.com/bg/en/search?q=base%20layer"&gt;Burton&lt;/a&gt; \n
+        Lib Tech: &lt;a href="https://www.lib-tech.com/snowboard"&gt;Lib Tech&lt;/a&gt; \n
+        GNU: &lt;a href="https://www.gnu.com/snowboard"&gt;GNU&lt;/a&gt; \n
+        Salomon: &lt;a href="https://www.salomon.com/en-bg/c/snowboards/"&gt; \n
+        Ride: \n
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboards/"&gt;K2&lt;/a&gt; \n
+        Jones: \n
+        Capita: &lt;a href="https://www.capitasnowboarding.com/"&gt;Capita&lt;/a&gt; \n
+        Arbor: \n
+        Nitro: \n
+    </string>
+        //Socks
+    <string name="brands_socks">
+        Burton: &lt;a href="https://www.burton.com/bg/en/search?q=socks"&gt;&lt;/a&gt; \n
+        Lib Tech: &lt;a href="https://www.lib-tech.com/snowboard"&gt;Lib Tech&lt;/a&gt; \n
+        GNU: &lt;a href="https://www.gnu.com/snowboard"&gt;GNU&lt;/a&gt; \n
+        Salomon: &lt;a href="https://www.salomon.com/en-bg/c/snowboards/"&gt; \n
+        Ride: \n
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboards/"&gt;K2&lt;/a&gt; \n
+        Jones: \n
+        Capita: &lt;a href="https://www.capitasnowboarding.com/"&gt;Capita&lt;/a&gt; \n
+        Arbor: \n
+        Nitro: \n
+    </string>
 </resources>

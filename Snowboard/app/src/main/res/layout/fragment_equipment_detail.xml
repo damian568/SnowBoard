@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.core.widget.NestedScrollView
-        android:id="@+id/tip_detail_root"
+        android:id="@+id/equipment_detail_root"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        tools:context=".fragments.TipDetailFragment">
+        tools:context=".fragments.EquipmentDetailFragment">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,7 +20,7 @@
                 android:layout_height="300dp">
 
                 <ImageView
-                    android:id="@+id/tip_detail_img"
+                    android:id="@+id/equipment_detail_img"
                     android:layout_width="300dp"
                     android:layout_height="300dp"
                     android:layout_gravity="center"
@@ -28,18 +28,18 @@
                     android:src="@drawable/ic_equipment" />
 
                 <ImageButton
-                    android:id="@+id/tip_btn_close"
+                    android:id="@+id/equipment_btn_close"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:layout_margin="8dp"
                     android:layout_gravity="top|start"
+                    android:layout_margin="8dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:src="@drawable/ic_close" />
 
             </FrameLayout>
 
             <TextView
-                android:id="@+id/tip_detail_title"
+                android:id="@+id/equipment_detail_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
@@ -49,7 +49,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tip_detail_description"
+                android:id="@+id/equipment_detail_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -57,6 +57,17 @@
                 android:layout_marginBottom="32dp"
                 android:lineSpacingExtra="4dp"
                 android:text="Full description goes here..."
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/equipment_detail_brands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                android:lineSpacingExtra="4dp"
+                android:text="Full brands goes here..."
                 android:textSize="18sp" />
 
         </LinearLayout>
