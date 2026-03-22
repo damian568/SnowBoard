@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -28,6 +29,7 @@ class TipsScreenFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        hideToolbar()
         dataInitialize()
 
         // 1. Setup the RecyclerView
@@ -41,9 +43,9 @@ class TipsScreenFragment : Fragment() {
             val transitionName = clickedCard.transitionName
 
             val bundle = Bundle().apply {
-                putString("TIP_TITLE", selectedTip.title)
-                putString("TIP_DESC", selectedTip.description)
-                putInt("TIP_IMAGE", selectedTip.imageResource)
+                putString("TIP_TITLE", selectedTip.tipTitle)
+                putString("TIP_DESC", selectedTip.tipDescription)
+                putInt("TIP_IMAGE", selectedTip.tipImage)
                 putString("TRANSITION_NAME", transitionName) // Pass the name to the next screen!
             }
 
@@ -58,87 +60,91 @@ class TipsScreenFragment : Fragment() {
         binding.recyclerView.adapter = tipsAdapter
     }
 
+    private fun hideToolbar() {
+        (activity as AppCompatActivity?)?.supportActionBar?.hide()
+    }
+
     private fun dataInitialize() {
         tipsArrayList = arrayListOf()
 
         // Add your dummy data here to test it out!
         tipsArrayList.add(
             TipsList(
-                title = getString(R.string.title_detail_tip_1),
-                description = getString(R.string.description_detail_tip_1),
-                imageResource = R.drawable.ic_equipment // Replace with your actual drawable
+                tipTitle = getString(R.string.title_detail_tip_1),
+                tipDescription = getString(R.string.description_detail_tip_1),
+                tipImage = R.drawable.ic_equipment // Replace with your actual drawable
             )
         )
 
         tipsArrayList.add(
             TipsList(
-                title = getString(R.string.title_detail_tip_2),
-                description = getString(R.string.description_detail_tip_2),
-                imageResource = R.drawable.ic_snowboard_logo
+                tipTitle = getString(R.string.title_detail_tip_2),
+                tipDescription = getString(R.string.description_detail_tip_2),
+                tipImage = R.drawable.ic_snowboard_logo
             )
         )
 
         tipsArrayList.add(
             TipsList(
-                title = getString(R.string.title_detail_tip_3),
-                description = getString(R.string.description_detail_tip_3),
-                imageResource = R.drawable.ic_snowboard_logo
+                tipTitle = getString(R.string.title_detail_tip_3),
+                tipDescription = getString(R.string.description_detail_tip_3),
+                tipImage = R.drawable.ic_snowboard_logo
             )
         )
 
         tipsArrayList.add(
             TipsList(
-                title = getString(R.string.title_detail_tip_4),
-                description = getString(R.string.description_detail_tip_4),
-                imageResource = R.drawable.ic_snowboard_logo
+                tipTitle = getString(R.string.title_detail_tip_4),
+                tipDescription = getString(R.string.description_detail_tip_4),
+                tipImage = R.drawable.ic_snowboard_logo
             )
         )
 
         tipsArrayList.add(
             TipsList(
-                title = getString(R.string.title_detail_tip_5),
-                description = getString(R.string.description_detail_tip_5),
-                imageResource = R.drawable.ic_snowboard_logo
+                tipTitle = getString(R.string.title_detail_tip_5),
+                tipDescription = getString(R.string.description_detail_tip_5),
+                tipImage = R.drawable.ic_snowboard_logo
             )
         )
 
         tipsArrayList.add(
             TipsList(
-                title = getString(R.string.title_detail_tip_6),
-                description = getString(R.string.description_detail_tip_6),
-                imageResource = R.drawable.ic_snowboard_logo
+                tipTitle = getString(R.string.title_detail_tip_6),
+                tipDescription = getString(R.string.description_detail_tip_6),
+                tipImage = R.drawable.ic_snowboard_logo
             )
         )
 
         tipsArrayList.add(
             TipsList(
-                title = getString(R.string.title_detail_tip_7),
-                description = getString(R.string.description_detail_tip_7),
-                imageResource = R.drawable.ic_snowboard_logo
+                tipTitle = getString(R.string.title_detail_tip_7),
+                tipDescription = getString(R.string.description_detail_tip_7),
+                tipImage = R.drawable.ic_snowboard_logo
             )
         )
 
         tipsArrayList.add(
             TipsList(
-                title = getString(R.string.title_detail_tip_8),
-                description = getString(R.string.description_detail_tip_8),
-                imageResource = R.drawable.ic_snowboard_logo
+                tipTitle = getString(R.string.title_detail_tip_8),
+                tipDescription = getString(R.string.description_detail_tip_8),
+                tipImage = R.drawable.ic_snowboard_logo
             )
         )
 
         tipsArrayList.add(
             TipsList(
-                title = getString(R.string.title_detail_tip_9),
-                description = getString(R.string.description_detail_tip_9),
-                imageResource = R.drawable.ic_snowboard_logo
+                tipTitle = getString(R.string.title_detail_tip_9),
+                tipDescription = getString(R.string.description_detail_tip_9),
+                tipImage = R.drawable.ic_snowboard_logo
             )
         )
 
         tipsArrayList.add(
             TipsList(
-                title = getString(R.string.title_detail_tip_10),
-                description = getString(R.string.description_detail_tip_10),
-                imageResource = R.drawable.ic_snowboard_logo
+                tipTitle = getString(R.string.title_detail_tip_10),
+                tipDescription = getString(R.string.description_detail_tip_10),
+                tipImage = R.drawable.ic_snowboard_logo
             )
         )
     }

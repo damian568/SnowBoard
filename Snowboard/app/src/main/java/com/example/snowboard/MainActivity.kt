@@ -72,15 +72,15 @@ class MainActivity : AppCompatActivity() {
                 binding.fab.hide()
             }
 
-            R.id.historyScreenFragment -> {
+            R.id.historyScreenFragment, R.id.equipmentScreenFragment -> {
                 binding.bottomAppBar.visibility = View.VISIBLE
                 binding.bottomAppBar.performShow()
-                binding.fab.hide() // Hide ONLY the FAB
+                //binding.fab.hide() // Hide ONLY the FAB
             }
 
             else -> {
                 binding.bottomAppBar.visibility = View.VISIBLE
-                binding.fab.show()
+                binding.fab.hide()
                 binding.bottomAppBar.performShow()
             }
         }

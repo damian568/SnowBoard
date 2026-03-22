@@ -52,4 +52,163 @@
     <string name="description_detail_tip_10">We can’t end this article without the most important part of your snowboarding experience. Just have fun. There’s a reason Never Summer lives, breathes, and eats the snowboarding life. We love it. And so will you. Once the ski lift brings you to the top of your first mountain, and you see the panoramic views as you’re floating down the pow—you’re going to be hooked. We’re excited to bring you into the boarding family, and we’ll be looking out for you on the slopes in your Never Summer gear.
         \n \nAs a new rider, it’s normal to feel overwhelmed and unsure about yourself. Just remember, the only thing between where you are today and where the pros are is just how much time they’ve spent on the slopes.
         \n \nGet out there and start practicing, and you’ll be running up and down the slopes in no time.</string>
+
+    //Equipment Screen
+    <string name="equipment_instruction">Click to see details</string>
+    <string name="equipment_instruction_google">"Search for brands at &lt;a href='https://www.google.com'&gt;Google&lt;/a&gt;"</string>
+
+    <string name="equipment_title_1">Snowboard</string>
+    <string name="equipment_title_2">Bindings</string>
+    <string name="equipment_title_3">Boots</string>
+    <string name="equipment_title_4">Helmet</string>
+    <string name="equipment_title_5">Goggles</string>
+    <string name="equipment_title_6">Jacket</string>
+    <string name="equipment_title_7">Pants</string>
+    <string name="equipment_title_8">Gloves</string>
+    <string name="equipment_title_9">Base Layers</string>
+    <string name="equipment_title_10">Socks</string>
+
+    <string name="equipment_desc_detail_1">Snowboard – The main equipment used to ride on snow; designed for control, balance, and movement on different terrains.</string>
+    <string name="equipment_desc_detail_2">Bindings – Connect your boots to the snowboard, giving you control and stability while riding.</string>
+    <string name="equipment_desc_detail_3">Boots – Provide comfort, support, and proper fit, helping you control the board efficiently.</string>
+    <string name="equipment_desc_detail_4">Helmet – Protects your head from injuries during falls or collisions.</string>
+    <string name="equipment_desc_detail_5">Goggles – Improve visibility by protecting your eyes from wind, snow, and sunlight.</string>
+    <string name="equipment_desc_detail_6">Snowboard jacket – Keeps you warm and dry while protecting against wind and snow.</string>
+    <string name="equipment_desc_detail_7">Snowboard pants – Provide insulation and waterproofing, keeping your lower body dry and comfortable.</string>
+    <string name="equipment_desc_detail_8">Gloves or mittens – Keep your hands warm and protect them from cold, wind, and moisture.</string>
+    <string name="equipment_desc_detail_9">Base layers (thermal) – Help regulate body temperature and keep sweat away from your skin.</string>
+    <string name="equipment_desc_detail_10">Snowboard socks – Designed for warmth, comfort, and better fit inside boots, reducing friction and blisters.</string>
+
+    //Brands
+        //Snowboards
+    <string name="brands_snowboards">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: &lt;a href="https://www.lib-tech.com/snowboard"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        GNU: &lt;a href="https://www.gnu.com/snowboard"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: &lt;a href="https://ridesnowboards.com/en-bg/c/snowboards/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboards/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Jones: &lt;a href="https://eu.jonessnowboards.com/collections/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Capita: &lt;a href="https://capitasnowboarding.com/collections/all-snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Arbor: &lt;a href="https://www.arborcollective.eu/collections/featured-snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Nitro: &lt;a href="https://www.nitrosnowboards.com/collections/snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+    </string>
+        //Bindings
+    <string name="brands_bindings">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboarding-bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: &lt;a href="https://www.lib-tech.com/catalogsearch/result/?q=+Snowboard+bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        GNU: &lt;a href="https://www.gnu.com/bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: &lt;a href="https://ridesnowboards.com/en-bg/c/snowboard-bindings/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboard-bindings/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Jones: &lt;a href="https://eu.jonessnowboards.com/collections/bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: &lt;a href="https://www.arborcollective.eu/collections/bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Nitro: &lt;a href="https://www.nitrosnowboards.com/collections/bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+
+    </string>
+        //Boots
+    <string name="brands_boots">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboarding-boots"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/boots"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: &lt;a href="https://ridesnowboards.com/en-bg/c/snowboard-boots/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboard-boots/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: &lt;a href="https://www.nitrosnowboards.com/collections/boots"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+    </string>
+        //Helmets
+    <string name="brands_helmets">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/anon-optics-helmets"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/helmets-and-back-protection"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: This brand don\'t sell it &lt;br&gt;
+        K2: &lt;a href="https://k2snow.com/en-bg/c/gear/helmets/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+        //Goggles
+    <string name="brands_goggles">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/anon-optics-goggles"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/goggles"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: This brand don\'t sell it &lt;br&gt;
+        K2: This brand don\'t sell it &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+        //Jackets
+    <string name="brands_jackets">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/jackets"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/clothing/tops"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: This brand don\'t sell it &lt;br&gt;
+        K2: This brand don\'t sell it &lt;br&gt;
+        Jones: &lt;a href="https://eu.jonessnowboards.com/collections/mens-snow-jacket"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+        //Pants
+    <string name="brands_pants">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboard-pants"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/clothing/bottoms"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: This brand don\'t sell it  &lt;br&gt;
+        K2: This brand don\'t sell it &lt;br&gt;
+        Jones: &lt;a href="https://eu.jonessnowboards.com/collections/mens-snow-pants"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+        //Gloves
+    <string name="brands_gloves">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/gloves"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/s/shopby/apparelActivities-snowboarding?q=glvoes"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: This brand don\'t sell it &lt;br&gt;
+        K2: This brand don\'t sell it &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+        //Base Layers
+    <string name="brands_base_layers">
+        Burton: &lt;a href="https://www.burton.com/bg/en/search?q=base%20layer"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: This brand don\'t sell it &lt;br&gt;
+        Ride: This brand don\'t sell it &lt;br&gt;
+        K2: This brand don\'t sell it &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+        //Socks
+    <string name="brands_socks">
+        Burton: &lt;a href="https://www.burton.com/bg/en/search?q=socks"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: This brand don\'t sell it &lt;br&gt;
+        Ride: &lt;a href="https://ridesnowboards.com/en-bg/c/accessories/?Accessories+Category=Footwear#clp-main"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        K2: &lt;a href="https://k2snow.com/en-bg/c/gear/apparel/?Apparel+Type=Socks#clp-main"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
 </resources>
