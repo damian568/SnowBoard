@@ -20,9 +20,11 @@ class TipDetailFragment : Fragment() {
 
         // Setup the exact animation from the video
         sharedElementEnterTransition = MaterialContainerTransform().apply {
-            drawingViewId = R.id.navHostFragment // The NavHost container from your activity_main.xml
+            drawingViewId =
+                R.id.navHostFragment // The NavHost container from your activity_main.xml
             duration = 300L
-            scrimColor = Color.TRANSPARENT // Keeps the background from turning dark during the animation
+            scrimColor =
+                Color.TRANSPARENT // Keeps the background from turning dark during the animation
         }
     }
 

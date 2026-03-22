@@ -47,7 +47,6 @@ class EquipmentScreenFragment : Fragment() {
             val bundle = Bundle().apply {
                 putInt("EQUIPMENT_IMAGE", selectedItem.equipmentImage)
                 putString("EQUIPMENT_TITLE", selectedItem.equipmentTitle)
-                putString("EQUIPMENT_DESC", selectedItem.equipmentDescription)
                 putString("TRANSITION_NAME", transitionName)
             }
 

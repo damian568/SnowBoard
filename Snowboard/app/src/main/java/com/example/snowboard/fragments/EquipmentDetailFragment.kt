@@ -21,9 +21,11 @@ class EquipmentDetailFragment : Fragment() {
 
         // Setup the exact animation from the video
         sharedElementEnterTransition = MaterialContainerTransform().apply {
-            drawingViewId = R.id.navHostFragment // The NavHost container from your activity_main.xml
+            drawingViewId =
+                R.id.navHostFragment // The NavHost container from your activity_main.xml
             duration = 300L
-            scrimColor = Color.TRANSPARENT // Keeps the background from turning dark during the animation
+            scrimColor =
+                Color.TRANSPARENT // Keeps the background from turning dark during the animation
         }
     }
 
@@ -45,38 +47,57 @@ class EquipmentDetailFragment : Fragment() {
         // 2. Set the rest of your data...
         val imageRes = arguments?.getInt("EQUIPMENT_IMAGE") ?: 0
         val title = arguments?.getString("EQUIPMENT_TITLE") ?: ""
-        val desc = arguments?.getString("EQUIPMENT_DESC")
 
         binding.equipmentDetailTitle.text = title
-        binding.equipmentDetailDescription.text = desc
         if (imageRes != 0) {
             binding.equipmentDetailImg.setImageResource(imageRes)
         }
-
-        // This logic maps the clicked item to the correct list of 10+ brands
-        val brandsHtml = when (title) {
-            "Snowboard" -> getString(R.string.brands_snowboards)
-            "Bindings" -> getString(R.string.brands_bindings)
-            "Boots" -> getString(R.string.brands_boots)
-            "Helmet" -> getString(R.string.brands_helmets)
-            "Goggles" -> getString(R.string.brands_goggles)
-            "Snowboard jacket" -> getString(R.string.brands_jackets)
-            "Snowboard pants" -> getString(R.string.brands_pants)
-            "Gloves" -> getString(R.string.brands_gloves)
-            "Base layers" -> getString(R.string.brands_base_layers)
-            "Snowboard socks" -> getString(R.string.brands_socks)
-            else -> "Search for brands at &lt;a href='https://www.google.com'&gt;Google&lt;/a&gt;"
-        }
-
-        // Apply the text and make links clickable
-        binding.equipmentDetailBrands.text = Html.fromHtml(brandsHtml)
-        binding.equipmentDetailBrands.movementMethod = android.text.method.LinkMovementMethod.getInstance()
+        changeDescDetail(title)
+        brandsHTML(title)
 
         binding.equipmentBtnClose.setOnClickListener {
             // This tells the NavController to go back to the list.
             // It will automatically play the reverse "shrinking" animation!
             findNavController().navigateUp()
         }
+    }
+
+    private fun changeDescDetail(title: String): String {
+        val changeDesc = when (title) {
+            "Snowboard" -> getString(R.string.equipment_desc_detail_1)
+            "Bindings" -> getString(R.string.equipment_desc_detail_2)
+            "Boots" -> getString(R.string.equipment_desc_detail_3)
+            "Helmet" -> getString(R.string.equipment_desc_detail_4)
+            "Goggles" -> getString(R.string.equipment_desc_detail_5)
+            "Jacket" -> getString(R.string.equipment_desc_detail_6)
+            "Pants" -> getString(R.string.equipment_desc_detail_7)
+            "Gloves" -> getString(R.string.equipment_desc_detail_8)
+            "Base Layers" -> getString(R.string.equipment_desc_detail_9)
+            "Socks" -> getString(R.string.equipment_desc_detail_10)
+            else -> getString(R.string.equipment_instruction_google)
+        }
+        return changeDesc.also { binding.equipmentDetailDescription.text = it }
+    }
+
+    // This logic maps the clicked item to the correct list of 10+ brands
+    private fun brandsHTML(title: String) {
+        val brandsHtml = when (title) {
+            "Snowboard" -> getString(R.string.brands_snowboards)
+            "Bindings" -> getString(R.string.brands_bindings)
+            "Boots" -> getString(R.string.brands_boots)
+            "Helmet" -> getString(R.string.brands_helmets)
+            "Goggles" -> getString(R.string.brands_goggles)
+            "Jacket" -> getString(R.string.brands_jackets)
+            "Pants" -> getString(R.string.brands_pants)
+            "Gloves" -> getString(R.string.brands_gloves)
+            "Base Layers" -> getString(R.string.brands_base_layers)
+            "Socks" -> getString(R.string.brands_socks)
+            else -> getString(R.string.equipment_instruction_google)
+        }
+
+        // Apply the text and make links clickable
+        binding.equipmentDetailBrands.text = Html.fromHtml(brandsHtml)
+        binding.equipmentDetailBrands.movementMethod = android.text.method.LinkMovementMethod.getInstance()
     }
 
     private fun hideTheToolbar() {
