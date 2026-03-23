@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ski_slopes_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/blush"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imgResort"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_equipment"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleSkiSlopes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/imgResort"
+            android:text="Bend Your Knees"
+            android:textColor="@color/midnight"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/descriptionSkiSlopes"
+            app:layout_constraintLeft_toRightOf="@id/imgResort"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/arrow_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_arrow" app:tint="@color/midnight" app:layout_constraintBottom_toBottomOf="@id/titleSkiSlopes"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/titleSkiSlopes" />
+
+        <TextView
+            android:id="@+id/descriptionSkiSlopes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Here is the detailed tip about bending your knees while snowboarding..."
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgResort" />
+
+        <ImageView
+            android:id="@+id/imgSkiSlopes"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descriptionSkiSlopes" />
+
+        <TextView
+            android:id="@+id/linkSkiSlopes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Here is the detailed tip about bending your knees while snowboarding..."
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/imgSkiSlopes" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -22,11 +22,13 @@ class MainScreenFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        showToolbar()
+        // This hides the back arrow specifically for this screen
+        (activity as? AppCompatActivity)?.supportActionBar?.setDisplayHomeAsUpEnabled(false)
     }
 
-    private fun showToolbar() {
-        (activity as AppCompatActivity?)?.supportActionBar?.show()
+    override fun onResume() {
+        super.onResume()
+        // To HIDE the toolbar
+        (activity as? AppCompatActivity)?.supportActionBar?.show()
     }
 }
