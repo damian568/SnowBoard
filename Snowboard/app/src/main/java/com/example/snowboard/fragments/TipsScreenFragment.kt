@@ -28,8 +28,6 @@ class TipsScreenFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        hideToolbar()
         dataInitialize()
 
         // 1. Setup the RecyclerView
@@ -60,8 +58,16 @@ class TipsScreenFragment : Fragment() {
         binding.recyclerView.adapter = tipsAdapter
     }
 
-    private fun hideToolbar() {
-        (activity as AppCompatActivity?)?.supportActionBar?.hide()
+    override fun onResume() {
+        super.onResume()
+        // To HIDE the toolbar
+        (activity as? AppCompatActivity)?.supportActionBar?.hide()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        // To SHOW the toolbar when leaving this fragment
+        (activity as? AppCompatActivity)?.supportActionBar?.show()
     }
 
     private fun dataInitialize() {

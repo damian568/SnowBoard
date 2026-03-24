@@ -64,6 +64,7 @@ class EquipmentDetailFragment : Fragment() {
 
     private fun changeDescDetail(title: String): String {
         val changeDesc = when (title) {
+            //ENG
             "Snowboard" -> getString(R.string.equipment_desc_detail_1)
             "Bindings" -> getString(R.string.equipment_desc_detail_2)
             "Boots" -> getString(R.string.equipment_desc_detail_3)
@@ -74,6 +75,18 @@ class EquipmentDetailFragment : Fragment() {
             "Gloves" -> getString(R.string.equipment_desc_detail_8)
             "Base Layers" -> getString(R.string.equipment_desc_detail_9)
             "Socks" -> getString(R.string.equipment_desc_detail_10)
+
+            //BG
+            "Сноуборд" -> getString(R.string.equipment_desc_detail_1)
+            "Автомати" -> getString(R.string.equipment_desc_detail_2)
+            "Обувки" -> getString(R.string.equipment_desc_detail_3)
+            "Каска" -> getString(R.string.equipment_desc_detail_4)
+            "Очила" -> getString(R.string.equipment_desc_detail_5)
+            "Яке" -> getString(R.string.equipment_desc_detail_6)
+            "Панталон" -> getString(R.string.equipment_desc_detail_7)
+            "Ръкавици" -> getString(R.string.equipment_desc_detail_8)
+            "Термо Бельо" -> getString(R.string.equipment_desc_detail_9)
+            "Чорапи" -> getString(R.string.equipment_desc_detail_10)
             else -> getString(R.string.equipment_instruction_google)
         }
         return changeDesc.also { binding.equipmentDetailDescription.text = it }
@@ -82,6 +95,7 @@ class EquipmentDetailFragment : Fragment() {
     // This logic maps the clicked item to the correct list of 10+ brands
     private fun brandsHTML(title: String) {
         val brandsHtml = when (title) {
+            //ENG
             "Snowboard" -> getString(R.string.brands_snowboards)
             "Bindings" -> getString(R.string.brands_bindings)
             "Boots" -> getString(R.string.brands_boots)
@@ -92,6 +106,18 @@ class EquipmentDetailFragment : Fragment() {
             "Gloves" -> getString(R.string.brands_gloves)
             "Base Layers" -> getString(R.string.brands_base_layers)
             "Socks" -> getString(R.string.brands_socks)
+
+            //BG
+            "Сноуборд" -> getString(R.string.brands_snowboards)
+            "Автомати" -> getString(R.string.brands_bindings)
+            "Обувки" -> getString(R.string.brands_boots)
+            "Каска" -> getString(R.string.brands_helmets)
+            "Очила" -> getString(R.string.brands_goggles)
+            "Яке" -> getString(R.string.brands_jackets)
+            "Панталон" -> getString(R.string.brands_pants)
+            "Ръкавици" -> getString(R.string.brands_gloves)
+            "Термо Бельо" -> getString(R.string.brands_base_layers)
+            "Чорапи" -> getString(R.string.brands_socks)
             else -> getString(R.string.equipment_instruction_google)
         }
 

@@ -4,32 +4,32 @@
     <item
         android:id="@+id/home"
         android:icon="@drawable/ic_home"
-        android:title="Home" />
+        android:title="@string/menu_home" />
     <item
         android:id="@+id/history"
         android:icon="@drawable/ic_history"
-        android:title="History" />
+        android:title="@string/menu_history" />
     <item
         android:id="@+id/tips"
         android:icon="@drawable/ic_tips"
-        android:title="Tips" />
+        android:title="@string/menu_tips" />
 
     <item
         android:id="@+id/equipment"
         android:icon="@drawable/ic_equipment"
-        android:title="Equipment" />
+        android:title="@string/menu_equipment" />
 
     <item
         android:id="@+id/skiSlopes"
         android:icon="@drawable/ic_slopes"
-        android:title="Ski Slopes" />
+        android:title="@string/menu_ski_slopes" />
     <item
         android:id="@+id/videos"
         android:icon="@drawable/ic_video"
-        android:title="Videos" />
+        android:title="@string/menu_videos" />
     <item
         android:id="@+id/weather"
         android:icon="@drawable/ic_weather"
-        android:title="Weather" />
+        android:title="@string/menu_weather" />
 
 </menu>

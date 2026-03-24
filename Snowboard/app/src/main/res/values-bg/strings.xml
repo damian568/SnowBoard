@@ -1,51 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SnowBoard</string>
-
+    <string name="app_name">Сноуборд</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     //Menu String
-    <string name="menu_home">Home</string>
-    <string name="menu_history">History</string>
-    <string name="menu_tips">Tips</string>
-    <string name="menu_equipment">Equipment</string>
-    <string name="menu_ski_slopes">Ski Slopes</string>
-    <string name="menu_videos">Videos</string>
-    <string name="menu_weather">Weather</string>
+    <string name="menu_home">Начало</string>
+    <string name="menu_history">История</string>
+    <string name="menu_tips">Съвети</string>
+    <string name="menu_equipment">Екипировка</string>
+    <string name="menu_ski_slopes">Писти</string>
+    <string name="menu_videos">Видеа</string>
+    <string name="menu_weather">Време</string>
 
     //History Screen
-    <string name="history_header">Snowboard</string>
-    <string name="history_title_history">History</string>
-    <string name="history_title_styles">Styles</string>
-    <string name="history_title_styles_1">Freeride</string>
-    <string name="history_title_styles_2">Freestyle</string>
-    <string name="history_title_styles_3">Boardercross</string>
-    <string name="history_title_tricks">Tricks</string>
+    <string name="history_header">Сноуборд</string>
+    <string name="history_title_history">История</string>
+    <string name="history_title_styles">Стилове</string>
+    <string name="history_title_styles_1">Фрийрайдът</string>
+    <string name="history_title_styles_2">Фрийстайл</string>
+    <string name="history_title_styles_3">Бордъркрос</string>
+    <string name="history_title_tricks">Трикове</string>
 
-    <string name="paragraph_history_1">A snowboard (in English: snowboard, in literal translation a snow board) is a flat structure designed for descending on snowy slopes in the mountains. It is seen as the winter equivalent of skateboarding. The snowboard has a wooden base and layers of fiberglass on top and bottom. There are foot pegs on the board. Its length varies from 140 to 165 cm, and its width from 24 to 27 cm.</string>
-    <string name="paragraph_history_2">The history of snowboarding began around 1960 with the attempt of several American surfers to make a surfboard that would move on the snowy slopes. The new sport is developing rapidly, as its technique is learned more easily and in a shorter time than that of skiing. In the late 70s and early 80s snowboarding began to establish itself as an alternative to skiing. Racing and experimentation began to lead to the present day, when about 50% of the US population owns a personal snowboard.</string>
-    <string name="paragraph_history_3">There are several styles in snowboarding - freeride, freestyle, boardercross and "alpine style" descents (which are performed in front of a large audience and judged by a jury). Freestyle is often practiced by skaters because many movements in this style are borrowed from skateboarding and surfing.</string>
-    <string name="paragraph_history_4">Freeride is off-piste riding on both skis and snowboards in pristine snow. The term comes from English and can be translated as "free ride". While in other styles everything depends on certain prerequisites - in freestyle from man-made jumps, ramps, etc., and in track skiing there is a special preparation of the snow, the focus of freeriding is, by descending, you take advantage of the random and uncertain conditions of the natural terrain. We cannot talk about specific styles, as the way of riding is completely individual. The only difference is off-piste riding away from a resort (backcountry) and on the territory of a given resort, near the slopes.</string>
-    <string name="paragraph_history_5">Freestyle or the so-called Freestyle is expressed in doing different tricks with the help of ramps, half-pipes, rails and others.</string>
-    <string name="paragraph_history_6">In boardercross, four snowboarders (or a different number, but mostly four) go down a heavily groomed track.</string>
-    <string name="paragraph_history_7">Here are some tricks performed by freestylers:
-        \n \t- 50/50 - when you point the board parallel to the beam/railing and slide along it.
-        \n \t- board slide - the opposite of 50/50, the board is directed perpendicular to the beam, the slide is faster here.
-        \n \t- 5/о(файв оу) - the initial position is 50/50, but when performing it, the weight is concentrated on the back leg (tail press).
-        \n \t- nose slide - the starting position is a board slide, but the slide takes place on the front of the board (the nose).
-        \n \t- tail slide - same as nose slide, but sliding is done with the rear leg and the tail of the board.
-        \nWax is often used to perform tricks - for easier sliding.</string>
+    <string name="paragraph_history_1">Сноуборд (на английски: snowboard, в буквален превод снежна дъска) представлява плоска конструкция, предназначена за спускане по снежни наклони в планината. Разглежда се като зимния еквивалент на скейтборда. Сноубордът има дървена основа, а отгоре и отдолу слоеве от стъклопласт. Върху дъската има закрепвания за краката. Дължината му варира от 140 до 165 см, а ширината му от 24 до 27 см.</string>
+    <string name="paragraph_history_2">Историята на сноуборда започва около 1960 г. с опита на няколко американски сърфисти да направят сърф, който да се движи по снежните склонове. Новият спорт се развива бързо, тъй като техниката му се усвоява по-лесно и за по-кратко време от тази на ските. В края на 70-те и началото на 80-те сноубордът започнал да се утвърждава като алтернатива на ските. Започват състезания и експериментиране, за да се стигне до наши дни, когато около 50% от населението на САЩ разполагат с личен сноуборд.</string>
+    <string name="paragraph_history_3">В сноуборда има няколко стила – фриирайд, фриистайл, бордъркрос и спускания в „алпийски стил“ (които стават пред много публика и се оценяват от жури). Фриистайлът често се практикува от скейтъри, защото много движения в този стил са заети от скейтборда и сърфа.</string>
+    <string name="paragraph_history_4">Фрийрайдът е извънпистово каране както на ски, така и на сноуборд в непокътнат сняг. Терминът идва от английски и може да се преведе като „свободно каране“. Докато при другите стилове всичко зависи от определени предпоставки – при фрийстайла от направените от човека скокове, рампи и др., а при пистовото каране има специална подготовка на снега, фокусът при фрийрайда е, спускайки се, използваш произволните и несигурни условия на естествения терен. Не може да се говори за конкретни стилове, тъй като начинът на каране е изцяло индивидуален. Различават се единствено извънпистово каране далеч от курорт (backcountry) и на територията на даден курорт, в близост до пистите.</string>
+    <string name="paragraph_history_5">Свободният стил или така нареченият Фриистайл се изразява в правенето на различни трикове с помощта на рампи, халф-пайп, релси и други.</string>
+    <string name="paragraph_history_6">В бордъркроса четирима сноубордисти (или различен брой, но най-вече четири) се пускат по силно пресечена писта.</string>
+    <string name="paragraph_history_7">Ето някои трикове изпълнявани от фриистайлърите:
+        \n \t- 50/50-когато насочиш дъската успоредно на гредата/парапета и плъзгаш по нея.
+        \n \t- board slide-обратното на 50/50, дъската е насочена перпендикулярно на гредата, плъзгането тук става по-бързо.
+        \n \t- 5/о(файв оу)- началната позиция е 50/50, но при изпълнението му тежестта се съсредоточава на задния крак (tail press)
+        \n \t- nose slide- началната позиция е board slide, но плъзгането става на предната част на борда (носът)
+        \n \t- tail slide-същото като nose slide, но плъзгането става м/у задния крак и опашката на борда.
+        \nЗа изпълнението на триковете често се използва вакса – за по лесно плъзгане.</string>
 
     //Tips Screen
-    <string name="title_detail_tip_1">Make Sure You Have The Right Board</string>
-    <string name="title_detail_tip_2">Make Sure You Have Proper Gear (And It Fits Well</string>
-    <string name="title_detail_tip_3">Take a Snowboarding Lesson</string>
-    <string name="title_detail_tip_4">Always Look Forward and Watch Where You Want To Go</string>
-    <string name="title_detail_tip_5">Bend Your Knees</string>
-    <string name="title_detail_tip_6">Ride Across The Slope</string>
-    <string name="title_detail_tip_7">Practice on the Bunny Slopes</string>
-    <string name="title_detail_tip_8">Observe All Resort Rider/Skier Safety Conduct</string>
-    <string name="title_detail_tip_9">Be Patient and Don’t Rush Yourself</string>
-    <string name="title_detail_tip_10">Have Fun!</string>
+    <string name="title_detail_tip_1">Уверете се, че имате правилната дъска</string>
+    <string name="title_detail_tip_2">Уверете се, че имате подходяща екипировка (и че ви пасва добре)</string>
+    <string name="title_detail_tip_3">Вземете урок по сноуборд</string>
+    <string name="title_detail_tip_4">Винаги гледайте напред и следете накъде искате да отидете</string>
+    <string name="title_detail_tip_5">Свивайте коленете</string>
+    <string name="title_detail_tip_6">Карайте напречно по склона</string>
+    <string name="title_detail_tip_7">Тренирайте на лесните писти</string>
+    <string name="title_detail_tip_8">Спазвайте всички правила за безопасност на пистата</string>
+    <string name="title_detail_tip_9">Бъдете търпеливи и не бързайте</string>
+    <string name="title_detail_tip_10">Забавлявайте се!</string>
 
     <string name="description_detail_tip_1">There are a lot of different types of snowboards for a reason. When you walk into a snowboard shop and wonder how there can be so many different boards, it’s because they all ride differently.
         \n \nAs a beginner, look for a board that has rocker camber. Rocker camber places rocker in between your feet, and camber underneath each foot. Rocker between your feet will make the board more catch free, so that you won’t catch your edges as much when you are learning to turn. Camber is to help the edge dig while initiating turns. Rocker camber in combination is great for learning to turn, because it will allow you to engage in turns easier, and make you less prone to catching your edge.
@@ -71,33 +71,33 @@
         \n \nGet out there and start practicing, and you’ll be running up and down the slopes in no time.</string>
 
     //Equipment Screen
-    <string name="equipment_instruction">Click to see details</string>
-    <string name="equipment_instruction_google">"Search for brands at &lt;a href='https://www.google.com'&gt;Google&lt;/a&gt;"</string>
+    <string name="equipment_instruction">Натиснете за детайли</string>
+    <string name="equipment_instruction_google">Търсете марки в &lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</string>
 
-    <string name="equipment_title_1">Snowboard</string>
-    <string name="equipment_title_2">Bindings</string>
-    <string name="equipment_title_3">Boots</string>
-    <string name="equipment_title_4">Helmet</string>
-    <string name="equipment_title_5">Goggles</string>
-    <string name="equipment_title_6">Jacket</string>
-    <string name="equipment_title_7">Pants</string>
-    <string name="equipment_title_8">Gloves</string>
-    <string name="equipment_title_9">Base Layers</string>
-    <string name="equipment_title_10">Socks</string>
+    <string name="equipment_title_1">Сноуборд</string>
+    <string name="equipment_title_2">Автомати</string>
+    <string name="equipment_title_3">Обувки</string>
+    <string name="equipment_title_4">Каска</string>
+    <string name="equipment_title_5">Очила</string>
+    <string name="equipment_title_6">Яке</string>
+    <string name="equipment_title_7">Панталон</string>
+    <string name="equipment_title_8">Ръкавици</string>
+    <string name="equipment_title_9">Термо Бельо</string>
+    <string name="equipment_title_10">Чорапи</string>
 
-    <string name="equipment_desc_detail_1">Snowboard – The main equipment used to ride on snow; designed for control, balance, and movement on different terrains.</string>
-    <string name="equipment_desc_detail_2">Bindings – Connect your boots to the snowboard, giving you control and stability while riding.</string>
-    <string name="equipment_desc_detail_3">Boots – Provide comfort, support, and proper fit, helping you control the board efficiently.</string>
-    <string name="equipment_desc_detail_4">Helmet – Protects your head from injuries during falls or collisions.</string>
-    <string name="equipment_desc_detail_5">Goggles – Improve visibility by protecting your eyes from wind, snow, and sunlight.</string>
-    <string name="equipment_desc_detail_6">Snowboard jacket – Keeps you warm and dry while protecting against wind and snow.</string>
-    <string name="equipment_desc_detail_7">Snowboard pants – Provide insulation and waterproofing, keeping your lower body dry and comfortable.</string>
-    <string name="equipment_desc_detail_8">Gloves or mittens – Keep your hands warm and protect them from cold, wind, and moisture.</string>
-    <string name="equipment_desc_detail_9">Base layers (thermal) – Help regulate body temperature and keep sweat away from your skin.</string>
-    <string name="equipment_desc_detail_10">Snowboard socks – Designed for warmth, comfort, and better fit inside boots, reducing friction and blisters.</string>
+    <string name="equipment_desc_detail_1">Сноуборд – Основната екипировка за каране върху сняг. designed for control, balance, and movement on different terrains.</string>
+    <string name="equipment_desc_detail_2">Автомати – Свързват обувките с дъската и дават контрол.</string>
+    <string name="equipment_desc_detail_3">Обувки – Осирурява ви комфорт, опора и подходящо прилягане, помагайки ви да контролирате дъската ефективно.</string>
+    <string name="equipment_desc_detail_4">Каска – Предпазва главата ви от наранявания при падане или сблъсък.</string>
+    <string name="equipment_desc_detail_5">Очила – Подобряват видимостта и защитават очите ви от вятър, сняг и слънчева светлина.</string>
+    <string name="equipment_desc_detail_6">Яке – Поддържа ви топло и сухо, като същевременно предпазва от вятър и сняг.</string>
+    <string name="equipment_desc_detail_7">Панталон – Осигурява изолация и хидроизолация, поддържайки долната част на тялото ви суха и удобна.</string>
+    <string name="equipment_desc_detail_8">Ръкавици – Държи ръцете ви топли и ги предпазва от студ, вятър и влага.</string>
+    <string name="equipment_desc_detail_9">Термо Бельо – Помогнете за регулиране на телесната температура и предпазете потта от кожата си.</string>
+    <string name="equipment_desc_detail_10">Чорапи – Проектиран за топлина, комфорт и по-добро прилягане в ботушите, намалявайки триенето и образуването на мехури.</string>
 
     //Brands
-        //Snowboards
+    //Snowboards
     <string name="brands_snowboards">
         Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
         Lib Tech: &lt;a href="https://www.lib-tech.com/snowboard"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
@@ -110,7 +110,7 @@
         Arbor: &lt;a href="https://www.arborcollective.eu/collections/featured-snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
         Nitro: &lt;a href="https://www.nitrosnowboards.com/collections/snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
     </string>
-        //Bindings
+    //Bindings
     <string name="brands_bindings">
         Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboarding-bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
         Lib Tech: &lt;a href="https://www.lib-tech.com/catalogsearch/result/?q=+Snowboard+bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
@@ -124,7 +124,7 @@
         Nitro: &lt;a href="https://www.nitrosnowboards.com/collections/bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
 
     </string>
-        //Boots
+    //Boots
     <string name="brands_boots">
         Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboarding-boots"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
         Lib Tech: This brand don\'t sell it &lt;br&gt;
@@ -137,7 +137,7 @@
         Arbor: This brand don\'t sell it &lt;br&gt;
         Nitro: &lt;a href="https://www.nitrosnowboards.com/collections/boots"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
     </string>
-        //Helmets
+    //Helmets
     <string name="brands_helmets">
         Burton: &lt;a href="https://www.burton.com/bg/en/c/anon-optics-helmets"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
         Lib Tech: This brand don\'t sell it &lt;br&gt;
@@ -150,7 +150,7 @@
         Arbor: This brand don\'t sell it &lt;br&gt;
         Nitro: This brand don\'t sell it &lt;br&gt;
     </string>
-        //Goggles
+    //Goggles
     <string name="brands_goggles">
         Burton: &lt;a href="https://www.burton.com/bg/en/c/anon-optics-goggles"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
         Lib Tech: This brand don\'t sell it &lt;br&gt;
@@ -163,7 +163,7 @@
         Arbor: This brand don\'t sell it &lt;br&gt;
         Nitro: This brand don\'t sell it &lt;br&gt;
     </string>
-        //Jackets
+    //Jackets
     <string name="brands_jackets">
         Burton: &lt;a href="https://www.burton.com/bg/en/c/jackets"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
         Lib Tech: This brand don\'t sell it &lt;br&gt;
@@ -176,7 +176,7 @@
         Arbor: This brand don\'t sell it &lt;br&gt;
         Nitro: This brand don\'t sell it &lt;br&gt;
     </string>
-        //Pants
+    //Pants
     <string name="brands_pants">
         Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboard-pants"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
         Lib Tech: This brand don\'t sell it &lt;br&gt;
@@ -189,7 +189,7 @@
         Arbor: This brand don\'t sell it &lt;br&gt;
         Nitro: This brand don\'t sell it &lt;br&gt;
     </string>
-        //Gloves
+    //Gloves
     <string name="brands_gloves">
         Burton: &lt;a href="https://www.burton.com/bg/en/c/gloves"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
         Lib Tech: This brand don\'t sell it &lt;br&gt;
@@ -202,7 +202,7 @@
         Arbor: This brand don\'t sell it &lt;br&gt;
         Nitro: This brand don\'t sell it &lt;br&gt;
     </string>
-        //Base Layers
+    //Base Layers
     <string name="brands_base_layers">
         Burton: &lt;a href="https://www.burton.com/bg/en/search?q=base%20layer"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
         Lib Tech: This brand don\'t sell it &lt;br&gt;
@@ -215,7 +215,7 @@
         Arbor: This brand don\'t sell it &lt;br&gt;
         Nitro: This brand don\'t sell it &lt;br&gt;
     </string>
-        //Socks
+    //Socks
     <string name="brands_socks">
         Burton: &lt;a href="https://www.burton.com/bg/en/search?q=socks"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
         Lib Tech: This brand don\'t sell it &lt;br&gt;
@@ -230,57 +230,57 @@
     </string>
 
     //Ski Slopes
-    <string name="title_ski_slopes_1">Bansko</string>
-    <string name="title_ski_slopes_2">Borovets</string>
-    <string name="title_ski_slopes_3">Pamporovo</string>
-    <string name="title_ski_slopes_4">Vitosha</string>
-    <string name="title_ski_slopes_5">Chepelare</string>
-    <string name="title_ski_slopes_6">Dobrinishte</string>
-    <string name="title_ski_slopes_7">Malyovitsa</string>
-    <string name="title_ski_slopes_8">Uzana</string>
-    <string name="title_ski_slopes_9">Semkovo</string>
-    <string name="title_ski_slopes_10">Kartala</string>
+    <string name="title_ski_slopes_1">Банско</string>
+    <string name="title_ski_slopes_2">Боровец</string>
+    <string name="title_ski_slopes_3">Пампорово</string>
+    <string name="title_ski_slopes_4">Витоша</string>
+    <string name="title_ski_slopes_5">Чепеларе</string>
+    <string name="title_ski_slopes_6">Добринище</string>
+    <string name="title_ski_slopes_7">Мальовица</string>
+    <string name="title_ski_slopes_8">Узана</string>
+    <string name="title_ski_slopes_9">Семково</string>
+    <string name="title_ski_slopes_10">Картала</string>
 
-    <string name="description_ski_slopes_1">The largest ski resort in Bulgaria, known for modern lifts, long slopes, and a lively atmosphere.</string>
-    <string name="description_ski_slopes_2">One of the oldest resorts, offering a mix of beginner and advanced slopes with good nightlife.</string>
-    <string name="description_ski_slopes_3">Famous for sunny weather and wide, easy slopes, ideal for beginners.</string>
-    <string name="description_ski_slopes_4">Located near Sofia, perfect for quick trips with accessible and shorter runs.</string>
-    <string name="description_ski_slopes_5">A quieter resort with well-maintained slopes and fewer crowds.</string>
-    <string name="description_ski_slopes_6">Small and peaceful area, great for beginners and relaxing skiing.</string>
-    <string name="description_ski_slopes_7">Known for more challenging terrain and a focus on experienced skiers.</string>
-    <string name="description_ski_slopes_8">A small resort in central Bulgaria, suitable for families and beginners.</string>
-    <string name="description_ski_slopes_9">A quiet and less crowded destination with basic slopes and natural surroundings.</string>
-    <string name="description_ski_slopes_10">A small resort near Blagoevgrad, offering peaceful skiing and fresh mountain air.</string>
+    <string name="description_ski_slopes_1">Най-големият ски курорт в България, известен с модерни лифтове, дълги писти и оживена атмосфера.</string>
+    <string name="description_ski_slopes_2">Един от най-старите курорти, предлагащ комбинация от начинаещи и напреднали писти с добър нощен живот.</string>
+    <string name="description_ski_slopes_3">Известен със слънчево време и широки, лесни писти, идеални за начинаещи.</string>
+    <string name="description_ski_slopes_4">Намира се в близост до София, идеален за бързи пътувания с достъпни и по-кратки разстояния.</string>
+    <string name="description_ski_slopes_5">По-спокоен курорт с добре поддържани писти и по-малко тълпи.</string>
+    <string name="description_ski_slopes_6">Малък и спокоен район, чудесен за начинаещи и спокойно каране на ски.</string>
+    <string name="description_ski_slopes_7">Известен с по-предизвикателния терен и фокус върху опитни скиори.</string>
+    <string name="description_ski_slopes_8">Малък курорт в Централна България, подходящо за семейства и начинаещи.</string>
+    <string name="description_ski_slopes_9">Тиха и по-малко претъпкана дестинация с основни писти и естествена среда.</string>
+    <string name="description_ski_slopes_10">Малък курорт близо до Благоевград, предлагащ спокойно каране на ски и чист планински въздух.</string>
 
     //Ski Slopes - Links
     <string name="link_ski_slopes_1">
-        Bansko: &lt;a href="https://www.banskoski.com/bg"&gt;Sourcing Link&lt;/a&gt;
+        Банско: &lt;a href="https://www.banskoski.com/bg"&gt;Sourcing Link&lt;/a&gt;
     </string>
     <string name="link_ski_slopes_2">
-        Borovets: &lt;a href="https://www.borovets-bg.com"&gt;Sourcing Link&lt;/a&gt;
+        Боровец: &lt;a href="https://www.borovets-bg.com"&gt;Sourcing Link&lt;/a&gt;
     </string>
     <string name="link_ski_slopes_3">
-        Pamporovo: &lt;a href="https://pamporovo.me/bg/winter/home"&gt;Sourcing Link&lt;/a&gt;
+        Пампорово: &lt;a href="https://pamporovo.me/bg/winter/home"&gt;Sourcing Link&lt;/a&gt;
     </string>
     <string name="link_ski_slopes_4">
-        Vitosha: &lt;a href="https://www.skivitosha.com"&gt;Sourcing Link&lt;/a&gt;
+        Витоша: &lt;a href="https://www.skivitosha.com"&gt;Sourcing Link&lt;/a&gt;
     </string>
     <string name="link_ski_slopes_5">
-        Chepelare: &lt;a href="https://bghotelite.com/ski-chepelare/"&gt;Sourcing Link&lt;/a&gt;
+        Чепеларе: &lt;a href="https://bghotelite.com/ski-chepelare/"&gt;Sourcing Link&lt;/a&gt;
     </string>
     <string name="link_ski_slopes_6">
-        Dobrinishte: &lt;a href="https://hoteldobrinishte.com"&gt;Sourcing Link&lt;/a&gt;
+        Добринище: &lt;a href="https://hoteldobrinishte.com"&gt;Sourcing Link&lt;/a&gt;
     </string>
     <string name="link_ski_slopes_7">
-        Malyovitsa: &lt;a href="https://malyovitsa.com/bg/winter/nachalo/"&gt;Sourcing Link&lt;/a&gt;
+        Мальовица: &lt;a href="https://malyovitsa.com/bg/winter/nachalo/"&gt;Sourcing Link&lt;/a&gt;
     </string>
     <string name="link_ski_slopes_8">
-        Uzana: &lt;a href="https://uzana.bg/ski/ski-pista-zavoya/"&gt;Sourcing Link&lt;/a&gt;
+        Узана: &lt;a href="https://uzana.bg/ski/ski-pista-zavoya/"&gt;Sourcing Link&lt;/a&gt;
     </string>
     <string name="link_ski_slopes_9">
-        Semkovo: &lt;a href="https://semkovo.com/winter.php"&gt;Sourcing Link&lt;/a&gt;
+        Семково: &lt;a href="https://semkovo.com/winter.php"&gt;Sourcing Link&lt;/a&gt;
     </string>
     <string name="link_ski_slopes_10">
-        Kartala: &lt;a href="https://kartala.bg"&gt;Sourcing Link&lt;/a&gt;
+        Картала: &lt;a href="https://kartala.bg"&gt;Sourcing Link&lt;/a&gt;
     </string>
 </resources>
