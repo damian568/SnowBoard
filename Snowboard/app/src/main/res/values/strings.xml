@@ -241,26 +241,46 @@
     <string name="title_ski_slopes_9">Semkovo</string>
     <string name="title_ski_slopes_10">Kartala</string>
 
-    <string name="description_ski_slopes_1"></string>
-    <string name="description_ski_slopes_2"></string>
-    <string name="description_ski_slopes_3"></string>
-    <string name="description_ski_slopes_4"></string>
-    <string name="description_ski_slopes_5"></string>
-    <string name="description_ski_slopes_6"></string>
-    <string name="description_ski_slopes_7"></string>
-    <string name="description_ski_slopes_8"></string>
-    <string name="description_ski_slopes_9"></string>
-    <string name="description_ski_slopes_10"></string>
+    <string name="description_ski_slopes_1">The largest ski resort in Bulgaria, known for modern lifts, long slopes, and a lively atmosphere.</string>
+    <string name="description_ski_slopes_2">One of the oldest resorts, offering a mix of beginner and advanced slopes with good nightlife.</string>
+    <string name="description_ski_slopes_3">Famous for sunny weather and wide, easy slopes, ideal for beginners.</string>
+    <string name="description_ski_slopes_4">Located near Sofia, perfect for quick trips with accessible and shorter runs.</string>
+    <string name="description_ski_slopes_5">A quieter resort with well-maintained slopes and fewer crowds.</string>
+    <string name="description_ski_slopes_6">Small and peaceful area, great for beginners and relaxing skiing.</string>
+    <string name="description_ski_slopes_7">Known for more challenging terrain and a focus on experienced skiers.</string>
+    <string name="description_ski_slopes_8">A small resort in central Bulgaria, suitable for families and beginners.</string>
+    <string name="description_ski_slopes_9">A quiet and less crowded destination with basic slopes and natural surroundings.</string>
+    <string name="description_ski_slopes_10">A small resort near Blagoevgrad, offering peaceful skiing and fresh mountain air.</string>
 
     //Ski Slopes - Links
-    <string name="link_ski_slopes_1">Bansko</string>
-    <string name="link_ski_slopes_2">Borovets</string>
-    <string name="link_ski_slopes_3">Pamporovo</string>
-    <string name="link_ski_slopes_4">Vitosha</string>
-    <string name="link_ski_slopes_5">Chepelare</string>
-    <string name="link_ski_slopes_6">Dobrinishte</string>
-    <string name="link_ski_slopes_7">Malyovitsa</string>
-    <string name="link_ski_slopes_8">Uzana</string>
-    <string name="link_ski_slopes_9">Semkovo</string>
-    <string name="link_ski_slopes_10">Kartala</string>
+    <string name="link_ski_slopes_1">
+        Bansko: &lt;a href="https://www.banskoski.com/bg"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_2">
+        Borovets: &lt;a href="https://www.borovets-bg.com"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_3">
+        Pamporovo: &lt;a href="https://pamporovo.me/bg/winter/home"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_4">
+        Vitosha: &lt;a href="https://www.skivitosha.com"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_5">
+        Chepelare: &lt;a href="https://bghotelite.com/ski-chepelare/"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_6">
+        Dobrinishte: &lt;a href="https://hoteldobrinishte.com"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_7">
+        Malyovitsa: &lt;a href="https://malyovitsa.com/bg/winter/nachalo/"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_8">
+        Uzana: &lt;a href="https://uzana.bg/ski/ski-pista-zavoya/"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_9">
+        Semkovo: &lt;a href="https://semkovo.com/winter.php"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_10">
+        Kartala: &lt;a href="https://kartala.bg"&gt;Sourcing Link&lt;/a&gt;
+    </string>
 </resources>

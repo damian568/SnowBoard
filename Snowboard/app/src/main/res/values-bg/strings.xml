@@ -241,26 +241,46 @@
     <string name="title_ski_slopes_9">Семково</string>
     <string name="title_ski_slopes_10">Картала</string>
 
-    <string name="description_ski_slopes_1"></string>
-    <string name="description_ski_slopes_2"></string>
-    <string name="description_ski_slopes_3"></string>
-    <string name="description_ski_slopes_4"></string>
-    <string name="description_ski_slopes_5"></string>
-    <string name="description_ski_slopes_6"></string>
-    <string name="description_ski_slopes_7"></string>
-    <string name="description_ski_slopes_8"></string>
-    <string name="description_ski_slopes_9"></string>
-    <string name="description_ski_slopes_10"></string>
+    <string name="description_ski_slopes_1">Най-големият ски курорт в България, известен с модерни лифтове, дълги писти и оживена атмосфера.</string>
+    <string name="description_ski_slopes_2">Един от най-старите курорти, предлагащ комбинация от начинаещи и напреднали писти с добър нощен живот.</string>
+    <string name="description_ski_slopes_3">Известен със слънчево време и широки, лесни писти, идеални за начинаещи.</string>
+    <string name="description_ski_slopes_4">Намира се в близост до София, идеален за бързи пътувания с достъпни и по-кратки разстояния.</string>
+    <string name="description_ski_slopes_5">По-спокоен курорт с добре поддържани писти и по-малко тълпи.</string>
+    <string name="description_ski_slopes_6">Малък и спокоен район, чудесен за начинаещи и спокойно каране на ски.</string>
+    <string name="description_ski_slopes_7">Известен с по-предизвикателния терен и фокус върху опитни скиори.</string>
+    <string name="description_ski_slopes_8">Малък курорт в Централна България, подходящо за семейства и начинаещи.</string>
+    <string name="description_ski_slopes_9">Тиха и по-малко претъпкана дестинация с основни писти и естествена среда.</string>
+    <string name="description_ski_slopes_10">Малък курорт близо до Благоевград, предлагащ спокойно каране на ски и чист планински въздух.</string>
 
     //Ski Slopes - Links
-    <string name="link_ski_slopes_1">Банско</string>
-    <string name="link_ski_slopes_2">Боровец</string>
-    <string name="link_ski_slopes_3">Пампорово</string>
-    <string name="link_ski_slopes_4">Витоша</string>
-    <string name="link_ski_slopes_5">Чепеларе</string>
-    <string name="link_ski_slopes_6">Добринище</string>
-    <string name="link_ski_slopes_7">Мальовица</string>
-    <string name="link_ski_slopes_8">Узана</string>
-    <string name="link_ski_slopes_9">Семково</string>
-    <string name="link_ski_slopes_10">Картала</string>
+    <string name="link_ski_slopes_1">
+        Банско: &lt;a href="https://www.banskoski.com/bg"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_2">
+        Боровец: &lt;a href="https://www.borovets-bg.com"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_3">
+        Пампорово: &lt;a href="https://pamporovo.me/bg/winter/home"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_4">
+        Витоша: &lt;a href="https://www.skivitosha.com"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_5">
+        Чепеларе: &lt;a href="https://bghotelite.com/ski-chepelare/"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_6">
+        Добринище: &lt;a href="https://hoteldobrinishte.com"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_7">
+        Мальовица: &lt;a href="https://malyovitsa.com/bg/winter/nachalo/"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_8">
+        Узана: &lt;a href="https://uzana.bg/ski/ski-pista-zavoya/"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_9">
+        Семково: &lt;a href="https://semkovo.com/winter.php"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_10">
+        Картала: &lt;a href="https://kartala.bg"&gt;Sourcing Link&lt;/a&gt;
+    </string>
 </resources>

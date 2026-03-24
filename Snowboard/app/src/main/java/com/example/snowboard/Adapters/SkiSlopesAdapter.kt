@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.text.HtmlCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.snowboard.Lists.SkiSlopesList
 import com.example.snowboard.R
@@ -53,6 +54,11 @@ class SkiSlopesAdapter(private val skiSlopesList: List<SkiSlopesList>) :
                 if (currentItem.isExpanded) View.VISIBLE else View.GONE
             holder.textLink.visibility =
                 if (currentItem.isExpanded) View.VISIBLE else View.GONE
+
+            val linkHtml = currentItem.link
+            holder.textLink.text = HtmlCompat.fromHtml(linkHtml, HtmlCompat.FROM_HTML_MODE_LEGACY)
+            // CRITICAL: This makes the link actually open the browser when clicked
+            holder.textLink.movementMethod = android.text.method.LinkMovementMethod.getInstance()
 
             // 3. Animate the arrow flipping!
             val targetRotation = if (currentItem.isExpanded) 180f else 0f

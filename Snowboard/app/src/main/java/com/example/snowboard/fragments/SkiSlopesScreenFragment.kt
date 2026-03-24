@@ -55,92 +55,92 @@ class SkiSlopesScreenFragment : Fragment() {
 
         skiSlopesArrayList.add(
             SkiSlopesList(
-                R.drawable.ic_snowboard_logo,
+                R.drawable.bansko_resort,
                 getString(R.string.title_ski_slopes_1),
-                "Here is the detailed tip about bending your knees while snowboarding...",
+                getString(R.string.description_ski_slopes_1),
                 R.drawable.bansko,
-                "https://www.banskoski.com/bg"
+                getString(R.string.link_ski_slopes_1)
             )
         )
         skiSlopesArrayList.add(
             SkiSlopesList(
-                R.drawable.ic_snowboard_logo,
+                R.drawable.borovets_resort,
                 getString(R.string.title_ski_slopes_2),
-                "Here is the detailed tip about bending your knees while snowboarding...",
-                R.drawable.bansko,
-                "https://www.banskoski.com/bg"
+                getString(R.string.description_ski_slopes_2),
+                R.drawable.borovets,
+                getString(R.string.link_ski_slopes_2)
             )
         )
         skiSlopesArrayList.add(
             SkiSlopesList(
-                R.drawable.ic_snowboard_logo,
+                R.drawable.pamporovo_resort,
                 getString(R.string.title_ski_slopes_3),
-                "Here is the detailed tip about bending your knees while snowboarding...",
-                R.drawable.bansko,
-                "https://www.banskoski.com/bg"
+                getString(R.string.description_ski_slopes_3),
+                R.drawable.pamporovo,
+                getString(R.string.link_ski_slopes_3)
             )
         )
         skiSlopesArrayList.add(
             SkiSlopesList(
-                R.drawable.ic_snowboard_logo,
+                R.drawable.vitosha_resort,
                 getString(R.string.title_ski_slopes_4),
-                "Here is the detailed tip about bending your knees while snowboarding...",
-                R.drawable.bansko,
-                "https://www.banskoski.com/bg"
+                getString(R.string.description_ski_slopes_4),
+                R.drawable.vitosha,
+                getString(R.string.link_ski_slopes_4)
             )
         )
         skiSlopesArrayList.add(
             SkiSlopesList(
-                R.drawable.ic_snowboard_logo,
+                R.drawable.chepelare_resort,
                 getString(R.string.title_ski_slopes_5),
-                "Here is the detailed tip about bending your knees while snowboarding...",
-                R.drawable.bansko,
-                "https://www.banskoski.com/bg"
+                getString(R.string.description_ski_slopes_5),
+                R.drawable.chepelare,
+                getString(R.string.link_ski_slopes_5)
             )
         )
         skiSlopesArrayList.add(
             SkiSlopesList(
-                R.drawable.ic_snowboard_logo,
+                R.drawable.dobrinishte_resort,
                 getString(R.string.title_ski_slopes_6),
-                "Here is the detailed tip about bending your knees while snowboarding...",
-                R.drawable.bansko,
-                "https://www.banskoski.com/bg"
+                getString(R.string.description_ski_slopes_6),
+                R.drawable.dobrinishte,
+                getString(R.string.link_ski_slopes_6)
             )
         )
         skiSlopesArrayList.add(
             SkiSlopesList(
-                R.drawable.ic_snowboard_logo,
+                R.drawable.malyovitsa_resort,
                 getString(R.string.title_ski_slopes_7),
-                "Here is the detailed tip about bending your knees while snowboarding...",
-                R.drawable.bansko,
-                "https://www.banskoski.com/bg"
+                getString(R.string.description_ski_slopes_7),
+                R.drawable.malyovitsa,
+                getString(R.string.link_ski_slopes_7)
             )
         )
         skiSlopesArrayList.add(
             SkiSlopesList(
-                R.drawable.ic_snowboard_logo,
+                R.drawable.uzana_resort,
                 getString(R.string.title_ski_slopes_8),
-                "Here is the detailed tip about bending your knees while snowboarding...",
-                R.drawable.bansko,
-                "https://www.banskoski.com/bg"
+                getString(R.string.description_ski_slopes_8),
+                R.drawable.ic_snowboard_logo,
+                getString(R.string.link_ski_slopes_8)
             )
         )
         skiSlopesArrayList.add(
             SkiSlopesList(
-                R.drawable.ic_snowboard_logo,
+                R.drawable.semkovo_resort,
                 getString(R.string.title_ski_slopes_9),
-                "Here is the detailed tip about bending your knees while snowboarding...",
-                R.drawable.bansko,
-                "https://www.banskoski.com/bg"
+                getString(R.string.description_ski_slopes_9),
+                R.drawable.semkovo,
+                getString(R.string.link_ski_slopes_9)
             )
         )
         skiSlopesArrayList.add(
             SkiSlopesList(
-                R.drawable.ic_snowboard_logo,
+                R.drawable.kartala_resort,
                 getString(R.string.title_ski_slopes_10),
-                "Here is the detailed tip about bending your knees while snowboarding...",
-                R.drawable.bansko,
-                "https://www.banskoski.com/bg"
+                getString(R.string.description_ski_slopes_10),
+                R.drawable.kartala,
+                getString(R.string.link_ski_slopes_10)
             )
         )
     }
