@@ -22,7 +22,7 @@ class SkiSlopesScreenFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentSkiSlopesScreenBinding.inflate(inflater, container, false)
+        binding = FragmentSkiSlopesScreenBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 

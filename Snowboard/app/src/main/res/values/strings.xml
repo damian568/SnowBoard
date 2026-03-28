@@ -283,4 +283,38 @@
     <string name="link_ski_slopes_10">
         Kartala: &lt;a href="https://kartala.bg"&gt;Sourcing Link&lt;/a&gt;
     </string>
+
+    //Videos
+    <string name="youtube_key_1">uCAEmjGzKO4</string>
+    <string name="youtube_key_2">PL969NUdTxk</string>
+    <string name="youtube_key_3">eTh9_-6gJIQ</string>
+    <string name="youtube_key_4">Iofrv4rxJcY</string>
+    <string name="youtube_key_5">I9t_ez_utno</string>
+    <string name="youtube_key_6">SQyTWk7OxSI</string>
+    <string name="youtube_key_7">8M1EPEs3Zl0</string>
+    <string name="youtube_key_8">lHmFDPXxJSs</string>
+    <string name="youtube_key_9">VcQEMhLItBo</string>
+    <string name="youtube_key_10">zLFAlw8Nt-w</string>
+
+    <string name="title_videos_1">Why Riding Duck Foot Is Holding You Back</string>
+    <string name="title_videos_2">5 Simple Tips For Your First Snowboard Turn</string>
+    <string name="title_videos_3">Your First Day Riding</string>
+    <string name="title_videos_4">Common Mistakes in Snowboarding</string>
+    <string name="title_videos_5">Beginners Guide - Snowboard type board</string>
+    <string name="title_videos_6">10 Snowboard Tricks to Learn First</string>
+    <string name="title_videos_7">Snowboard Level Explained</string>
+    <string name="title_videos_8">Slow to Fast Turns</string>
+    <string name="title_videos_9">How to Snowboard</string>
+    <string name="title_videos_10">How to Fall on a Snowboard</string>
+
+    <string name="description_videos_1">Shows why angle of the duck foot is important</string>
+    <string name="description_videos_2">Simple Tips for beginners</string>
+    <string name="description_videos_3">Learn How to Snowboard in 20 Minutes</string>
+    <string name="description_videos_4">Fix the Most Common Snowboarding Mistake</string>
+    <string name="description_videos_5">What TYPE of Snowboard Should You Buy?</string>
+    <string name="description_videos_6">This tricks you should know before everything</string>
+    <string name="description_videos_7">You Might Be Better Than You Think</string>
+    <string name="description_videos_8">This will help you to understand the tricks of slowing and going fast</string>
+    <string name="description_videos_9">8 STEPS TO CARVING</string>
+    <string name="description_videos_10">Shows you how to fall without getting hurt</string>
 </resources>
