@@ -80,7 +80,11 @@ class MainActivity : AppCompatActivity() {
 
             else -> {
                 binding.bottomAppBar.visibility = View.VISIBLE
-                binding.fab.hide()
+                binding.fab.hide() //Need to change it to show
+                /**
+                 *  When I make the user Interface need this fab to make it show
+                 *  and to add it only to some of the screens
+                 */
                 binding.bottomAppBar.performShow()
             }
         }
