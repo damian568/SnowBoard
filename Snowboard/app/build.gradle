@@ -64,6 +64,9 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
 
+    // Coroutines Lifecycle Scope
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.2"
+
     // Navigation & Fragment
     implementation "androidx.fragment:fragment-ktx:$fragment_version"
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
@@ -85,8 +88,13 @@ dependencies {
     implementation 'com.sun.mail:android-mail:1.6.0'
     implementation 'com.sun.mail:android-activation:1.6.0'
 
-    // GSON
+    // GSON & Retrofit
     implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
+    // Location
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
 
     //Picasso
     implementation 'com.squareup.picasso:picasso:2.71828'

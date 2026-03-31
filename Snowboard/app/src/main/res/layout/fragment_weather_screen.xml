@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/weather_back"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/sunny_back"
@@ -137,7 +138,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
-                        app:constraint_referenced_ids="humidity,wind_speed,conditions,sunrise,sunset,sea"
+                        app:constraint_referenced_ids="layout_humidity,layout_wind_speed,layout_conditions,layout_sunrise,layout_sunset,layout_sea"
                         app:flow_maxElementsWrap="3"
                         app:flow_wrapMode="chain"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -146,7 +147,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <LinearLayout
-                        android:id="@+id/humidity"
+                        android:id="@+id/layout_humidity"
                         android:layout_width="80dp"
                         android:layout_height="88dp"
                         android:background="@drawable/background_shape"
@@ -160,6 +161,7 @@
                             android:src="@drawable/humidity" />
 
                         <TextView
+                            android:id="@+id/humidity"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merriweathersans_medium"
@@ -179,13 +181,13 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/wind_speed"
+                        android:id="@+id/layout_wind_speed"
                         android:layout_width="80dp"
                         android:layout_height="88dp"
                         android:background="@drawable/background_shape"
                         android:gravity="bottom|center_vertical"
                         android:orientation="vertical"
-                        app:layout_constraintStart_toEndOf="@id/humidity">
+                        app:layout_constraintStart_toEndOf="@id/layout_humidity">
 
                         <ImageView
                             android:id="@+id/img_wind"
@@ -194,6 +196,7 @@
                             android:src="@drawable/wind" />
 
                         <TextView
+                            android:id="@+id/wind_speed"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merriweathersans_medium"
@@ -213,13 +216,13 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/conditions"
+                        android:id="@+id/layout_conditions"
                         android:layout_width="80dp"
                         android:layout_height="88dp"
                         android:background="@drawable/background_shape"
                         android:gravity="bottom|center_vertical"
                         android:orientation="vertical"
-                        app:layout_constraintStart_toEndOf="@id/wind_speed">
+                        app:layout_constraintStart_toEndOf="@id/layout_wind_speed">
 
                         <ImageView
                             android:id="@+id/img_conditions"
@@ -228,6 +231,7 @@
                             android:src="@drawable/conditions" />
 
                         <TextView
+                            android:id="@+id/conditions"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merriweathersans_medium"
@@ -247,13 +251,13 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/sunrise"
+                        android:id="@+id/layout_sunrise"
                         android:layout_width="80dp"
                         android:layout_height="88dp"
                         android:background="@drawable/background_shape"
                         android:gravity="bottom|center_vertical"
                         android:orientation="vertical"
-                        app:layout_constraintTop_toBottomOf="@id/humidity">
+                        app:layout_constraintTop_toBottomOf="@id/layout_humidity">
 
                         <ImageView
                             android:id="@+id/img_rise"
@@ -262,11 +266,12 @@
                             android:src="@drawable/sunrise" />
 
                         <TextView
+                            android:id="@+id/sunrise"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merriweathersans_medium"
                             android:gravity="center"
-                            android:text="Sunrise"
+                            android:text="00:00"
                             android:textColor="@color/black" />
 
                         <TextView
@@ -275,20 +280,20 @@
                             android:layout_marginBottom="5dp"
                             android:fontFamily="@font/merriweathersans_medium"
                             android:gravity="center"
-                            android:text="00:00"
+                            android:text="Sunrise"
                             android:textColor="@color/black"
                             android:textSize="10sp" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/sunset"
+                        android:id="@+id/layout_sunset"
                         android:layout_width="80dp"
                         android:layout_height="88dp"
                         android:background="@drawable/background_shape"
                         android:gravity="bottom|center_vertical"
                         android:orientation="vertical"
-                        app:layout_constraintStart_toEndOf="@id/sunrise"
-                        app:layout_constraintTop_toBottomOf="@id/wind_speed">
+                        app:layout_constraintStart_toEndOf="@id/layout_sunrise"
+                        app:layout_constraintTop_toBottomOf="@id/layout_wind_speed">
 
                         <ImageView
                             android:id="@+id/img_set"
@@ -297,6 +302,7 @@
                             android:src="@drawable/sunset" />
 
                         <TextView
+                            android:id="@+id/sunset"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merriweathersans_medium"
@@ -316,14 +322,14 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/sea"
+                        android:id="@+id/layout_sea"
                         android:layout_width="80dp"
                         android:layout_height="88dp"
                         android:background="@drawable/background_shape"
                         android:gravity="bottom|center_vertical"
                         android:orientation="vertical"
-                        app:layout_constraintStart_toEndOf="@id/sunset"
-                        app:layout_constraintTop_toBottomOf="@id/conditions">
+                        app:layout_constraintStart_toEndOf="@id/layout_sunset"
+                        app:layout_constraintTop_toBottomOf="@id/layout_conditions">
 
                         <ImageView
                             android:id="@+id/img_sea"
@@ -332,6 +338,7 @@
                             android:src="@drawable/sea" />
 
                         <TextView
+                            android:id="@+id/sea"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merriweathersans_medium"
@@ -349,7 +356,6 @@
                             android:textColor="@color/black"
                             android:textSize="10sp" />
                     </LinearLayout>
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </FrameLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
