@@ -38,9 +38,9 @@
                 android:layout_gravity="bottom"
                 app:backgroundTint="@color/lavender"
                 app:fabAlignmentMode="center"
-                app:fabCradleMargin="10dp"
-                app:fabCradleRoundedCornerRadius="10dp"
-                app:fabCradleVerticalOffset="0dp"
+                app:fabCradleMargin="@dimen/fab"
+                app:fabCradleRoundedCornerRadius="@dimen/fab"
+                app:fabCradleVerticalOffset="@dimen/no_dimen"
                 app:hideOnScroll="true"
                 app:navigationIcon="@drawable/ic_menu" />
 

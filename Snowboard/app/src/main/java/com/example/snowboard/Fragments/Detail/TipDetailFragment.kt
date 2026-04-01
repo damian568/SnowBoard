@@ -1,13 +1,14 @@
-package com.example.snowboard.fragments
+package com.example.snowboard.Fragments.Detail
 
 import android.graphics.Color
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.snowboard.Constants.Constants
 import com.example.snowboard.R
 import com.example.snowboard.databinding.FragmentTipDetailBinding
 import com.google.android.material.transition.MaterialContainerTransform
@@ -22,7 +23,7 @@ class TipDetailFragment : Fragment() {
         sharedElementEnterTransition = MaterialContainerTransform().apply {
             drawingViewId =
                 R.id.navHostFragment // The NavHost container from your activity_main.xml
-            duration = 300L
+            duration = Constants.DetailDoration
             scrimColor =
                 Color.TRANSPARENT // Keeps the background from turning dark during the animation
         }
@@ -46,11 +47,11 @@ class TipDetailFragment : Fragment() {
         // 2. Set the rest of your data...
         val title = arguments?.getString("TIP_TITLE")
         val desc = arguments?.getString("TIP_DESC")
-        val imageRes = arguments?.getInt("TIP_IMAGE") ?: 0
+        val imageRes = arguments?.getInt("TIP_IMAGE") ?: Constants.Detail_IMG
 
-        binding.tipDetailTitle.text= title
+        binding.tipDetailTitle.text = title
         binding.tipDetailDescription.text = desc
-        if (imageRes != 0) {
+        if (imageRes != Constants.Detail_IMG) {
             binding.tipDetailImg.setImageResource(imageRes)
         }
 

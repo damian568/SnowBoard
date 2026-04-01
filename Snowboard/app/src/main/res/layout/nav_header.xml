@@ -2,16 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="176dp"
+    android:layout_height="@dimen/header_layout"
     android:background="@android:color/white"
     android:gravity="bottom"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="@dimen/header_mer_pad">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/img_profile"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:layout_width="@dimen/header_img_profile"
+        android:layout_height="@dimen/header_img_profile"
         android:scaleType="centerCrop"
         android:src="@mipmap/ic_icon"
         app:shapeAppearanceOverlay="@style/CircleImage" />
@@ -19,10 +19,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/header_mer_pad"
         android:text="Sandra Adams"
         android:textColor="@android:color/black"
-        android:textSize="16sp"
+        android:textSize="@dimen/header_title"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -32,17 +32,16 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="@dimen/no_dimen"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="sandra_a88@gmail.com"
-            android:textColor="#757575"
-            android:textSize="14sp" />
+            android:textColor="@color/grey"
+            android:textSize="@dimen/header_email" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:tint="#757575" />
+            app:tint="@color/grey" />
     </LinearLayout>
-
 </LinearLayout>

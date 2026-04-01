@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="min_max_text">16sp</dimen>
+    <dimen name="location_text">20sp</dimen>
+    <dimen name="day_text">34sp</dimen>
+    <dimen name="temp_text">50sp</dimen>
+    <dimen name="layout_box_text">10sp</dimen>
+
+    //Title
+    <dimen name="detail_title_text">30sp</dimen>
+    <dimen name="history_title">25sp</dimen>
+    <dimen name="main_title">24sp</dimen>
+    <dimen name="video_title">23sp</dimen>
+    <dimen name="equip_title">18sp</dimen>
+    <dimen name="tip_title">23sp</dimen>
+    <dimen name="ski_title">23sp</dimen>
+    <dimen name="header_title">16sp</dimen>
+
+    //Desc - Info
+    <dimen name="detail_desc_text">18sp</dimen>
+    <dimen name="history_desc">15sp</dimen>
+    <dimen name="history_style">20sp</dimen>
+    <dimen name="equip_desc">14sp</dimen>
+    <dimen name="header_email">14sp</dimen>
+</resources>

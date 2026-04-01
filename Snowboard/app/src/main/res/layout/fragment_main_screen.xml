@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        tools:context=".fragments.MainScreenFragment">
+        tools:context=".Fragments.MainScreenFragment">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/contain_margin"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -22,12 +22,12 @@
                 android:gravity="center"
                 android:text="@string/app_name"
                 android:textColor="@color/shadow_black"
-                android:textSize="24sp" />
+                android:textSize="@dimen/main_title" />
 
             <ImageView
                 android:id="@+id/imageLogo"
                 android:layout_width="match_parent"
-                android:layout_height="500dp"
+                android:layout_height="@dimen/main_logo"
                 android:src="@drawable/ic_snowboard_logo" />
 
             <LinearLayout
@@ -40,15 +40,15 @@
                     android:id="@+id/btnBeginner"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="30dp"
-                    android:text="Beginner" />
+                    android:layout_marginEnd="@dimen/start_end_btn"
+                    android:text="@string/btn_beginner" />
 
                 <Button
                     android:id="@+id/btnAdvance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
-                    android:text="Advance" />
+                    android:layout_marginStart="@dimen/start_end_btn"
+                    android:text="@string/btn_advance" />
             </LinearLayout>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

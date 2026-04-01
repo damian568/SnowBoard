@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.text.HtmlCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.example.snowboard.Constants.Constants
 import com.example.snowboard.Lists.SkiSlopesList
 import com.example.snowboard.R
 import com.google.android.material.card.MaterialCardView
@@ -64,7 +65,7 @@ class SkiSlopesAdapter(private val skiSlopesList: List<SkiSlopesList>) :
             val targetRotation = if (currentItem.isExpanded) 180f else 0f
             holder.arrowButton.animate()
                 .rotation(targetRotation)
-                .setDuration(200) // 200 milliseconds is a nice, snappy speed
+                .setDuration(Constants.SkiRotation)
                 .start()
         }
     }
@@ -78,7 +79,6 @@ class SkiSlopesAdapter(private val skiSlopesList: List<SkiSlopesList>) :
         val textTitle: TextView = itemView.findViewById(R.id.titleSkiSlopes)
         val textDescription: TextView = itemView.findViewById(R.id.descriptionSkiSlopes)
         val imageSkiSlopes: ImageView = itemView.findViewById(R.id.imgSkiSlopes)
-
         val textLink: TextView = itemView.findViewById(R.id.linkSkiSlopes)
         val cardView: MaterialCardView = itemView.findViewById(R.id.ski_slopes_cardView)
         val arrowButton: ImageView = itemView.findViewById(R.id.arrow_button)

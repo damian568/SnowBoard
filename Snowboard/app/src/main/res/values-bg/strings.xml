@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Сноуборд</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     //Menu String
     <string name="menu_home">Начало</string>
@@ -11,6 +10,14 @@
     <string name="menu_ski_slopes">Писти</string>
     <string name="menu_videos">Видеа</string>
     <string name="menu_weather">Време</string>
+
+    //Detail
+    <string name="detail_tips">Подробности за върха</string>
+    <string name="detail_equipment">Подробности за оборудването</string>
+
+    //Main Screen
+    <string name="btn_beginner">Начинаещ</string>
+    <string name="btn_advance">Напреднал</string>
 
     //History Screen
     <string name="history_header">Сноуборд</string>
@@ -317,4 +324,29 @@
     <string name="description_videos_8">Това ще ви помогне да разберете триковете за забавянето и бързото движение</string>
     <string name="description_videos_9">8 СТЪПКИ В КАК ДА ЗАВИВАШ</string>
     <string name="description_videos_10">Показва как да паднеш без да се нараниш</string>
+
+    //Weather
+    <string name="weather_error">Разрешението за локация е отказана.</string>
+
+    <string name="weather_condition_1">Облачно</string>
+    <string name="weather_condition_2">Ветровито</string>
+    <string name="weather_condition_3">Дъждовно</string>
+    <string name="weather_condition_4">Сняг</string>
+    <string name="weather_condition_5">Чисто</string>
+    <string name="weather_condition_6">Слънчево</string>
+    <string name="weather_condition_7">Мъгла</string>
+    <string name="weather_condition_8">Вихрушка</string>
+    <string name="weather_condition_9">Дъжд</string>
+    <string name="weather_condition_10">Гръмотевична Буря</string>
+
+    //Weather TextView
+    <string name="weather_day">Днес</string>
+    <string name="weather_min">Мин: %d °C</string>
+    <string name="weather_max">Макс: %d °C</string>
+    <string name="weather_humidity">Влажност</string>
+    <string name="weather_wind">Скорост на вятъра</string>
+    <string name="weather_condition">Условия</string>
+    <string name="weather_sunrise">Изгрев</string>
+    <string name="weather_sunset">Залез</string>
+    <string name="weather_sea">Морско Равнище</string>
 </resources>

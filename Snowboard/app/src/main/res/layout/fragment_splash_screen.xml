@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:background="@color/crimson_red"
         android:fitsSystemWindows="true"
-        tools:context=".fragments.SplashScreenFragment">
+        tools:context=".Fragments.SplashScreenFragment">
 
         <ImageView
             android:id="@+id/imageLogo"

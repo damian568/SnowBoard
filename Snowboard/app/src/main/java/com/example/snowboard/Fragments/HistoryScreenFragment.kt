@@ -1,4 +1,4 @@
-package com.example.snowboard.fragments
+package com.example.snowboard.Fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

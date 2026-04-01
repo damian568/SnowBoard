@@ -1,4 +1,4 @@
-package com.example.snowboard.fragments
+package com.example.snowboard.Fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.snowboard.Adapters.SkiSlopesAdapter
 import com.example.snowboard.Lists.SkiSlopesList
@@ -16,7 +15,6 @@ import com.example.snowboard.databinding.FragmentSkiSlopesScreenBinding
 class SkiSlopesScreenFragment : Fragment() {
     private lateinit var binding: FragmentSkiSlopesScreenBinding
     private lateinit var skiSlopesArrayList: ArrayList<SkiSlopesList>
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
