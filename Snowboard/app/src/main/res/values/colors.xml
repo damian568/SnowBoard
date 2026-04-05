@@ -15,4 +15,8 @@
     <color name="shadow_black">#1A1A1A</color>
     <color name="crimson_red">#A4133C</color>
     <color name="grey">#757575</color>
+    <color name="bordeaux_velvet">#53161D</color>
+    <color name="ivory_whisper">#FFFBF0</color>
+    <color name="cotton_white">#EDE8DD</color>
+    <color name="ghost_white">#F7F7FF</color>
 </resources>

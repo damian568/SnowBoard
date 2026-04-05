@@ -60,6 +60,14 @@ class TipDetailFragment : Fragment() {
             // It will automatically play the reverse "shrinking" animation!
             findNavController().navigateUp()
         }
+        textColors()
+    }
+
+    private fun textColors() {
+        binding.apply {
+            tipDetailTitle.setTextColor(resources.getColor(R.color.midnight))
+            tipDetailDescription.setTextColor(resources.getColor(R.color.shadow_black))
+        }
     }
 
     private fun hideTheToolbar() {

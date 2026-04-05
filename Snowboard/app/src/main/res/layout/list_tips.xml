@@ -26,17 +26,21 @@
 
         <TextView
             android:id="@+id/title"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/no_dimen"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="@dimen/tip_start_end"
+            android:layout_marginEnd="@dimen/tip_start_end"
             android:layout_toEndOf="@id/icon_info"
             android:text="Bend Your Knees"
             android:textColor="@color/midnight"
             android:textSize="@dimen/tip_title"
             android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toRightOf="@id/icon_info"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

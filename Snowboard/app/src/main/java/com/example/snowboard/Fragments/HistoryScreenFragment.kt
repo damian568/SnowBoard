@@ -24,26 +24,51 @@ class HistoryScreenFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         setUpHistoryTitles()
         setUpHistoryParagraphs()
+        textColors()
     }
 
     private fun setUpHistoryTitles() {
-        binding.historyTitle.text = getString(R.string.history_header)
-        binding.titleHistory.text = getString(R.string.history_title_history)
-        binding.titleStyles.text = getString(R.string.history_title_styles)
-        binding.titleStyles1.text = getString(R.string.history_title_styles_1)
-        binding.titleStyles2.text = getString(R.string.history_title_styles_2)
-        binding.titleStyles3.text = getString(R.string.history_title_styles_3)
-        binding.titleTricks.text = getString(R.string.history_title_tricks)
+        binding.apply {
+            historyTitle.text = getString(R.string.history_header)
+            titleHistory.text = getString(R.string.history_title_history)
+            titleStyles.text = getString(R.string.history_title_styles)
+            titleStyles1.text = getString(R.string.history_title_styles_1)
+            titleStyles2.text = getString(R.string.history_title_styles_2)
+            titleStyles3.text = getString(R.string.history_title_styles_3)
+            titleTricks.text = getString(R.string.history_title_tricks)
+        }
     }
 
     private fun setUpHistoryParagraphs() {
-        binding.paragraphHistory1.text = getString(R.string.paragraph_history_1)
-        binding.paragraphHistory2.text = getString(R.string.paragraph_history_2)
-        binding.paragraphHistory3.text = getString(R.string.paragraph_history_3)
-        binding.paragraphHistory4.text = getString(R.string.paragraph_history_4)
-        binding.paragraphHistory5.text = getString(R.string.paragraph_history_5)
-        binding.paragraphHistory6.text = getString(R.string.paragraph_history_6)
-        binding.paragraphHistory7.text = getString(R.string.paragraph_history_7)
+        binding.apply {
+            paragraphHistory1.text = getString(R.string.paragraph_history_1)
+            paragraphHistory2.text = getString(R.string.paragraph_history_2)
+            paragraphHistory3.text = getString(R.string.paragraph_history_3)
+            paragraphHistory4.text = getString(R.string.paragraph_history_4)
+            paragraphHistory5.text = getString(R.string.paragraph_history_5)
+            paragraphHistory6.text = getString(R.string.paragraph_history_6)
+            paragraphHistory7.text = getString(R.string.paragraph_history_7)
+        }
+    }
+
+    private fun textColors() {
+        binding.apply {
+            historyTitle.setTextColor(resources.getColor(R.color.black))
+            titleHistory.setTextColor(resources.getColor(R.color.black))
+            titleStyles.setTextColor(resources.getColor(R.color.black))
+            titleStyles1.setTextColor(resources.getColor(R.color.black))
+            titleStyles2.setTextColor(resources.getColor(R.color.black))
+            titleStyles3.setTextColor(resources.getColor(R.color.black))
+            titleTricks.setTextColor(resources.getColor(R.color.black))
+
+            paragraphHistory1.setTextColor(resources.getColor(R.color.shadow_black))
+            paragraphHistory2.setTextColor(resources.getColor(R.color.shadow_black))
+            paragraphHistory3.setTextColor(resources.getColor(R.color.shadow_black))
+            paragraphHistory4.setTextColor(resources.getColor(R.color.shadow_black))
+            paragraphHistory5.setTextColor(resources.getColor(R.color.shadow_black))
+            paragraphHistory6.setTextColor(resources.getColor(R.color.shadow_black))
+            paragraphHistory7.setTextColor(resources.getColor(R.color.shadow_black))
+        }
     }
 
     override fun onResume() {

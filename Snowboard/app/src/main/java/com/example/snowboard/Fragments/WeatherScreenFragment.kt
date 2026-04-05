@@ -225,6 +225,7 @@ class WeatherScreenFragment : Fragment() {
                     weatherAnimation.setAnimation(R.raw.sunny)
                 }
             }
+            weatherAnimation.playAnimation()
         }
     }
 
@@ -297,6 +298,7 @@ class WeatherScreenFragment : Fragment() {
                     weatherAnimation.setAnimation(R.raw.sunny)
                 }
             }
+            weatherAnimation.playAnimation()
         }
     }
 

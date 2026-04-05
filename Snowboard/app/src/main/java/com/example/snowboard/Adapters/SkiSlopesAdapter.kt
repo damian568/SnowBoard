@@ -7,12 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.core.text.HtmlCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.snowboard.Constants.Constants
 import com.example.snowboard.Lists.SkiSlopesList
 import com.example.snowboard.R
 import com.google.android.material.card.MaterialCardView
+import com.google.android.material.imageview.ShapeableImageView
 
 class SkiSlopesAdapter(private val skiSlopesList: List<SkiSlopesList>) :
     RecyclerView.Adapter<SkiSlopesAdapter.ViewHolder>() {
@@ -27,6 +29,8 @@ class SkiSlopesAdapter(private val skiSlopesList: List<SkiSlopesList>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentItem = skiSlopesList[position]
+
+        setItemColors(holder)
 
         holder.imageResort.setImageResource(currentItem.imgResort)
         holder.textTitle.text = currentItem.title
@@ -75,12 +79,22 @@ class SkiSlopesAdapter(private val skiSlopesList: List<SkiSlopesList>) :
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val imageResort: ImageView = itemView.findViewById(R.id.imgResort)
+        val imageResort: ShapeableImageView = itemView.findViewById(R.id.imgResort)
         val textTitle: TextView = itemView.findViewById(R.id.titleSkiSlopes)
         val textDescription: TextView = itemView.findViewById(R.id.descriptionSkiSlopes)
         val imageSkiSlopes: ImageView = itemView.findViewById(R.id.imgSkiSlopes)
         val textLink: TextView = itemView.findViewById(R.id.linkSkiSlopes)
         val cardView: MaterialCardView = itemView.findViewById(R.id.ski_slopes_cardView)
         val arrowButton: ImageView = itemView.findViewById(R.id.arrow_button)
+    }
+
+    private fun setItemColors(holder: ViewHolder) {
+        val colorTitle = ContextCompat.getColor(holder.itemView.context, R.color.midnight)
+        val colorDesc = ContextCompat.getColor(holder.itemView.context, R.color.shadow_black)
+        holder.apply {
+            textTitle.setTextColor(colorTitle)
+            textDescription.setTextColor(colorDesc)
+            textLink.setTextColor(colorDesc)
+        }
     }
 }

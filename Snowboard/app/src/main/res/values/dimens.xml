@@ -26,7 +26,7 @@
     <dimen name="weather_frame">220dp</dimen>
     <dimen name="layout_box_height">88dp</dimen>
     <dimen name="history_img">250dp</dimen>
-    <dimen name="main_logo">500dp</dimen>
+    <dimen name="main_logo">450dp</dimen>
     <dimen name="equip_img">180dp</dimen>
     <dimen name="ski_map">300dp</dimen>
     <dimen name="header_layout">176dp</dimen>
@@ -45,6 +45,7 @@
     <dimen name="bot_history">20dp</dimen>
     <dimen name="start_end_btn">30dp</dimen>
     <dimen name="list_margin">5dp</dimen>
+    <dimen name="tip_start_end">20dp</dimen>
     <dimen name="info_ski_top">16dp</dimen>
     <dimen name="ski_title_top">20dp</dimen>
 
@@ -53,4 +54,5 @@
     <dimen name="recycler_padding">4dp</dimen>
     <dimen name="content_padding">4dp</dimen>
     <dimen name="equip_padding">12dp</dimen>
+    <dimen name="nav_header_start">8dp</dimen>
 </resources>

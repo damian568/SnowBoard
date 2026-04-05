@@ -62,6 +62,7 @@ class EquipmentDetailFragment : Fragment() {
             // It will automatically play the reverse "shrinking" animation!
             findNavController().navigateUp()
         }
+        textColors()
     }
 
     private fun changeDescDetail(title: String): String {
@@ -126,6 +127,14 @@ class EquipmentDetailFragment : Fragment() {
         // Apply the text and make links clickable
         binding.equipmentDetailBrands.text = Html.fromHtml(brandsHtml)
         binding.equipmentDetailBrands.movementMethod = LinkMovementMethod.getInstance()
+    }
+
+    private fun textColors() {
+        binding.apply {
+            equipmentDetailTitle.setTextColor(resources.getColor(R.color.midnight))
+            equipmentDetailDescription.setTextColor(resources.getColor(R.color.shadow_black))
+            equipmentDetailBrands.setTextColor(resources.getColor(R.color.shadow_black))
+        }
     }
 
     private fun hideTheToolbar() {
