@@ -1,4 +1,4 @@
-package com.example.snowboard.fragments
+package com.example.snowboard.Fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -44,7 +44,7 @@ class TipsScreenFragment : Fragment() {
                 putString("TIP_TITLE", selectedTip.tipTitle)
                 putString("TIP_DESC", selectedTip.tipDescription)
                 putInt("TIP_IMAGE", selectedTip.tipImage)
-                putString("TRANSITION_NAME", transitionName) // Pass the name to the next screen!
+                putString("TRANSITION_NAME", transitionName)
             }
 
             // Tell Navigation Component to link this specific card to the next screen
@@ -73,12 +73,11 @@ class TipsScreenFragment : Fragment() {
     private fun dataInitialize() {
         tipsArrayList = arrayListOf()
 
-        // Add your dummy data here to test it out!
         tipsArrayList.add(
             TipsList(
                 tipTitle = getString(R.string.title_detail_tip_1),
                 tipDescription = getString(R.string.description_detail_tip_1),
-                tipImage = R.drawable.ic_equipment // Replace with your actual drawable
+                tipImage = R.drawable.ic_snowboard_logo
             )
         )
 

@@ -1,4 +1,4 @@
-package com.example.snowboard.fragments
+package com.example.snowboard.Fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -14,7 +14,6 @@ import com.example.snowboard.R
 import com.example.snowboard.databinding.FragmentVideosScreenBinding
 
 class VideosScreenFragment : Fragment() {
-
     private lateinit var binding: FragmentVideosScreenBinding
     private lateinit var videosArrayList: ArrayList<VideosList>
 

@@ -1,4 +1,4 @@
-package com.example.snowboard.fragments
+package com.example.snowboard.Fragments
 
 import android.content.pm.PackageManager
 import android.os.Bundle
@@ -9,8 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
+import com.example.snowboard.Constants.Constants
 import com.example.snowboard.Interface.WeatherApiService
 import com.example.snowboard.R
 import com.example.snowboard.Response.WeatherResponse
@@ -28,8 +28,15 @@ import java.util.Locale
 class WeatherScreenFragment : Fragment() {
     private lateinit var binding: FragmentWeatherScreenBinding
     private lateinit var fusedLocationClient: FusedLocationProviderClient
+    private val currentLang = Locale.getDefault().language
+    private val retrofit by lazy {
+        Retrofit.Builder()
+            .baseUrl("https://api.openweathermap.org/data/2.5/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+    }
 
-    private val API_KEY: String = "84dfac113d43bc77a052c4e6ec5edbb2"
+    private val weatherService by lazy { retrofit.create(WeatherApiService::class.java) }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -58,6 +65,22 @@ class WeatherScreenFragment : Fragment() {
         }
     }
 
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+
+        if (requestCode == 100) {
+            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                getLocationAndFetchWeather()
+            } else {
+                Log.e("Weather", getString(R.string.weather_error))
+            }
+        }
+    }
+
     private fun getLocationAndFetchWeather() {
         if (ActivityCompat.checkSelfPermission(
                 requireContext(),
@@ -71,26 +94,31 @@ class WeatherScreenFragment : Fragment() {
             return
         }
 
-        fusedLocationClient.lastLocation.addOnSuccessListener { location ->
+        fusedLocationClient.getCurrentLocation(
+            com.google.android.gms.location.Priority.PRIORITY_HIGH_ACCURACY,
+            null
+        ).addOnSuccessListener { location ->
             if (location != null) {
                 fetchWeatherData(location.latitude, location.longitude)
             } else {
-                Log.e("Weather", "Location is null. Ensure GPS is enabled.")
+                // Fallback to lastLocation if getCurrentLocation fails
+                fusedLocationClient.lastLocation.addOnSuccessListener { lastLoc ->
+                    lastLoc?.let { fetchWeatherData(it.latitude, it.longitude) }
+                }
             }
         }
     }
 
     private fun fetchWeatherData(lat: Double, lon: Double) {
-        val retrofit = Retrofit.Builder()
-            .baseUrl("https://api.openweathermap.org/data/2.5/")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-
-        val service = retrofit.create(WeatherApiService::class.java)
-
         lifecycleScope.launch(Dispatchers.Main) {
             try {
-                val response = service.getCurrentWeather(lat, lon, API_KEY)
+                val response = weatherService.getCurrentWeather(
+                    lat,
+                    lon,
+                    Constants.API_KEY,
+                    "metric",
+                    currentLang
+                )
                 updateUI(response)
             } catch (e: Exception) {
                 Log.e("Weather", "Error: ${e.message}")
@@ -99,12 +127,14 @@ class WeatherScreenFragment : Fragment() {
     }
 
     private fun updateUI(data: WeatherResponse) {
+        val minTepValue = data.main.temp_min.toInt()
+        val maxTepValue = data.main.temp_max.toInt()
         binding.apply {
             date.text = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault()).format(Date())
             myLocation.text = "${data.name}"
             temp.text = "${data.main.temp.toInt()}°C"
-            minTemp.text = "Min: ${data.main.temp_min.toInt()}°C"
-            maxTemp.text = "Max: ${data.main.temp_max.toInt()}°C"
+            minTemp.text = getString(R.string.weather_min, minTepValue)
+            maxTemp.text = getString(R.string.weather_max, maxTepValue)
             humidity.text = "${data.main.humidity}%"
             windSpeed.text = "${data.wind.speed} m/s"
             conditions.text = data.weather[0].main
@@ -118,74 +148,157 @@ class WeatherScreenFragment : Fragment() {
     }
 
     private fun updateTheBackUI(conditions: String) {
+        val language = Locale.getDefault().language
+        if (language == "bg") {
+            updateBulgarianUI(conditions)
+        } else {
+            updateEnglishUI(conditions)
+        }
+    }
+
+    private fun updateBulgarianUI(conditions: String) {
         binding.apply {
             when (conditions) {
                 "Clouds" -> {
-                    weather.text = "Clouds"
+                    weather.text = getString(R.string.weather_condition_1)
                     weatherBack.setBackgroundResource(R.drawable.mist_back)
                     weatherAnimation.setAnimation(R.raw.clouds)
                 }
 
                 "Windy" -> {
-                    weather.text = "Windy"
+                    weather.text = getString(R.string.weather_condition_2)
                     weatherBack.setBackgroundResource(R.drawable.mist_back)
                     weatherAnimation.setAnimation(R.raw.windy)
                 }
 
                 "Rain" -> {
-                    weather.text = "Rain"
+                    weather.text = getString(R.string.weather_condition_3)
                     weatherBack.setBackgroundResource(R.drawable.rain_back)
                     weatherAnimation.setAnimation(R.raw.cloudy_rain)
                 }
 
                 "Snow" -> {
-                    weather.text = "Snow"
+                    weather.text = getString(R.string.weather_condition_4)
                     weatherBack.setBackgroundResource(R.drawable.snow_back)
                     weatherAnimation.setAnimation(R.raw.snow)
                 }
 
                 "Clear" -> {
-                    weather.text = "Clear"
+                    weather.text = getString(R.string.weather_condition_5)
                     weatherBack.setBackgroundResource(R.drawable.sunny_back)
                     weatherAnimation.setAnimation(R.raw.sunny)
                 }
 
                 "Sunny" -> {
-                    weather.text = "Sunny"
+                    weather.text = getString(R.string.weather_condition_6)
                     weatherBack.setBackgroundResource(R.drawable.sunny_back)
                     weatherAnimation.setAnimation(R.raw.sunny)
                 }
 
                 "Haze" -> {
-                    weather.text = "Haze"
+                    weather.text = getString(R.string.weather_condition_7)
                     weatherBack.setBackgroundResource(R.drawable.mist_back)
                     weatherAnimation.setAnimation(R.raw.mist)
                 }
 
                 "Squall" -> {
-                    weather.text = "Squall"
+                    weather.text = getString(R.string.weather_condition_8)
                     weatherBack.setBackgroundResource(R.drawable.snow_back)
                     weatherAnimation.setAnimation(R.raw.snow)
                 }
 
                 "Drizzle" -> {
-                    weather.text = "Drizzle"
+                    weather.text = getString(R.string.weather_condition_9)
                     weatherBack.setBackgroundResource(R.drawable.rain_back)
                     weatherAnimation.setAnimation(R.raw.cloudy_rain)
                 }
 
                 "Thunderstorm" -> {
-                    weather.text = "Thunderstorm"
+                    weather.text = getString(R.string.weather_condition_10)
                     weatherBack.setBackgroundResource(R.drawable.storm_back)
                     weatherAnimation.setAnimation(R.raw.storm)
                 }
 
                 else -> {
-                    weather.text = "Clear"
+                    weather.text = getString(R.string.weather_condition_5)
                     weatherBack.setBackgroundResource(R.drawable.sunny_back)
                     weatherAnimation.setAnimation(R.raw.sunny)
                 }
             }
+            weatherAnimation.playAnimation()
+        }
+    }
+
+    private fun updateEnglishUI(conditions: String) {
+        binding.apply {
+            when (conditions) {
+                "Clouds" -> {
+                    weather.text = getString(R.string.weather_condition_1)
+                    weatherBack.setBackgroundResource(R.drawable.mist_back)
+                    weatherAnimation.setAnimation(R.raw.clouds)
+                }
+
+                "Windy" -> {
+                    weather.text = getString(R.string.weather_condition_2)
+                    weatherBack.setBackgroundResource(R.drawable.mist_back)
+                    weatherAnimation.setAnimation(R.raw.windy)
+                }
+
+                "Rain" -> {
+                    weather.text = getString(R.string.weather_condition_3)
+                    weatherBack.setBackgroundResource(R.drawable.rain_back)
+                    weatherAnimation.setAnimation(R.raw.cloudy_rain)
+                }
+
+                "Snow" -> {
+                    weather.text = getString(R.string.weather_condition_4)
+                    weatherBack.setBackgroundResource(R.drawable.snow_back)
+                    weatherAnimation.setAnimation(R.raw.snow)
+                }
+
+                "Clear" -> {
+                    weather.text = getString(R.string.weather_condition_5)
+                    weatherBack.setBackgroundResource(R.drawable.sunny_back)
+                    weatherAnimation.setAnimation(R.raw.sunny)
+                }
+
+                "Sunny" -> {
+                    weather.text = getString(R.string.weather_condition_6)
+                    weatherBack.setBackgroundResource(R.drawable.sunny_back)
+                    weatherAnimation.setAnimation(R.raw.sunny)
+                }
+
+                "Haze" -> {
+                    weather.text = getString(R.string.weather_condition_7)
+                    weatherBack.setBackgroundResource(R.drawable.mist_back)
+                    weatherAnimation.setAnimation(R.raw.mist)
+                }
+
+                "Squall" -> {
+                    weather.text = getString(R.string.weather_condition_8)
+                    weatherBack.setBackgroundResource(R.drawable.snow_back)
+                    weatherAnimation.setAnimation(R.raw.snow)
+                }
+
+                "Drizzle" -> {
+                    weather.text = getString(R.string.weather_condition_9)
+                    weatherBack.setBackgroundResource(R.drawable.rain_back)
+                    weatherAnimation.setAnimation(R.raw.cloudy_rain)
+                }
+
+                "Thunderstorm" -> {
+                    weather.text = getString(R.string.weather_condition_10)
+                    weatherBack.setBackgroundResource(R.drawable.storm_back)
+                    weatherAnimation.setAnimation(R.raw.storm)
+                }
+
+                else -> {
+                    weather.text = getString(R.string.weather_condition_5)
+                    weatherBack.setBackgroundResource(R.drawable.sunny_back)
+                    weatherAnimation.setAnimation(R.raw.sunny)
+                }
+            }
+            weatherAnimation.playAnimation()
         }
     }
 

@@ -3,22 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp"
+    android:layout_margin="@dimen/list_margin"
     app:cardBackgroundColor="@color/blush"
-    app:cardCornerRadius="12dp"
-    app:cardElevation="3dp"
-    app:contentPadding="4dp">
+    app:cardCornerRadius="@dimen/card_corner"
+    app:cardElevation="@dimen/elevation"
+    app:contentPadding="@dimen/content_padding">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="8dp">
+        android:padding="@dimen/contain_margin">
 
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/webVideos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="@dimen/contain_margin"
             android:importantForAccessibility="no"
             app:enableAutomaticInitialization="false"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:text="Bend Your Knees"
             android:textColor="@color/midnight"
-            android:textSize="23sp"
+            android:textSize="@dimen/video_title"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/webVideos"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +38,7 @@
 
         <TextView
             android:id="@+id/descriptionVideos"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/no_dimen"
             android:layout_height="wrap_content"
             android:text="Here is the detailed tip about bending your knees while snowboarding..."
             app:layout_constraintLeft_toLeftOf="parent"

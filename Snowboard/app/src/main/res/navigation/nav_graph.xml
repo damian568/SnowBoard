@@ -6,7 +6,7 @@
     app:startDestination="@id/splashScreenFragment">
     <fragment
         android:id="@+id/splashScreenFragment"
-        android:name="com.example.snowboard.fragments.SplashScreenFragment"
+        android:name="com.example.snowboard.Fragments.SplashScreenFragment"
         android:label="SplashScreenFragment" >
         <action
             android:id="@+id/action_splashScreenFragment_to_mainScreenFragment"
@@ -14,39 +14,39 @@
     </fragment>
     <fragment
         android:id="@+id/mainScreenFragment"
-        android:name="com.example.snowboard.fragments.MainScreenFragment"
-        android:label="Home" />
+        android:name="com.example.snowboard.Fragments.MainScreenFragment"
+        android:label="@string/menu_home" />
     <fragment
         android:id="@+id/historyScreenFragment"
-        android:name="com.example.snowboard.fragments.HistoryScreenFragment"
-        android:label="HistoryScreenFragment" />
+        android:name="com.example.snowboard.Fragments.HistoryScreenFragment"
+        android:label="@string/menu_history" />
     <fragment
         android:id="@+id/skiSlopesScreenFragment"
-        android:name="com.example.snowboard.fragments.SkiSlopesScreenFragment"
-        android:label="SkiSlopesScreenFragment" />
+        android:name="com.example.snowboard.Fragments.SkiSlopesScreenFragment"
+        android:label="@string/menu_ski_slopes" />
     <fragment
         android:id="@+id/tipsScreenFragment"
-        android:name="com.example.snowboard.fragments.TipsScreenFragment"
-        android:label="TipsScreenFragment" />
+        android:name="com.example.snowboard.Fragments.TipsScreenFragment"
+        android:label="@string/menu_tips" />
     <fragment
         android:id="@+id/videosScreenFragment"
-        android:name="com.example.snowboard.fragments.VideosScreenFragment"
-        android:label="VideosScreenFragment" />
+        android:name="com.example.snowboard.Fragments.VideosScreenFragment"
+        android:label="@string/menu_videos" />
     <fragment
         android:id="@+id/weatherScreenFragment"
-        android:name="com.example.snowboard.fragments.WeatherScreenFragment"
-        android:label="WeatherScreenFragment" />
+        android:name="com.example.snowboard.Fragments.WeatherScreenFragment"
+        android:label="@string/menu_weather" />
     <fragment
         android:id="@+id/equipmentScreenFragment"
-        android:name="com.example.snowboard.fragments.EquipmentScreenFragment"
+        android:name="com.example.snowboard.Fragments.EquipmentScreenFragment"
         android:label="fragment_equipment_screen"
         tools:layout="@layout/fragment_equipment_screen" />
     <fragment
         android:id="@+id/tipDetailFragment"
-        android:name="com.example.snowboard.fragments.TipDetailFragment"
-        android:label="TipDetailFragment" />
+        android:name="com.example.snowboard.Fragments.Detail.TipDetailFragment"
+        android:label="@string/detail_tips" />
     <fragment
         android:id="@+id/equipmentDetailFragment"
-        android:name="com.example.snowboard.fragments.EquipmentDetailFragment"
-        android:label="EquipmentDetailFragment" />
+        android:name="com.example.snowboard.Fragments.Detail.EquipmentDetailFragment"
+        android:label="@string/detail_equipment" />
 </navigation>

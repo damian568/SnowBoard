@@ -7,32 +7,33 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        tools:context=".fragments.EquipmentDetailFragment">
+        android:background="@color/ghost_white"
+        tools:context=".Fragments.Detail.EquipmentDetailFragment">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/contain_margin"
             android:orientation="vertical">
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="300dp">
+                android:layout_height="@dimen/detail_width_height">
 
                 <ImageView
                     android:id="@+id/equipment_detail_img"
-                    android:layout_width="300dp"
-                    android:layout_height="300dp"
+                    android:layout_width="@dimen/detail_width_height"
+                    android:layout_height="@dimen/detail_width_height"
                     android:layout_gravity="center"
                     android:scaleType="centerCrop"
                     android:src="@drawable/ic_equipment" />
 
                 <ImageButton
                     android:id="@+id/equipment_btn_close"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="@dimen/close_btn_detail"
+                    android:layout_height="@dimen/close_btn_detail"
                     android:layout_gravity="top|start"
-                    android:layout_margin="8dp"
+                    android:layout_margin="@dimen/contain_margin"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:src="@drawable/ic_close" />
 
@@ -42,33 +43,33 @@
                 android:id="@+id/equipment_detail_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+                android:layout_margin="@dimen/title_margin"
                 android:text="Tip Title"
                 android:textColor="@color/midnight"
-                android:textSize="30sp"
+                android:textSize="@dimen/detail_title_text"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/equipment_detail_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="32dp"
-                android:lineSpacingExtra="4dp"
+                android:layout_marginStart="@dimen/start_end_margin"
+                android:layout_marginEnd="@dimen/start_end_margin"
+                android:layout_marginBottom="@dimen/detail_margin_bot"
+                android:lineSpacingExtra="@dimen/spacing"
                 android:text="Full description goes here..."
-                android:textSize="18sp" />
+                android:textSize="@dimen/detail_desc_text" />
 
             <TextView
                 android:id="@+id/equipment_detail_brands"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="32dp"
-                android:lineSpacingExtra="4dp"
+                android:layout_marginStart="@dimen/start_end_margin"
+                android:layout_marginEnd="@dimen/start_end_margin"
+                android:layout_marginBottom="@dimen/detail_margin_bot"
+                android:lineSpacingExtra="@dimen/spacing"
                 android:text="Full brands goes here..."
-                android:textSize="18sp" />
+                android:textSize="@dimen/detail_desc_text" />
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

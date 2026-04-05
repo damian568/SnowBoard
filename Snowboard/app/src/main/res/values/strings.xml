@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">SnowBoard</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
     //Menu String
     <string name="menu_home">Home</string>
     <string name="menu_history">History</string>
@@ -11,6 +9,14 @@
     <string name="menu_ski_slopes">Ski Slopes</string>
     <string name="menu_videos">Videos</string>
     <string name="menu_weather">Weather</string>
+
+    //Detail
+    <string name="detail_tips">Tip Detail</string>
+    <string name="detail_equipment">Equipment Detail</string>
+
+    //Main Screen
+    <string name="btn_beginner">Beginner</string>
+    <string name="btn_advance">Advance</string>
 
     //History Screen
     <string name="history_header">Snowboard</string>
@@ -317,4 +323,29 @@
     <string name="description_videos_8">This will help you to understand the tricks of slowing and going fast</string>
     <string name="description_videos_9">8 STEPS TO CARVING</string>
     <string name="description_videos_10">Shows you how to fall without getting hurt</string>
+
+    //Weather
+    <string name="weather_error">Location permission was denied by the user.</string>
+
+    <string name="weather_condition_1">Clouds</string>
+    <string name="weather_condition_2">Windy</string>
+    <string name="weather_condition_3">Rain</string>
+    <string name="weather_condition_4">Snow</string>
+    <string name="weather_condition_5">Clear</string>
+    <string name="weather_condition_6">Sunny</string>
+    <string name="weather_condition_7">Haze</string>
+    <string name="weather_condition_8">Squall</string>
+    <string name="weather_condition_9">Drizzle</string>
+    <string name="weather_condition_10">Thunderstorm</string>
+
+    //Weather TextView
+    <string name="weather_day">Today</string>
+    <string name="weather_min">Min: %d °C</string>
+    <string name="weather_max">Max: %d °C</string>
+    <string name="weather_humidity">Humidity</string>
+    <string name="weather_wind">Wind Speed</string>
+    <string name="weather_condition">Conditions</string>
+    <string name="weather_sunrise">Sunrise</string>
+    <string name="weather_sunset">Sunset</string>
+    <string name="weather_sea">Sea</string>
 </resources>

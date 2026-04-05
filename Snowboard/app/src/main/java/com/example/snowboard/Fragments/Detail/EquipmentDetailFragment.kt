@@ -1,14 +1,16 @@
-package com.example.snowboard.fragments
+package com.example.snowboard.Fragments.Detail
 
 import android.graphics.Color
 import android.os.Bundle
 import android.text.Html
-import androidx.fragment.app.Fragment
+import android.text.method.LinkMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.snowboard.Constants.Constants
 import com.example.snowboard.R
 import com.example.snowboard.databinding.FragmentEquipmentDetailBinding
 import com.google.android.material.transition.MaterialContainerTransform
@@ -23,7 +25,7 @@ class EquipmentDetailFragment : Fragment() {
         sharedElementEnterTransition = MaterialContainerTransform().apply {
             drawingViewId =
                 R.id.navHostFragment // The NavHost container from your activity_main.xml
-            duration = 300L
+            duration = Constants.DetailDoration
             scrimColor =
                 Color.TRANSPARENT // Keeps the background from turning dark during the animation
         }
@@ -45,11 +47,11 @@ class EquipmentDetailFragment : Fragment() {
         view.findViewById<View>(R.id.equipment_detail_root).transitionName = transitionName
 
         // 2. Set the rest of your data...
-        val imageRes = arguments?.getInt("EQUIPMENT_IMAGE") ?: 0
+        val imageRes = arguments?.getInt("EQUIPMENT_IMAGE") ?: Constants.Detail_IMG
         val title = arguments?.getString("EQUIPMENT_TITLE") ?: ""
 
         binding.equipmentDetailTitle.text = title
-        if (imageRes != 0) {
+        if (imageRes != Constants.Detail_IMG) {
             binding.equipmentDetailImg.setImageResource(imageRes)
         }
         changeDescDetail(title)
@@ -60,6 +62,7 @@ class EquipmentDetailFragment : Fragment() {
             // It will automatically play the reverse "shrinking" animation!
             findNavController().navigateUp()
         }
+        textColors()
     }
 
     private fun changeDescDetail(title: String): String {
@@ -123,7 +126,15 @@ class EquipmentDetailFragment : Fragment() {
 
         // Apply the text and make links clickable
         binding.equipmentDetailBrands.text = Html.fromHtml(brandsHtml)
-        binding.equipmentDetailBrands.movementMethod = android.text.method.LinkMovementMethod.getInstance()
+        binding.equipmentDetailBrands.movementMethod = LinkMovementMethod.getInstance()
+    }
+
+    private fun textColors() {
+        binding.apply {
+            equipmentDetailTitle.setTextColor(resources.getColor(R.color.midnight))
+            equipmentDetailDescription.setTextColor(resources.getColor(R.color.shadow_black))
+            equipmentDetailBrands.setTextColor(resources.getColor(R.color.shadow_black))
+        }
     }
 
     private fun hideTheToolbar() {

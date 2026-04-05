@@ -1,4 +1,4 @@
-package com.example.snowboard.fragments
+package com.example.snowboard.Fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,14 +9,13 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import com.example.snowboard.Constants.Constants
 import com.example.snowboard.databinding.FragmentSplashScreenBinding
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class SplashScreenFragment : Fragment() {
-
     private lateinit var binding: FragmentSplashScreenBinding
-    private var delayMills = 4000
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -46,7 +45,7 @@ class SplashScreenFragment : Fragment() {
 
     private fun slowFragment() {
         viewLifecycleOwner.lifecycleScope.launch {
-            delay(delayMills.toLong())
+            delay(Constants.DelayMills_Splash)
 
             if (isAdded) {
                 goToMainScreen()
@@ -56,7 +55,8 @@ class SplashScreenFragment : Fragment() {
 
     private fun goToMainScreen() {
         if (isAdded) {
-            val action = SplashScreenFragmentDirections.actionSplashScreenFragmentToMainScreenFragment()
+            val action =
+                SplashScreenFragmentDirections.actionSplashScreenFragmentToMainScreenFragment()
             findNavController().navigate(action)
         }
     }
