@@ -48,7 +48,7 @@ class SplashScreenFragment : Fragment() {
             delay(Constants.DelayMills_Splash)
 
             if (isAdded) {
-                goToMainScreen()
+                goToLoginScreen()
             }
         }
     }
@@ -57,6 +57,14 @@ class SplashScreenFragment : Fragment() {
         if (isAdded) {
             val action =
                 SplashScreenFragmentDirections.actionSplashScreenFragmentToMainScreenFragment()
+            findNavController().navigate(action)
+        }
+    }
+
+    private fun goToLoginScreen() {
+        if (isAdded) {
+            val action =
+                SplashScreenFragmentDirections.actionSplashScreenFragmentToLoginScreenFragment()
             findNavController().navigate(action)
         }
     }
