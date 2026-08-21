@@ -22,4 +22,13 @@
     <dimen name="history_style">20sp</dimen>
     <dimen name="equip_desc">14sp</dimen>
     <dimen name="header_email">14sp</dimen>
+
+    //Login - Register - Profile
+    <dimen name="login_header_title">18sp</dimen>
+    <dimen name="login_welcome_title">22sp</dimen>
+    <dimen name="login_subtitle">13sp</dimen>
+    <dimen name="login_input_text">15sp</dimen>
+    <dimen name="login_button_text">16sp</dimen>
+    <dimen name="login_link_text">13sp</dimen>
+    <dimen name="login_small_text">13sp</dimen>
 </resources>

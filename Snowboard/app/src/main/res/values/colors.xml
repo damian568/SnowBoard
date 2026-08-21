@@ -19,4 +19,9 @@
     <color name="ivory_whisper">#FFFBF0</color>
     <color name="cotton_white">#EDE8DD</color>
     <color name="ghost_white">#F7F7FF</color>
+
+    <!-- Login/Register/Profile -->
+    <color name="wine_maroon">#720423</color>
+    <color name="pearl_background">#F9F7F8</color>
+    <color name="field_stroke">#E0DCDC</color>
 </resources>
