@@ -59,6 +59,11 @@
         <action
             android:id="@+id/action_loginScreenFragment_to_registerScreenFragment"
             app:destination="@id/registerScreenFragment" />
+        <action
+            android:id="@+id/action_loginScreenFragment_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/profileScreenFragment"
@@ -71,5 +76,10 @@
         <action
             android:id="@+id/action_registerScreenFragment_to_loginScreenFragment"
             app:destination="@id/loginScreenFragment" />
+        <action
+            android:id="@+id/action_registerScreenFragment_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>
