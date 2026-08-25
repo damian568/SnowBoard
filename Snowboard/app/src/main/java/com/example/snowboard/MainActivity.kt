@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun behaviorBottomAppBar(destination: NavDestination) {
         when (destination.id) {
-            R.id.splashScreenFragment, R.id.tipDetailFragment, R.id.loginScreenFragment -> {
+            R.id.splashScreenFragment, R.id.tipDetailFragment, R.id.loginScreenFragment, R.id.registerScreenFragment -> {
                 binding.bottomAppBar.visibility = View.GONE
                 binding.fab.hide()
             }

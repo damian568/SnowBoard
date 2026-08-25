@@ -364,4 +364,14 @@
     <string name="btn_facebook">Facebook</string>
     <string name="no_account">Don\'t have an account? </string>
     <string name="sign_up">Sign Up</string>
+
+    //Register Screen
+    <string name="register_welcome_title">Create Account</string>
+    <string name="register_subtitle">Sign up to start your ride.</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="btn_register">SIGN UP</string>
+    <string name="have_account">Already have an account? </string>
+    <string name="log_in">Login</string>
+    <string name="choose_level">Choose Your Level</string>
 </resources>
