@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.snowboard.R
 import com.example.snowboard.databinding.FragmentLoginScreenBinding
 
@@ -38,5 +39,12 @@ class LoginScreenFragment : Fragment() {
             )
             binding.editPassword.setSelection(cursorPosition)
         }
+
+        binding.signUp.setOnClickListener { goToRegisterScreen() }
+    }
+
+    private fun goToRegisterScreen(){
+        val action = LoginScreenFragmentDirections.actionLoginScreenFragmentToRegisterScreenFragment()
+        findNavController().navigate(action)
     }
 }
