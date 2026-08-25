@@ -3,20 +3,27 @@ package com.example.snowboard.User.Register
 import android.content.res.ColorStateList
 import android.os.Bundle
 import android.text.InputType
+import android.util.Patterns
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.snowboard.R
+import com.example.snowboard.User.Model.UserProfile
 import com.example.snowboard.databinding.FragmentRegisterScreenBinding
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 class RegisterScreenFragment : Fragment() {
 
     private enum class SkillLevel { BEGINNER, ADVANCE }
 
     private lateinit var binding: FragmentRegisterScreenBinding
+    private val auth = FirebaseAuth.getInstance()
+    private val firestore = FirebaseFirestore.getInstance()
     private var passwordVisible = false
     private var confirmPasswordVisible = false
     private var selectedLevel = SkillLevel.BEGINNER
@@ -64,6 +71,87 @@ class RegisterScreenFragment : Fragment() {
         binding.levelAdvance.setOnClickListener { selectLevel(SkillLevel.ADVANCE) }
 
         binding.logIn.setOnClickListener { goToLoginScreen() }
+
+        binding.btnRegister.setOnClickListener { attemptRegister() }
+    }
+
+    private fun attemptRegister() {
+        val fullName = binding.editFullName.text.toString().trim()
+        val email = binding.editEmail.text.toString().trim()
+        val password = binding.editPassword.text.toString()
+        val confirmPassword = binding.editConfirmPassword.text.toString()
+
+        if (fullName.isEmpty()) {
+            binding.editFullName.error = getString(R.string.error_full_name_required)
+            return
+        }
+        if (email.isEmpty()) {
+            binding.editEmail.error = getString(R.string.error_email_required)
+            return
+        }
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            binding.editEmail.error = getString(R.string.error_email_invalid)
+            return
+        }
+        if (password.isEmpty()) {
+            binding.editPassword.error = getString(R.string.error_password_required)
+            return
+        }
+        if (password.length < 6) {
+            binding.editPassword.error = getString(R.string.error_password_too_short)
+            return
+        }
+        if (password != confirmPassword) {
+            binding.editConfirmPassword.error = getString(R.string.error_password_mismatch)
+            return
+        }
+
+        setLoading(true)
+        auth.createUserWithEmailAndPassword(email, password)
+            .addOnSuccessListener { result ->
+                val uid = result.user?.uid
+                if (uid == null) {
+                    setLoading(false)
+                    return@addOnSuccessListener
+                }
+                val profile = UserProfile(
+                    fullName = fullName,
+                    email = email,
+                    level = selectedLevel.name
+                )
+                firestore.collection("users").document(uid).set(profile)
+                    .addOnSuccessListener {
+                        setLoading(false)
+                        goToMainScreen()
+                    }
+                    .addOnFailureListener { e ->
+                        setLoading(false)
+                        showError(e.message)
+                    }
+            }
+            .addOnFailureListener { e ->
+                setLoading(false)
+                showError(e.message)
+            }
+    }
+
+    private fun setLoading(loading: Boolean) {
+        binding.btnRegister.isEnabled = !loading
+        binding.btnRegister.text = if (loading) "" else getString(R.string.btn_register)
+    }
+
+    private fun showError(message: String?) {
+        if (isAdded) {
+            Toast.makeText(requireContext(), message ?: return, Toast.LENGTH_LONG).show()
+        }
+    }
+
+    private fun goToMainScreen() {
+        if (isAdded) {
+            val action =
+                RegisterScreenFragmentDirections.actionRegisterScreenFragmentToMainScreenFragment()
+            findNavController().navigate(action)
+        }
     }
 
     private fun selectLevel(level: SkillLevel) {

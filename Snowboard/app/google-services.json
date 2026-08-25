@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "329048282346",
+    "project_id": "snowboard-8e1d3",
+    "storage_bucket": "snowboard-8e1d3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329048282346:android:be57db08adf1252a62f393",
+        "android_client_info": {
+          "package_name": "com.example.snowboard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcCvx4gTm6ZOeAylfOwPmA4Q_M_cSbev0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

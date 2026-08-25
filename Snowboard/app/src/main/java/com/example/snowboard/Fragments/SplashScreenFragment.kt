@@ -11,6 +11,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.snowboard.Constants.Constants
 import com.example.snowboard.databinding.FragmentSplashScreenBinding
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -48,7 +49,11 @@ class SplashScreenFragment : Fragment() {
             delay(Constants.DelayMills_Splash)
 
             if (isAdded) {
-                goToLoginScreen()
+                if (FirebaseAuth.getInstance().currentUser != null) {
+                    goToMainScreen()
+                } else {
+                    goToLoginScreen()
+                }
             }
         }
     }
