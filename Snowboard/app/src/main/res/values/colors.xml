@@ -22,6 +22,7 @@
 
     <!-- Login/Register/Profile -->
     <color name="wine_maroon">#720423</color>
+    <color name="blush_deep">#E3D0C9</color>
     <color name="pearl_background">#F9F7F8</color>
     <color name="field_stroke">#E0DCDC</color>
 </resources>

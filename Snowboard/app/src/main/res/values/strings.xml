@@ -375,6 +375,21 @@
     <string name="log_in">Login</string>
     <string name="choose_level">Choose Your Level</string>
 
+    //Profile Screen
+    <string name="profile_title">Profile</string>
+    <string name="profile_stat_trips">Trips</string>
+    <string name="profile_stat_points">Points</string>
+    <string name="profile_stat_level">Level</string>
+    <string name="level_beginner_label">Beginner</string>
+    <string name="level_advanced_label">Advanced</string>
+    <string name="menu_personal_information">Personal Information</string>
+    <string name="menu_my_stats">My Stats</string>
+    <string name="menu_achievements">Achievements</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_help_support">Help &amp; Support</string>
+    <string name="btn_log_out">Log Out</string>
+    <string name="change_profile_photo">Change profile photo</string>
+
     //Auth Validation
     <string name="error_full_name_required">Please enter your full name</string>
     <string name="error_email_required">Please enter your email</string>

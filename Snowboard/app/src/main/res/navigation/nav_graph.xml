@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/splashScreenFragment">
+    app:startDestination="@id/profileScreenFragment">
     <fragment
         android:id="@+id/splashScreenFragment"
         android:name="com.example.snowboard.Fragments.SplashScreenFragment"
@@ -68,7 +68,13 @@
     <fragment
         android:id="@+id/profileScreenFragment"
         android:name="com.example.snowboard.User.ProfileScreenFragment"
-        android:label="ProfileScreenFragment" />
+        android:label="ProfileScreenFragment" >
+        <action
+            android:id="@+id/action_profileScreenFragment_to_loginScreenFragment"
+            app:destination="@id/loginScreenFragment"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
     <fragment
         android:id="@+id/registerScreenFragment"
         android:name="com.example.snowboard.User.Register.RegisterScreenFragment"
