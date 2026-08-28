@@ -7,48 +7,71 @@
     app:cardBackgroundColor="@color/blush"
     app:shapeAppearanceOverlay="@style/NavMenuShape">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom"
-        android:orientation="vertical"
-        android:paddingStart="@dimen/nav_header_start">
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/img_profile"
-            android:layout_width="@dimen/header_img_profile"
-            android:layout_height="@dimen/header_img_profile"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/ic_icon"
-            app:shapeAppearanceOverlay="@style/CircleImageStyle" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/header_mer_pad"
-            android:text="Sandra Adams"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/header_title"
-            android:textStyle="bold" />
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/nav_header_start">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_profile"
+                android:layout_width="@dimen/header_img_profile"
+                android:layout_height="@dimen/header_img_profile"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_icon"
+                app:shapeAppearanceOverlay="@style/CircleImageStyle" />
 
             <TextView
-                android:layout_width="@dimen/no_dimen"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_marginTop="@dimen/header_mer_pad"
+                android:text="Sandra Adams"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/header_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="sandra_a88@gmail.com"
                 android:textColor="@color/grey"
                 android:textSize="@dimen/header_email" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_nav_header_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:background="@drawable/bg_profile_pill_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="6dp">
 
             <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_person"
+                app:tint="@color/wine_maroon" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:tint="@color/grey" />
+                android:layout_marginStart="6dp"
+                android:fontFamily="@font/merriweathersans_medium"
+                android:text="@string/menu_profile"
+                android:textColor="@color/wine_maroon"
+                android:textSize="12sp" />
         </LinearLayout>
-    </LinearLayout>
+
+    </FrameLayout>
 </com.google.android.material.card.MaterialCardView>
