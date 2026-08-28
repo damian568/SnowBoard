@@ -31,4 +31,11 @@
     <dimen name="login_button_text">16sp</dimen>
     <dimen name="login_link_text">13sp</dimen>
     <dimen name="login_small_text">13sp</dimen>
+
+    //Profile Screen
+    <dimen name="profile_name_text">19sp</dimen>
+    <dimen name="profile_email_text">13sp</dimen>
+    <dimen name="profile_stat_value_text">16sp</dimen>
+    <dimen name="profile_stat_label_text">12sp</dimen>
+    <dimen name="profile_menu_text">15sp</dimen>
 </resources>
