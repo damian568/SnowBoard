@@ -9,6 +9,7 @@
     <string name="menu_ski_slopes">Ski Slopes</string>
     <string name="menu_videos">Videos</string>
     <string name="menu_weather">Weather</string>
+    <string name="menu_profile">Profile</string>
 
     //Detail
     <string name="detail_tips">Tip Detail</string>

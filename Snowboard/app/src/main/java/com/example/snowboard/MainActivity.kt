@@ -11,6 +11,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.snowboard.databinding.ActivityMainBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,6 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         drawerMenu()
         handleDrawerMenuClicks()
+        handleDrawerHeaderClick()
         navControllerDestinationChanged()
     }
 
@@ -53,10 +55,31 @@ class MainActivity : AppCompatActivity() {
                 R.id.skiSlopes -> navController.navigate(R.id.skiSlopesScreenFragment)
                 R.id.videos -> navController.navigate(R.id.videosScreenFragment)
                 R.id.weather -> navController.navigate(R.id.weatherScreenFragment)
+                R.id.logout -> logOut()
             }
             binding.drawerLayout.closeDrawer(GravityCompat.START)
             true
         }
+    }
+
+    private fun handleDrawerHeaderClick() {
+        // 3. Navigate to Profile when the header's chevron button is tapped
+        val headerView = binding.navView.getHeaderView(0)
+        headerView.findViewById<View>(R.id.btn_nav_header_profile).setOnClickListener {
+            navController.navigate(R.id.profileScreenFragment)
+            binding.drawerLayout.closeDrawer(GravityCompat.START)
+        }
+    }
+
+    private fun logOut() {
+        FirebaseAuth.getInstance().signOut()
+        navController.navigate(
+            R.id.loginScreenFragment,
+            null,
+            androidx.navigation.NavOptions.Builder()
+                .setPopUpTo(R.id.nav_graph, true)
+                .build()
+        )
     }
 
     private fun navControllerDestinationChanged() {
