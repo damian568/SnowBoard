@@ -3,6 +3,7 @@ package com.example.snowboard
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.GravityCompat
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.NavController
@@ -10,6 +11,7 @@ import androidx.navigation.NavDestination
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.example.snowboard.User.Settings.AppPreferences
 import com.example.snowboard.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -19,6 +21,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(
+            if (AppPreferences.isDarkMode(this)) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO
+        )
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
@@ -90,7 +95,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun behaviorBottomAppBar(destination: NavDestination) {
         when (destination.id) {
-            R.id.splashScreenFragment, R.id.tipDetailFragment, R.id.loginScreenFragment, R.id.registerScreenFragment, R.id.profileScreenFragment -> {
+            R.id.splashScreenFragment, R.id.tipDetailFragment, R.id.loginScreenFragment, R.id.registerScreenFragment, R.id.profileScreenFragment, R.id.personalInformationFragment, R.id.settingsFragment, R.id.helpSupportFragment, R.id.changePasswordScreenFragment, R.id.changeEmailScreenFragment -> {
                 binding.bottomAppBar.visibility = View.GONE
                 binding.fab.hide()
             }

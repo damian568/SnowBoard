@@ -39,6 +39,9 @@ class ProfileScreenFragment : Fragment() {
 
         binding.btnMenu.setOnClickListener { openDrawer() }
         binding.btnCamera.setOnClickListener { pickAvatarImage.launch("image/*") }
+        binding.rowPersonalInfo.setOnClickListener { goToPersonalInformation() }
+        binding.rowSettings.setOnClickListener { goToSettings() }
+        binding.rowHelpSupport.setOnClickListener { goToHelpSupport() }
         binding.rowLogOut.setOnClickListener { logOut() }
 
         loadUserProfile()
@@ -74,6 +77,21 @@ class ProfileScreenFragment : Fragment() {
                     getString(R.string.level_advanced_label)
                 }
             }
+    }
+
+    private fun goToPersonalInformation() {
+        val action = ProfileScreenFragmentDirections.actionProfileScreenFragmentToPersonalInformationFragment()
+        findNavController().navigate(action)
+    }
+
+    private fun goToSettings() {
+        val action = ProfileScreenFragmentDirections.actionProfileScreenFragmentToSettingsFragment()
+        findNavController().navigate(action)
+    }
+
+    private fun goToHelpSupport() {
+        val action = ProfileScreenFragmentDirections.actionProfileScreenFragmentToHelpSupportFragment()
+        findNavController().navigate(action)
     }
 
     private fun logOut() {
