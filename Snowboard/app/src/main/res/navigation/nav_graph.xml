@@ -68,7 +68,14 @@
             app:destination="@id/mainScreenFragment"
             app:popUpTo="@id/splashScreenFragment"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginScreenFragment_to_forgotPasswordScreenFragment"
+            app:destination="@id/forgotPasswordScreenFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordScreenFragment"
+        android:name="com.example.snowboard.User.ForgotPassword.ForgotPasswordScreenFragment"
+        android:label="ForgotPasswordScreenFragment" />
     <fragment
         android:id="@+id/profileScreenFragment"
         android:name="com.example.snowboard.User.ProfileScreenFragment"
