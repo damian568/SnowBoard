@@ -14,6 +14,7 @@ import com.example.snowboard.Constants.Constants
 import com.example.snowboard.Interface.WeatherApiService
 import com.example.snowboard.R
 import com.example.snowboard.Response.WeatherResponse
+import com.example.snowboard.User.Settings.AppPreferences
 import com.example.snowboard.databinding.FragmentWeatherScreenBinding
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
@@ -110,33 +111,36 @@ class WeatherScreenFragment : Fragment() {
     }
 
     private fun fetchWeatherData(lat: Double, lon: Double) {
+        val useMetric = AppPreferences.isMetricUnits(requireContext())
         lifecycleScope.launch(Dispatchers.Main) {
             try {
                 val response = weatherService.getCurrentWeather(
                     lat,
                     lon,
                     Constants.API_KEY,
-                    "metric",
+                    if (useMetric) "metric" else "imperial",
                     currentLang
                 )
-                updateUI(response)
+                updateUI(response, useMetric)
             } catch (e: Exception) {
                 Log.e("Weather", "Error: ${e.message}")
             }
         }
     }
 
-    private fun updateUI(data: WeatherResponse) {
+    private fun updateUI(data: WeatherResponse, useMetric: Boolean) {
         val minTepValue = data.main.temp_min.toInt()
         val maxTepValue = data.main.temp_max.toInt()
+        val tempUnit = if (useMetric) "C" else "F"
+        val speedUnit = if (useMetric) "m/s" else "mph"
         binding.apply {
             date.text = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault()).format(Date())
             myLocation.text = "${data.name}"
-            temp.text = "${data.main.temp.toInt()}°C"
-            minTemp.text = getString(R.string.weather_min, minTepValue)
-            maxTemp.text = getString(R.string.weather_max, maxTepValue)
+            temp.text = "${data.main.temp.toInt()}°$tempUnit"
+            minTemp.text = getString(R.string.weather_min, minTepValue, tempUnit)
+            maxTemp.text = getString(R.string.weather_max, maxTepValue, tempUnit)
             humidity.text = "${data.main.humidity}%"
-            windSpeed.text = "${data.wind.speed} m/s"
+            windSpeed.text = "${data.wind.speed} $speedUnit"
             conditions.text = data.weather[0].main
             sunrise.text =
                 SimpleDateFormat("HH:mm", Locale.getDefault()).format(Date(data.sys.sunrise * 1000))

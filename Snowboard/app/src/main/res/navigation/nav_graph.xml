@@ -85,7 +85,43 @@
             app:destination="@id/loginScreenFragment"
             app:popUpTo="@id/splashScreenFragment"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_profileScreenFragment_to_personalInformationFragment"
+            app:destination="@id/personalInformationFragment" />
+        <action
+            android:id="@+id/action_profileScreenFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_profileScreenFragment_to_helpSupportFragment"
+            app:destination="@id/helpSupportFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/personalInformationFragment"
+        android:name="com.example.snowboard.User.PersonalInformation.PersonalInformationFragment"
+        android:label="PersonalInformationFragment" />
+    <fragment
+        android:id="@+id/changeEmailScreenFragment"
+        android:name="com.example.snowboard.User.ChangeEmail.ChangeEmailScreenFragment"
+        android:label="ChangeEmailScreenFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.snowboard.User.Settings.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_changePasswordScreenFragment"
+            app:destination="@id/changePasswordScreenFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_changeEmailScreenFragment"
+            app:destination="@id/changeEmailScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpSupportFragment"
+        android:name="com.example.snowboard.User.HelpSupport.HelpSupportFragment"
+        android:label="HelpSupportFragment" />
+    <fragment
+        android:id="@+id/changePasswordScreenFragment"
+        android:name="com.example.snowboard.User.ChangePassword.ChangePasswordScreenFragment"
+        android:label="ChangePasswordScreenFragment" />
     <fragment
         android:id="@+id/registerScreenFragment"
         android:name="com.example.snowboard.User.Register.RegisterScreenFragment"

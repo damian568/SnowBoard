@@ -50,19 +50,8 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/login_header_title"
                 app:layout_constraintBottom_toBottomOf="@id/btn_menu"
-                app:layout_constraintEnd_toStartOf="@id/btn_edit"
-                app:layout_constraintStart_toEndOf="@id/btn_menu"
-                app:layout_constraintTop_toTopOf="@id/btn_menu" />
-
-            <ImageView
-                android:id="@+id/btn_edit"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginEnd="20dp"
-                android:contentDescription="@string/menu_personal_information"
-                android:src="@drawable/ic_edit"
-                app:layout_constraintBottom_toBottomOf="@id/btn_menu"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@id/btn_menu" />
 
             <com.google.android.material.imageview.ShapeableImageView

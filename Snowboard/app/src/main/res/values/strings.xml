@@ -341,8 +341,8 @@
 
     //Weather TextView
     <string name="weather_day">Today</string>
-    <string name="weather_min">Min: %d °C</string>
-    <string name="weather_max">Max: %d °C</string>
+    <string name="weather_min">Min: %1$d °%2$s</string>
+    <string name="weather_max">Max: %1$d °%2$s</string>
     <string name="weather_humidity">Humidity</string>
     <string name="weather_wind">Wind Speed</string>
     <string name="weather_condition">Conditions</string>
@@ -427,4 +427,48 @@
     <string name="error_new_password_same_as_old">New password must be different from the current password</string>
     <string name="error_current_password_incorrect">Current password is incorrect</string>
     <string name="msg_password_changed">Your password has been changed</string>
+
+    //Personal Information Screen
+    <string name="btn_save_changes">SAVE CHANGES</string>
+    <string name="msg_profile_updated">Profile updated</string>
+
+    //Settings Screen
+    <string name="settings_section_preferences">Preferences</string>
+    <string name="settings_section_account">Account</string>
+    <string name="settings_units">Units</string>
+    <string name="settings_units_metric">Metric</string>
+    <string name="settings_units_imperial">Imperial</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_dark_mode">Dark Theme</string>
+    <string name="settings_change_password">Change Password</string>
+    <string name="settings_change_email">Change Email</string>
+
+    //Help and Support Screen
+    <string name="help_faq_title">Frequently Asked Questions</string>
+    <string name="help_faq_q1">How do I reset my password?</string>
+    <string name="help_faq_a1">Go to Settings → Change Password, or use \"Forgot Password?\" on the login screen.</string>
+    <string name="help_faq_q2">How do I change my skill level?</string>
+    <string name="help_faq_a2">Open Profile → Personal Information and pick a new level.</string>
+    <string name="help_faq_q3">The app can\'t find my location for weather.</string>
+    <string name="help_faq_a3">Make sure location permission is granted to SnowBoard in your device settings.</string>
+    <string name="help_faq_q4">How do I log out?</string>
+    <string name="help_faq_a4">Open your Profile and tap Log Out at the bottom of the menu.</string>
+    <string name="help_contact_support">Contact Support</string>
+    <string name="help_contact_subtitle">Have a question or found a bug? Send us an email.</string>
+    <string name="help_email_subject">SnowBoard Support</string>
+    <string name="error_no_email_app">No email app found on this device</string>
+    <string name="help_app_version_value">Version %1$s</string>
+    <string name="help_terms_title">Terms &amp; Privacy</string>
+    <string name="help_terms_body">Terms of Service and Privacy Policy are not published yet for this app.</string>
+
+    //Support Email Screen
+    <string name="support_email">damyants.work@gmail.com</string>
+
+    //Change Email Screen
+    <string name="change_email_title">Change Email</string>
+    <string name="change_email_subtitle">Enter your current password and the new email address.</string>
+    <string name="hint_new_email">New Email</string>
+    <string name="btn_update_email">UPDATE EMAIL</string>
+    <string name="msg_verification_email_sent_new_address">A verification link has been sent to %1$s. Confirm it to finish changing your email.</string>
+    <string name="error_new_email_same_as_old">New email must be different from the current one</string>
 </resources>
