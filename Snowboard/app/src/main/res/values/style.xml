@@ -10,6 +10,14 @@
         <item name="cornerSize">16dp</item>
     </style>
 
+    <style name="HeroImageShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">28dp</item>
+        <item name="cornerSizeBottomRight">28dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+    </style>
+
     <style name="NavMenuShape">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSizeBottomLeft">45dp</item> <item name="cornerSizeBottomRight">45dp</item> <item name="cornerSizeTopLeft">0dp</item>

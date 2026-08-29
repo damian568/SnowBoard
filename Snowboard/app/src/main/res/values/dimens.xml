@@ -55,4 +55,13 @@
     <dimen name="content_padding">4dp</dimen>
     <dimen name="equip_padding">12dp</dimen>
     <dimen name="nav_header_start">8dp</dimen>
+
+    //Home Screen
+    <dimen name="home_hero_height">300dp</dimen>
+    <dimen name="home_card_corner_lg">12dp</dimen>
+    <dimen name="home_quick_icon">48dp</dimen>
+    <dimen name="home_nearby_card_width">156dp</dimen>
+    <dimen name="home_nearby_image_height">100dp</dimen>
+    <dimen name="home_trip_card_height">150dp</dimen>
+    <dimen name="home_badge_dot">16dp</dimen>
 </resources>
