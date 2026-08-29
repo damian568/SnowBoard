@@ -1,5 +1,6 @@
 package com.example.snowboard.User.Register
 
+import android.content.Intent
 import android.content.res.ColorStateList
 import android.os.Bundle
 import android.text.InputType
@@ -8,13 +9,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.snowboard.R
 import com.example.snowboard.User.Model.UserProfile
+import com.example.snowboard.User.SocialAuthHelper
 import com.example.snowboard.databinding.FragmentRegisterScreenBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.firestore.FirebaseFirestore
 
 class RegisterScreenFragment : Fragment() {
@@ -27,6 +31,21 @@ class RegisterScreenFragment : Fragment() {
     private var passwordVisible = false
     private var confirmPasswordVisible = false
     private var selectedLevel = SkillLevel.BEGINNER
+
+    private val googleSignInLauncher: androidx.activity.result.ActivityResultLauncher<Intent> =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+            socialAuthHelper.handleGoogleSignInResult(result.data)
+        }
+
+    private val socialAuthHelper: SocialAuthHelper by lazy {
+        SocialAuthHelper(
+            fragment = this,
+            googleSignInLauncher = googleSignInLauncher,
+            onLoading = { setLoading(it) },
+            onError = { showError(it) },
+            onSuccess = { goToMainScreen() }
+        )
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -73,6 +92,15 @@ class RegisterScreenFragment : Fragment() {
         binding.logIn.setOnClickListener { goToLoginScreen() }
 
         binding.btnRegister.setOnClickListener { attemptRegister() }
+
+        binding.btnGoogle.setOnClickListener { socialAuthHelper.signInWithGoogle() }
+
+        binding.btnFacebook.setOnClickListener { socialAuthHelper.signInWithFacebook() }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        socialAuthHelper.onActivityResult(requestCode, resultCode, data)
     }
 
     private fun attemptRegister() {
@@ -109,7 +137,8 @@ class RegisterScreenFragment : Fragment() {
         setLoading(true)
         auth.createUserWithEmailAndPassword(email, password)
             .addOnSuccessListener { result ->
-                val uid = result.user?.uid
+                val user = result.user
+                val uid = user?.uid
                 if (uid == null) {
                     setLoading(false)
                     return@addOnSuccessListener
@@ -121,8 +150,19 @@ class RegisterScreenFragment : Fragment() {
                 )
                 firestore.collection("users").document(uid).set(profile)
                     .addOnSuccessListener {
-                        setLoading(false)
-                        goToMainScreen()
+                        user.sendEmailVerification()
+                            .addOnCompleteListener {
+                                auth.signOut()
+                                setLoading(false)
+                                if (isAdded) {
+                                    Toast.makeText(
+                                        requireContext(),
+                                        getString(R.string.msg_verification_email_sent, email),
+                                        Toast.LENGTH_LONG
+                                    ).show()
+                                }
+                                goToLoginScreen()
+                            }
                     }
                     .addOnFailureListener { e ->
                         setLoading(false)
@@ -131,7 +171,11 @@ class RegisterScreenFragment : Fragment() {
             }
             .addOnFailureListener { e ->
                 setLoading(false)
-                showError(e.message)
+                if (e is FirebaseAuthUserCollisionException) {
+                    binding.editEmail.error = getString(R.string.error_email_already_in_use)
+                } else {
+                    showError(e.message)
+                }
             }
     }
 
@@ -143,14 +187,6 @@ class RegisterScreenFragment : Fragment() {
     private fun showError(message: String?) {
         if (isAdded) {
             Toast.makeText(requireContext(), message ?: return, Toast.LENGTH_LONG).show()
-        }
-    }
-
-    private fun goToMainScreen() {
-        if (isAdded) {
-            val action =
-                RegisterScreenFragmentDirections.actionRegisterScreenFragmentToMainScreenFragment()
-            findNavController().navigate(action)
         }
     }
 
@@ -180,5 +216,13 @@ class RegisterScreenFragment : Fragment() {
     private fun goToLoginScreen() {
         val action = RegisterScreenFragmentDirections.actionRegisterScreenFragmentToLoginScreenFragment()
         findNavController().navigate(action)
+    }
+
+    private fun goToMainScreen() {
+        if (isAdded) {
+            val action =
+                RegisterScreenFragmentDirections.actionRegisterScreenFragmentToMainScreenFragment()
+            findNavController().navigate(action)
+        }
     }
 }

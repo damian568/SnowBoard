@@ -363,13 +363,18 @@
     <string name="continue_with">or continue with</string>
     <string name="btn_google">Google</string>
     <string name="btn_facebook">Facebook</string>
+
+    <!-- TODO: replace with the values from your Facebook Developer app -->
+    <string name="facebook_app_id">FACEBOOK_APP_ID</string>
+    <string name="facebook_client_token">FACEBOOK_CLIENT_TOKEN</string>
+    <string name="fb_login_protocol_scheme">fbFACEBOOK_APP_ID</string>
     <string name="no_account">Don\'t have an account? </string>
     <string name="sign_up">Sign Up</string>
 
     //Register Screen
     <string name="register_welcome_title">Create Account</string>
     <string name="register_subtitle">Sign up to start your ride.</string>
-    <string name="hint_full_name">Full Name</string>
+    <string name="hint_full_name">Username</string>
     <string name="hint_confirm_password">Confirm Password</string>
     <string name="btn_register">SIGN UP</string>
     <string name="have_account">Already have an account? </string>
@@ -398,4 +403,28 @@
     <string name="error_password_required">Please enter your password</string>
     <string name="error_password_too_short">Password must be at least 6 characters</string>
     <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_email_already_in_use">An account with this email already exists</string>
+    <string name="msg_verification_email_sent">A verification email has been sent to %1$s. Please verify your email.</string>
+    <string name="error_email_not_verified">Please verify your email before logging in</string>
+
+    //Forgot Password Screen
+    <string name="forgot_password_title">Reset Password</string>
+    <string name="forgot_password_subtitle">Enter your email and we\'ll send you a link to reset your password.</string>
+    <string name="btn_send_reset_link">SEND RESET LINK</string>
+    <string name="back_to_log_in">Back to Login</string>
+    <string name="msg_reset_email_sent">A password reset link has been sent to %1$s.</string>
+    <string name="error_no_account_for_email">No account found with this email. The password cannot be changed.</string>
+
+    //Change Password Screen
+    <string name="change_password_title">Change Password</string>
+    <string name="change_password_subtitle">Enter your current password and choose a new one.</string>
+    <string name="hint_current_password">Current Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="hint_confirm_new_password">Confirm New Password</string>
+    <string name="btn_change_password">CHANGE PASSWORD</string>
+    <string name="error_current_password_required">Please enter your current password</string>
+    <string name="error_new_password_required">Please enter a new password</string>
+    <string name="error_new_password_same_as_old">New password must be different from the current password</string>
+    <string name="error_current_password_incorrect">Current password is incorrect</string>
+    <string name="msg_password_changed">Your password has been changed</string>
 </resources>

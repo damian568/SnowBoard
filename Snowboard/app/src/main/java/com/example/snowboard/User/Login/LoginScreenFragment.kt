@@ -1,14 +1,18 @@
 package com.example.snowboard.User.Login
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.InputType
+import android.util.Patterns
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.snowboard.R
+import com.example.snowboard.User.SocialAuthHelper
 import com.example.snowboard.databinding.FragmentLoginScreenBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -17,6 +21,21 @@ class LoginScreenFragment : Fragment() {
     private lateinit var binding: FragmentLoginScreenBinding
     private val auth = FirebaseAuth.getInstance()
     private var passwordVisible = false
+
+    private val googleSignInLauncher: androidx.activity.result.ActivityResultLauncher<Intent> =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+            socialAuthHelper.handleGoogleSignInResult(result.data)
+        }
+
+    private val socialAuthHelper: SocialAuthHelper by lazy {
+        SocialAuthHelper(
+            fragment = this,
+            googleSignInLauncher = googleSignInLauncher,
+            onLoading = { setLoading(it) },
+            onError = { showError(it) },
+            onSuccess = { goToMainScreen() }
+        )
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -45,7 +64,18 @@ class LoginScreenFragment : Fragment() {
 
         binding.signUp.setOnClickListener { goToRegisterScreen() }
 
+        binding.forgotPassword.setOnClickListener { goToForgotPasswordScreen() }
+
         binding.btnLogin.setOnClickListener { attemptLogin() }
+
+        binding.btnGoogle.setOnClickListener { socialAuthHelper.signInWithGoogle() }
+
+        binding.btnFacebook.setOnClickListener { socialAuthHelper.signInWithFacebook() }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        socialAuthHelper.onActivityResult(requestCode, resultCode, data)
     }
 
     private fun attemptLogin() {
@@ -56,6 +86,10 @@ class LoginScreenFragment : Fragment() {
             binding.editEmail.error = getString(R.string.error_email_required)
             return
         }
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            binding.editEmail.error = getString(R.string.error_email_invalid)
+            return
+        }
         if (password.isEmpty()) {
             binding.editPassword.error = getString(R.string.error_password_required)
             return
@@ -63,9 +97,27 @@ class LoginScreenFragment : Fragment() {
 
         setLoading(true)
         auth.signInWithEmailAndPassword(email, password)
-            .addOnSuccessListener {
-                setLoading(false)
-                goToMainScreen()
+            .addOnSuccessListener { result ->
+                val user = result.user
+                if (user == null) {
+                    setLoading(false)
+                    return@addOnSuccessListener
+                }
+                user.reload().addOnCompleteListener {
+                    setLoading(false)
+                    if (user.isEmailVerified) {
+                        goToMainScreen()
+                    } else {
+                        auth.signOut()
+                        if (isAdded) {
+                            Toast.makeText(
+                                requireContext(),
+                                getString(R.string.error_email_not_verified),
+                                Toast.LENGTH_LONG
+                            ).show()
+                        }
+                    }
+                }
             }
             .addOnFailureListener { e ->
                 setLoading(false)
@@ -94,6 +146,12 @@ class LoginScreenFragment : Fragment() {
 
     private fun goToRegisterScreen(){
         val action = LoginScreenFragmentDirections.actionLoginScreenFragmentToRegisterScreenFragment()
+        findNavController().navigate(action)
+    }
+
+    private fun goToForgotPasswordScreen() {
+        val action =
+            LoginScreenFragmentDirections.actionLoginScreenFragmentToForgotPasswordScreenFragment()
         findNavController().navigate(action)
     }
 }

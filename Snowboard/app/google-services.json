@@ -12,7 +12,12 @@
           "package_name": "com.example.snowboard"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "329048282346-8a71jnptonm81j1nmkn9vhd20eo1pcij.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCcCvx4gTm6ZOeAylfOwPmA4Q_M_cSbev0"
@@ -20,7 +25,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "329048282346-8a71jnptonm81j1nmkn9vhd20eo1pcij.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

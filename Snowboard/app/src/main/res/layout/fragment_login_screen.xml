@@ -279,7 +279,8 @@
                         android:layout_weight="1"
                         android:background="@drawable/bg_login_social_button"
                         android:gravity="center"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
                         <ImageView
                             android:layout_width="18dp"

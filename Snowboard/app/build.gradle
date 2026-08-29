@@ -102,6 +102,12 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth-ktx'
     implementation 'com.google.firebase:firebase-firestore-ktx'
 
+    // Google Sign-In
+    implementation 'com.google.android.gms:play-services-auth:21.2.0'
+
+    // Facebook Login
+    implementation 'com.facebook.android:facebook-login:17.0.0'
+
     //Picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
 
