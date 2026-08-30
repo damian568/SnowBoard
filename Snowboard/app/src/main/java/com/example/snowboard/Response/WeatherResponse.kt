@@ -17,6 +17,6 @@ data class Main(
     val sea_level: Int
 )
 
-data class Weather(val main: String)
+data class Weather(val main: String, val description: String)
 data class Wind(val speed: Double)
 data class Sys(val sunrise: Long, val sunset: Long, val country: String?)

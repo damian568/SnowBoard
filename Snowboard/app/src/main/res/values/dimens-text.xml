@@ -38,4 +38,18 @@
     <dimen name="profile_stat_value_text">16sp</dimen>
     <dimen name="profile_stat_label_text">12sp</dimen>
     <dimen name="profile_menu_text">15sp</dimen>
+
+    //Home Screen
+    <dimen name="home_title_text">18sp</dimen>
+    <dimen name="home_greeting_text">13sp</dimen>
+    <dimen name="home_name_text">20sp</dimen>
+    <dimen name="home_subtitle_text">12sp</dimen>
+    <dimen name="home_temp_text">20sp</dimen>
+    <dimen name="home_section_title_text">17sp</dimen>
+    <dimen name="home_view_all_text">13sp</dimen>
+    <dimen name="home_action_label_text">12sp</dimen>
+    <dimen name="home_card_title_text">15sp</dimen>
+    <dimen name="home_card_subtitle_text">12sp</dimen>
+    <dimen name="home_rating_text">13sp</dimen>
+    <dimen name="home_badge_text">10sp</dimen>
 </resources>

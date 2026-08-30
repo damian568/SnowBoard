@@ -7,6 +7,9 @@ object AppPreferences {
     private const val KEY_DARK_MODE = "dark_mode"
     private const val KEY_METRIC_UNITS = "metric_units"
     private const val KEY_NOTIFICATIONS = "notifications_enabled"
+    private const val KEY_QUICK_ACTIONS = "quick_actions"
+    private const val DEFAULT_QUICK_ACTIONS = "skiSlopes,equipment,tips,videos"
+    const val MAX_QUICK_ACTIONS = 4
 
     private fun prefs(context: Context) =
         context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
@@ -27,5 +30,14 @@ object AppPreferences {
 
     fun setNotificationsEnabled(context: Context, enabled: Boolean) {
         prefs(context).edit().putBoolean(KEY_NOTIFICATIONS, enabled).apply()
+    }
+
+    fun getQuickActions(context: Context): List<String> {
+        val stored = prefs(context).getString(KEY_QUICK_ACTIONS, DEFAULT_QUICK_ACTIONS)
+        return stored?.split(",")?.filter { it.isNotBlank() } ?: emptyList()
+    }
+
+    fun setQuickActions(context: Context, ids: List<String>) {
+        prefs(context).edit().putString(KEY_QUICK_ACTIONS, ids.take(MAX_QUICK_ACTIONS).joinToString(",")).apply()
     }
 }
