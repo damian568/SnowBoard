@@ -51,9 +51,5 @@
     <dimen name="home_card_title_text">15sp</dimen>
     <dimen name="home_card_subtitle_text">12sp</dimen>
     <dimen name="home_rating_text">13sp</dimen>
-    <dimen name="home_trip_label_text">12sp</dimen>
-    <dimen name="home_trip_title_text">20sp</dimen>
-    <dimen name="home_trip_date_text">13sp</dimen>
-    <dimen name="home_button_text">14sp</dimen>
     <dimen name="home_badge_text">10sp</dimen>
 </resources>

@@ -54,34 +54,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@id/btn_menu" />
 
-            <ImageView
-                android:id="@+id/btn_notification"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginEnd="20dp"
-                android:contentDescription="@null"
-                android:src="@drawable/ic_notification"
-                app:layout_constraintBottom_toBottomOf="@id/btn_menu"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@id/btn_menu"
-                app:tint="@color/white" />
-
-            <TextView
-                android:id="@+id/notification_badge"
-                android:layout_width="@dimen/home_badge_dot"
-                android:layout_height="@dimen/home_badge_dot"
-                android:background="@drawable/bg_notification_dot"
-                android:fontFamily="@font/merriweathersans_bold"
-                android:gravity="center"
-                android:includeFontPadding="false"
-                android:text="1"
-                android:textColor="@color/white"
-                android:textSize="@dimen/home_badge_text"
-                app:layout_constraintEnd_toEndOf="@id/btn_notification"
-                app:layout_constraintTop_toTopOf="@id/btn_notification"
-                app:layout_constraintHorizontal_bias="1"
-                app:layout_constraintVertical_bias="0" />
-
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_greeting_weather"
                 android:layout_width="0dp"
@@ -198,7 +170,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/merriweathersans_regular"
-                                android:text="@string/home_location_whistler"
+                                android:text="@string/home_location_placeholder"
                                 android:textColor="@color/crimson_red"
                                 android:textSize="@dimen/home_subtitle_text" />
 
@@ -217,19 +189,36 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="20dp"
+                android:gravity="center_vertical"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/card_greeting_weather">
 
                 <TextView
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:fontFamily="@font/merriweathersans_bold"
                     android:text="@string/quick_actions_title"
                     android:textColor="@color/black"
                     android:textSize="@dimen/home_section_title_text" />
+
+                <ImageView
+                    android:id="@+id/btn_edit_quick_actions"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="8dp"
+                    android:clickable="true"
+                    android:contentDescription="@null"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_edit"
+                    app:tint="@color/crimson_red" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
 
                 <TextView
                     android:id="@+id/txt_quick_actions_view_all"
@@ -260,108 +249,124 @@
                 app:layout_constraintTop_toBottomOf="@id/row_quick_actions_header">
 
                 <LinearLayout
+                    android:id="@+id/btn_quick_slot_1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/img_quick_slot_1"
                         android:layout_width="@dimen/home_quick_icon"
                         android:layout_height="@dimen/home_quick_icon"
                         android:background="@drawable/bg_icon_badge"
                         android:contentDescription="@null"
                         android:padding="12dp"
-                        android:src="@drawable/ic_slopes"
                         app:tint="@color/wine_maroon" />
 
                     <TextView
+                        android:id="@+id/txt_quick_slot_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/merriweathersans_medium"
-                        android:text="@string/menu_ski_slopes"
                         android:textColor="@color/black"
                         android:textSize="@dimen/home_action_label_text" />
 
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/btn_quick_slot_2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/img_quick_slot_2"
                         android:layout_width="@dimen/home_quick_icon"
                         android:layout_height="@dimen/home_quick_icon"
                         android:background="@drawable/bg_icon_badge"
                         android:contentDescription="@null"
                         android:padding="12dp"
-                        android:src="@drawable/ic_equipment"
                         app:tint="@color/wine_maroon" />
 
                     <TextView
+                        android:id="@+id/txt_quick_slot_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/merriweathersans_medium"
-                        android:text="@string/menu_equipment"
                         android:textColor="@color/black"
                         android:textSize="@dimen/home_action_label_text" />
 
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/btn_quick_slot_3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/img_quick_slot_3"
                         android:layout_width="@dimen/home_quick_icon"
                         android:layout_height="@dimen/home_quick_icon"
                         android:background="@drawable/bg_icon_badge"
                         android:contentDescription="@null"
                         android:padding="12dp"
-                        android:src="@drawable/ic_tips"
                         app:tint="@color/wine_maroon" />
 
                     <TextView
+                        android:id="@+id/txt_quick_slot_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/merriweathersans_medium"
-                        android:text="@string/menu_tips"
                         android:textColor="@color/black"
                         android:textSize="@dimen/home_action_label_text" />
 
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/btn_quick_slot_4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/img_quick_slot_4"
                         android:layout_width="@dimen/home_quick_icon"
                         android:layout_height="@dimen/home_quick_icon"
                         android:background="@drawable/bg_icon_badge"
                         android:contentDescription="@null"
                         android:padding="12dp"
-                        android:src="@drawable/ic_video"
                         app:tint="@color/wine_maroon" />
 
                     <TextView
+                        android:id="@+id/txt_quick_slot_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/merriweathersans_medium"
-                        android:text="@string/menu_videos"
                         android:textColor="@color/black"
                         android:textSize="@dimen/home_action_label_text" />
 
@@ -409,10 +414,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
+                android:layout_marginBottom="24dp"
                 android:clipToPadding="false"
                 android:paddingStart="20dp"
                 android:paddingEnd="8dp"
                 android:scrollbars="none"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/row_nearby_slopes_header">
@@ -447,6 +454,7 @@
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
+                                android:id="@+id/txt_slope_distance_1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="8dp"
@@ -457,7 +465,7 @@
                                 android:gravity="center_vertical"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp"
-                                android:text="@string/distance_2_5_km"
+                                android:text="@string/distance_placeholder"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/home_badge_text"
                                 app:drawableStartCompat="@drawable/ic_location"
@@ -466,6 +474,7 @@
                                 app:layout_constraintTop_toTopOf="@id/img_slope_1" />
 
                             <TextView
+                                android:id="@+id/txt_slope_difficulty_1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="8dp"
@@ -489,7 +498,7 @@
                                 android:layout_marginTop="8dp"
                                 android:layout_marginEnd="10dp"
                                 android:fontFamily="@font/merriweathersans_bold"
-                                android:text="@string/slope_blackcomb"
+                                android:text="@string/title_ski_slopes_1"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/home_card_title_text"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -503,7 +512,7 @@
                                 android:layout_marginStart="10dp"
                                 android:layout_marginEnd="10dp"
                                 android:fontFamily="@font/merriweathersans_regular"
-                                android:text="@string/home_location_whistler"
+                                android:text="@string/location_bansko"
                                 android:textColor="@color/grey"
                                 android:textSize="@dimen/home_card_subtitle_text"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -524,11 +533,12 @@
                                 app:layout_constraintTop_toBottomOf="@id/txt_slope_subtitle_1" />
 
                             <TextView
+                                android:id="@+id/txt_slope_rating_1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="4dp"
                                 android:fontFamily="@font/merriweathersans_bold"
-                                android:text="@string/rating_4_7"
+                                android:text="@string/rating_placeholder"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/home_rating_text"
                                 app:layout_constraintBottom_toBottomOf="@id/img_rating_1"
@@ -564,6 +574,7 @@
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
+                                android:id="@+id/txt_slope_distance_2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="8dp"
@@ -574,7 +585,7 @@
                                 android:gravity="center_vertical"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp"
-                                android:text="@string/distance_5_1_km"
+                                android:text="@string/distance_placeholder"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/home_badge_text"
                                 app:drawableStartCompat="@drawable/ic_location"
@@ -583,6 +594,7 @@
                                 app:layout_constraintTop_toTopOf="@id/img_slope_2" />
 
                             <TextView
+                                android:id="@+id/txt_slope_difficulty_2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="8dp"
@@ -606,7 +618,7 @@
                                 android:layout_marginTop="8dp"
                                 android:layout_marginEnd="10dp"
                                 android:fontFamily="@font/merriweathersans_bold"
-                                android:text="@string/slope_whistler_mountain"
+                                android:text="@string/title_ski_slopes_2"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/home_card_title_text"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -620,7 +632,7 @@
                                 android:layout_marginStart="10dp"
                                 android:layout_marginEnd="10dp"
                                 android:fontFamily="@font/merriweathersans_regular"
-                                android:text="@string/home_location_whistler"
+                                android:text="@string/location_borovets"
                                 android:textColor="@color/grey"
                                 android:textSize="@dimen/home_card_subtitle_text"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -641,11 +653,12 @@
                                 app:layout_constraintTop_toBottomOf="@id/txt_slope_subtitle_2" />
 
                             <TextView
+                                android:id="@+id/txt_slope_rating_2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="4dp"
                                 android:fontFamily="@font/merriweathersans_bold"
-                                android:text="@string/rating_4_5"
+                                android:text="@string/rating_placeholder"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/home_rating_text"
                                 app:layout_constraintBottom_toBottomOf="@id/img_rating_2"
@@ -681,6 +694,7 @@
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
+                                android:id="@+id/txt_slope_distance_3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="8dp"
@@ -691,7 +705,7 @@
                                 android:gravity="center_vertical"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp"
-                                android:text="@string/distance_6_7_km"
+                                android:text="@string/distance_placeholder"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/home_badge_text"
                                 app:drawableStartCompat="@drawable/ic_location"
@@ -700,6 +714,7 @@
                                 app:layout_constraintTop_toTopOf="@id/img_slope_3" />
 
                             <TextView
+                                android:id="@+id/txt_slope_difficulty_3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="8dp"
@@ -723,7 +738,7 @@
                                 android:layout_marginTop="8dp"
                                 android:layout_marginEnd="10dp"
                                 android:fontFamily="@font/merriweathersans_bold"
-                                android:text="@string/slope_cypress_bowl"
+                                android:text="@string/title_ski_slopes_4"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/home_card_title_text"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -737,7 +752,7 @@
                                 android:layout_marginStart="10dp"
                                 android:layout_marginEnd="10dp"
                                 android:fontFamily="@font/merriweathersans_regular"
-                                android:text="@string/location_west_vancouver"
+                                android:text="@string/location_vitosha"
                                 android:textColor="@color/grey"
                                 android:textSize="@dimen/home_card_subtitle_text"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -758,11 +773,12 @@
                                 app:layout_constraintTop_toBottomOf="@id/txt_slope_subtitle_3" />
 
                             <TextView
+                                android:id="@+id/txt_slope_rating_3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="4dp"
                                 android:fontFamily="@font/merriweathersans_bold"
-                                android:text="@string/rating_4_6"
+                                android:text="@string/rating_placeholder"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/home_rating_text"
                                 app:layout_constraintBottom_toBottomOf="@id/img_rating_3"
@@ -776,109 +792,6 @@
                 </LinearLayout>
 
             </HorizontalScrollView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/card_upcoming_trip"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/home_trip_card_height"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="28dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="24dp"
-                app:cardCornerRadius="@dimen/home_card_corner_lg"
-                app:cardElevation="@dimen/elevation"
-                app:contentPadding="0dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/scroll_nearby_slopes">
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:contentDescription="@null"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/bg_home_hero_art" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/scrim_gradient" />
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="16dp">
-
-                        <ImageView
-                            android:id="@+id/img_trip_calendar"
-                            android:layout_width="16dp"
-                            android:layout_height="16dp"
-                            android:contentDescription="@null"
-                            android:src="@drawable/ic_calendar"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:tint="@color/white" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:fontFamily="@font/merriweathersans_medium"
-                            android:text="@string/upcoming_trip_label"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/home_trip_label_text"
-                            app:layout_constraintBottom_toBottomOf="@id/img_trip_calendar"
-                            app:layout_constraintStart_toEndOf="@id/img_trip_calendar"
-                            app:layout_constraintTop_toTopOf="@id/img_trip_calendar" />
-
-                        <TextView
-                            android:id="@+id/txt_trip_title"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/merriweathersans_bold"
-                            android:text="@string/upcoming_trip_title"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/home_trip_title_text"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/img_trip_calendar" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:fontFamily="@font/merriweathersans_regular"
-                            android:text="@string/upcoming_trip_dates"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/home_trip_date_text"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/txt_trip_title" />
-
-                        <TextView
-                            android:id="@+id/btn_view_details"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/bg_pill"
-                            android:backgroundTint="@color/white"
-                            android:fontFamily="@font/merriweathersans_bold"
-                            android:paddingHorizontal="18dp"
-                            android:paddingVertical="8dp"
-                            android:text="@string/btn_view_details"
-                            android:textColor="@color/crimson_red"
-                            android:textSize="@dimen/home_button_text"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </FrameLayout>
-
-            </com.google.android.material.card.MaterialCardView>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

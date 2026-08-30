@@ -97,6 +97,9 @@ dependencies {
     // Location
     implementation 'com.google.android.gms:play-services-location:21.0.1'
 
+    // HTML parsing (live resort ratings)
+    implementation 'org.jsoup:jsoup:1.17.2'
+
     // Firebase
     implementation platform('com.google.firebase:firebase-bom:33.5.1')
     implementation 'com.google.firebase:firebase-auth-ktx'

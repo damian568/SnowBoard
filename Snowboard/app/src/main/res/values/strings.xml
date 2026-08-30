@@ -479,28 +479,28 @@
     <string name="home_subtitle">Ready for your next adventure?</string>
     <string name="home_temp">-2°C</string>
     <string name="home_condition">Light Snow</string>
-    <string name="home_location_whistler">Whistler, BC</string>
+    <string name="home_location_placeholder">Locating…</string>
     <string name="view_all">View All</string>
     <string name="quick_actions_title">Quick Actions</string>
+    <string name="quick_actions_edit_title">Edit Quick Actions</string>
+    <string name="quick_actions_edit_subtitle">Choose up to 4 shortcuts for your home screen</string>
+    <string name="quick_actions_max_reached">You can select up to 4 quick actions</string>
     <string name="nearby_slopes_title">Nearby Slopes</string>
 
-    <string name="slope_blackcomb">Blackcomb</string>
-    <string name="slope_whistler_mountain">Whistler Mountain</string>
-    <string name="slope_cypress_bowl">Cypress Bowl</string>
-    <string name="location_west_vancouver">West Vancouver, BC</string>
-    <string name="distance_2_5_km">2.5 km</string>
-    <string name="distance_5_1_km">5.1 km</string>
-    <string name="distance_6_7_km">6.7 km</string>
-    <string name="rating_4_7">4.7</string>
-    <string name="rating_4_5">4.5</string>
-    <string name="rating_4_6">4.6</string>
+    <string name="location_bansko">Blagoevgrad Province</string>
+    <string name="location_borovets">Sofia Province</string>
+    <string name="location_pamporovo">Smolyan Province</string>
+    <string name="location_vitosha">Sofia</string>
+    <string name="location_chepelare">Smolyan Province</string>
+    <string name="location_dobrinishte">Blagoevgrad Province</string>
+    <string name="location_malyovitsa">Sofia Province</string>
+    <string name="location_uzana">Gabrovo Province</string>
+    <string name="location_semkovo">Blagoevgrad Province</string>
+    <string name="location_kartala">Blagoevgrad Province</string>
+    <string name="distance_km_format">%1$.1f km</string>
+    <string name="distance_placeholder">-- km</string>
+    <string name="rating_placeholder">—</string>
     <string name="difficulty_advanced">Advanced</string>
     <string name="difficulty_intermediate">Intermediate</string>
     <string name="difficulty_beginner">Beginner</string>
-
-    <string name="upcoming_trip_label">Upcoming Trip</string>
-    <string name="upcoming_trip_title">Whistler Weekend</string>
-    <string name="upcoming_trip_dates">Jan 25 - Jan 27, 2025</string>
-    <string name="btn_view_details">View Details</string>
-    <string name="no_new_notifications">No new notifications</string>
 </resources>
