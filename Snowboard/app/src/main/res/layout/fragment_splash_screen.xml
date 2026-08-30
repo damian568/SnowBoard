@@ -6,21 +6,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/crimson_red"
-        android:fitsSystemWindows="true"
         tools:context=".Fragments.SplashScreenFragment">
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/imageSplashBackground"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/contain_margin"
-            android:gravity="center">
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_splash_screen" />
 
-            <ImageView
-                android:id="@+id/imageLogo"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_snowboard_logo" />
-
-        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
