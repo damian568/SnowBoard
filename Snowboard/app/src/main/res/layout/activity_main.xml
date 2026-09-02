@@ -59,15 +59,253 @@
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-        <com.google.android.material.navigation.NavigationView
-            android:id="@+id/navView"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/navDrawerContent"
+            android:layout_width="@dimen/nav_drawer_width"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            android:background="@color/ghost_white"
-            app:headerLayout="@layout/nav_header"
-            app:itemIconTint="@color/black"
-            app:itemTextColor="@color/black"
-            app:menu="@menu/bottom_menu" />
+            android:background="@color/nav_menu_background"
+            android:orientation="vertical">
+
+            <include layout="@layout/nav_header" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="4dp">
+
+                    <!-- Home -->
+                    <LinearLayout
+                        android:id="@+id/home"
+                        style="@style/NavDrawerRow">
+
+                        <View
+                            android:id="@+id/home_accent"
+                            style="@style/NavDrawerRowAccent" />
+
+                        <ImageView
+                            android:id="@+id/home_icon"
+                            style="@style/NavDrawerRowIcon"
+                            android:src="@drawable/ic_home" />
+
+                        <TextView
+                            android:id="@+id/home_text"
+                            style="@style/NavDrawerRowText"
+                            android:text="@string/menu_home" />
+
+                        <ImageView
+                            android:id="@+id/home_chevron"
+                            style="@style/NavDrawerRowChevron"
+                            android:src="@drawable/ic_chevron_right" />
+                    </LinearLayout>
+
+                    <View style="@style/NavDrawerDivider" />
+
+                    <!-- History -->
+                    <LinearLayout
+                        android:id="@+id/history"
+                        style="@style/NavDrawerRow">
+
+                        <View
+                            android:id="@+id/history_accent"
+                            style="@style/NavDrawerRowAccent" />
+
+                        <ImageView
+                            android:id="@+id/history_icon"
+                            style="@style/NavDrawerRowIcon"
+                            android:src="@drawable/ic_history" />
+
+                        <TextView
+                            android:id="@+id/history_text"
+                            style="@style/NavDrawerRowText"
+                            android:text="@string/menu_history" />
+
+                        <ImageView
+                            android:id="@+id/history_chevron"
+                            style="@style/NavDrawerRowChevron"
+                            android:src="@drawable/ic_chevron_right" />
+                    </LinearLayout>
+
+                    <View style="@style/NavDrawerDivider" />
+
+                    <!-- Tips -->
+                    <LinearLayout
+                        android:id="@+id/tips"
+                        style="@style/NavDrawerRow">
+
+                        <View
+                            android:id="@+id/tips_accent"
+                            style="@style/NavDrawerRowAccent" />
+
+                        <ImageView
+                            android:id="@+id/tips_icon"
+                            style="@style/NavDrawerRowIcon"
+                            android:src="@drawable/ic_tips" />
+
+                        <TextView
+                            android:id="@+id/tips_text"
+                            style="@style/NavDrawerRowText"
+                            android:text="@string/menu_tips" />
+
+                        <ImageView
+                            android:id="@+id/tips_chevron"
+                            style="@style/NavDrawerRowChevron"
+                            android:src="@drawable/ic_chevron_right" />
+                    </LinearLayout>
+
+                    <View style="@style/NavDrawerDivider" />
+
+                    <!-- Equipment -->
+                    <LinearLayout
+                        android:id="@+id/equipment"
+                        style="@style/NavDrawerRow">
+
+                        <View
+                            android:id="@+id/equipment_accent"
+                            style="@style/NavDrawerRowAccent" />
+
+                        <ImageView
+                            android:id="@+id/equipment_icon"
+                            style="@style/NavDrawerRowIcon"
+                            android:src="@drawable/ic_equipment" />
+
+                        <TextView
+                            android:id="@+id/equipment_text"
+                            style="@style/NavDrawerRowText"
+                            android:text="@string/menu_equipment" />
+
+                        <ImageView
+                            android:id="@+id/equipment_chevron"
+                            style="@style/NavDrawerRowChevron"
+                            android:src="@drawable/ic_chevron_right" />
+                    </LinearLayout>
+
+                    <View style="@style/NavDrawerDivider" />
+
+                    <!-- Ski Slopes -->
+                    <LinearLayout
+                        android:id="@+id/skiSlopes"
+                        style="@style/NavDrawerRow">
+
+                        <View
+                            android:id="@+id/skiSlopes_accent"
+                            style="@style/NavDrawerRowAccent" />
+
+                        <ImageView
+                            android:id="@+id/skiSlopes_icon"
+                            style="@style/NavDrawerRowIcon"
+                            android:src="@drawable/ic_slopes" />
+
+                        <TextView
+                            android:id="@+id/skiSlopes_text"
+                            style="@style/NavDrawerRowText"
+                            android:text="@string/menu_ski_slopes" />
+
+                        <ImageView
+                            android:id="@+id/skiSlopes_chevron"
+                            style="@style/NavDrawerRowChevron"
+                            android:src="@drawable/ic_chevron_right" />
+                    </LinearLayout>
+
+                    <View style="@style/NavDrawerDivider" />
+
+                    <!-- Videos -->
+                    <LinearLayout
+                        android:id="@+id/videos"
+                        style="@style/NavDrawerRow">
+
+                        <View
+                            android:id="@+id/videos_accent"
+                            style="@style/NavDrawerRowAccent" />
+
+                        <ImageView
+                            android:id="@+id/videos_icon"
+                            style="@style/NavDrawerRowIcon"
+                            android:src="@drawable/ic_video" />
+
+                        <TextView
+                            android:id="@+id/videos_text"
+                            style="@style/NavDrawerRowText"
+                            android:text="@string/menu_videos" />
+
+                        <ImageView
+                            android:id="@+id/videos_chevron"
+                            style="@style/NavDrawerRowChevron"
+                            android:src="@drawable/ic_chevron_right" />
+                    </LinearLayout>
+
+                    <View style="@style/NavDrawerDivider" />
+
+                    <!-- Weather -->
+                    <LinearLayout
+                        android:id="@+id/weather"
+                        style="@style/NavDrawerRow">
+
+                        <View
+                            android:id="@+id/weather_accent"
+                            style="@style/NavDrawerRowAccent" />
+
+                        <ImageView
+                            android:id="@+id/weather_icon"
+                            style="@style/NavDrawerRowIcon"
+                            android:src="@drawable/ic_weather" />
+
+                        <TextView
+                            android:id="@+id/weather_text"
+                            style="@style/NavDrawerRowText"
+                            android:text="@string/menu_weather" />
+
+                        <ImageView
+                            android:id="@+id/weather_chevron"
+                            style="@style/NavDrawerRowChevron"
+                            android:src="@drawable/ic_chevron_right" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!-- Log Out floats on top of the footer artwork -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/nav_footer_height">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bg_nav_footer" />
+
+                    <LinearLayout
+                        android:id="@+id/logout"
+                        style="@style/NavDrawerRow"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="4dp">
+
+                        <View style="@style/NavDrawerRowAccent" />
+
+                        <ImageView
+                            style="@style/NavDrawerRowIcon"
+                            android:src="@drawable/ic_logout"
+                            android:tint="@color/crimson_red" />
+
+                        <TextView
+                            style="@style/NavDrawerRowText"
+                            android:text="@string/btn_log_out"
+                            android:textColor="@color/crimson_red" />
+
+                        <ImageView
+                            style="@style/NavDrawerRowChevron"
+                            android:src="@drawable/ic_chevron_right"
+                            android:tint="@color/crimson_red" />
+                    </LinearLayout>
+                </FrameLayout>
+
+        </LinearLayout>
     </androidx.drawerlayout.widget.DrawerLayout>
 </layout>

@@ -1,9 +1,14 @@
 package com.example.snowboard
 
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.NavController
@@ -19,6 +24,27 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
+
+    private data class DrawerItem(
+        val rowId: Int,
+        val accentId: Int,
+        val iconId: Int,
+        val textId: Int,
+        val chevronId: Int,
+        val destinationId: Int
+    )
+
+    private val drawerItems by lazy {
+        listOf(
+            DrawerItem(R.id.home, R.id.home_accent, R.id.home_icon, R.id.home_text, R.id.home_chevron, R.id.mainScreenFragment),
+            DrawerItem(R.id.history, R.id.history_accent, R.id.history_icon, R.id.history_text, R.id.history_chevron, R.id.historyScreenFragment),
+            DrawerItem(R.id.tips, R.id.tips_accent, R.id.tips_icon, R.id.tips_text, R.id.tips_chevron, R.id.tipsScreenFragment),
+            DrawerItem(R.id.equipment, R.id.equipment_accent, R.id.equipment_icon, R.id.equipment_text, R.id.equipment_chevron, R.id.equipmentScreenFragment),
+            DrawerItem(R.id.skiSlopes, R.id.skiSlopes_accent, R.id.skiSlopes_icon, R.id.skiSlopes_text, R.id.skiSlopes_chevron, R.id.skiSlopesScreenFragment),
+            DrawerItem(R.id.videos, R.id.videos_accent, R.id.videos_icon, R.id.videos_text, R.id.videos_chevron, R.id.videosScreenFragment),
+            DrawerItem(R.id.weather, R.id.weather_accent, R.id.weather_icon, R.id.weather_text, R.id.weather_chevron, R.id.weatherScreenFragment)
+        )
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AppCompatDelegate.setDefaultNightMode(
@@ -38,7 +64,6 @@ class MainActivity : AppCompatActivity() {
 
         drawerMenu()
         handleDrawerMenuClicks()
-        handleDrawerHeaderClick()
         navControllerDestinationChanged()
     }
 
@@ -51,27 +76,26 @@ class MainActivity : AppCompatActivity() {
 
     private fun handleDrawerMenuClicks() {
         // 2. Handle Drawer Item Clicks
-        binding.navView.setNavigationItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.home -> navController.navigate(R.id.mainScreenFragment)
-                R.id.history -> navController.navigate(R.id.historyScreenFragment)
-                R.id.tips -> navController.navigate(R.id.tipsScreenFragment)
-                R.id.equipment -> navController.navigate(R.id.equipmentScreenFragment)
-                R.id.skiSlopes -> navController.navigate(R.id.skiSlopesScreenFragment)
-                R.id.videos -> navController.navigate(R.id.videosScreenFragment)
-                R.id.weather -> navController.navigate(R.id.weatherScreenFragment)
-                R.id.logout -> logOut()
-            }
-            binding.drawerLayout.closeDrawer(GravityCompat.START)
-            true
-        }
-    }
+        val destinationByRowId = mapOf(
+            R.id.home to R.id.mainScreenFragment,
+            R.id.history to R.id.historyScreenFragment,
+            R.id.tips to R.id.tipsScreenFragment,
+            R.id.equipment to R.id.equipmentScreenFragment,
+            R.id.skiSlopes to R.id.skiSlopesScreenFragment,
+            R.id.videos to R.id.videosScreenFragment,
+            R.id.weather to R.id.weatherScreenFragment,
+            R.id.btn_nav_header_profile to R.id.profileScreenFragment
+        )
 
-    private fun handleDrawerHeaderClick() {
-        // 3. Navigate to Profile when the header's chevron button is tapped
-        val headerView = binding.navView.getHeaderView(0)
-        headerView.findViewById<View>(R.id.btn_nav_header_profile).setOnClickListener {
-            navController.navigate(R.id.profileScreenFragment)
+        destinationByRowId.forEach { (rowId, destinationId) ->
+            binding.navDrawerContent.findViewById<View>(rowId).setOnClickListener {
+                navController.navigate(destinationId)
+                binding.drawerLayout.closeDrawer(GravityCompat.START)
+            }
+        }
+
+        binding.navDrawerContent.findViewById<View>(R.id.logout).setOnClickListener {
+            logOut()
             binding.drawerLayout.closeDrawer(GravityCompat.START)
         }
     }
@@ -90,6 +114,33 @@ class MainActivity : AppCompatActivity() {
     private fun navControllerDestinationChanged() {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             behaviorBottomAppBar(destination)
+            updateSelectedDrawerItem(destination.id)
+        }
+    }
+
+    private fun updateSelectedDrawerItem(destinationId: Int) {
+        val selectedColor = ContextCompat.getColor(this, R.color.crimson_red)
+        val defaultTextColor = ContextCompat.getColor(this, R.color.black)
+        val defaultChevronColor = ContextCompat.getColor(this, R.color.grey)
+
+        drawerItems.forEach { item ->
+            val isSelected = item.destinationId == destinationId
+
+            binding.navDrawerContent.findViewById<View>(item.rowId).background =
+                if (isSelected) ContextCompat.getDrawable(this, R.drawable.bg_nav_row_selected) else null
+
+            binding.navDrawerContent.findViewById<View>(item.accentId).setBackgroundColor(
+                if (isSelected) selectedColor else Color.TRANSPARENT
+            )
+
+            binding.navDrawerContent.findViewById<ImageView>(item.iconId).imageTintList =
+                ColorStateList.valueOf(if (isSelected) selectedColor else defaultTextColor)
+
+            binding.navDrawerContent.findViewById<TextView>(item.textId)
+                .setTextColor(if (isSelected) selectedColor else defaultTextColor)
+
+            binding.navDrawerContent.findViewById<ImageView>(item.chevronId).imageTintList =
+                ColorStateList.valueOf(if (isSelected) selectedColor else defaultChevronColor)
         }
     }
 
