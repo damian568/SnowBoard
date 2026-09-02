@@ -1,77 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/header_layout"
-    android:padding="@dimen/header_mer_pad"
-    app:cardBackgroundColor="@color/blush"
-    app:shapeAppearanceOverlay="@style/NavMenuShape">
+    android:layout_height="@dimen/header_layout">
 
-    <FrameLayout
+    <com.google.android.material.imageview.ShapeableImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/blush"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_nav_header"
+        app:shapeAppearanceOverlay="@style/NavMenuShape" />
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        android:padding="@dimen/header_mer_pad">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_profile"
+            android:layout_width="@dimen/header_img_profile"
+            android:layout_height="@dimen/header_img_profile"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_icon"
+            app:shapeAppearanceOverlay="@style/CircleImageStyle"
+            app:strokeColor="@color/white"
+            app:strokeWidth="3dp" />
+
+        <TextView
+            android:id="@+id/txt_nav_header_name"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="bottom"
-            android:orientation="vertical"
-            android:paddingStart="@dimen/nav_header_start">
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merriweathersans_bold"
+            android:text="Sandra Adams"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/header_title"
+            android:textStyle="bold" />
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/img_profile"
-                android:layout_width="@dimen/header_img_profile"
-                android:layout_height="@dimen/header_img_profile"
-                android:scaleType="centerCrop"
-                android:src="@mipmap/ic_icon"
-                app:shapeAppearanceOverlay="@style/CircleImageStyle" />
+        <TextView
+            android:id="@+id/txt_nav_header_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merriweathersans_regular"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="6"
+            android:text="sandra_a88@gmail.com"
+            android:textColor="@color/wine_maroon"
+            android:textSize="@dimen/header_email" />
+    </LinearLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/header_mer_pad"
-                android:text="Sandra Adams"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/header_title"
-                android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/btn_nav_header_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="@dimen/header_mer_pad"
+        android:background="@drawable/bg_profile_pill_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="6dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="sandra_a88@gmail.com"
-                android:textColor="@color/grey"
-                android:textSize="@dimen/header_email" />
-        </LinearLayout>
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_person"
+            app:tint="@color/wine_maroon" />
 
-        <LinearLayout
-            android:id="@+id/btn_nav_header_profile"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="top|end"
-            android:background="@drawable/bg_profile_pill_button"
-            android:clickable="true"
-            android:focusable="true"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingHorizontal="14dp"
-            android:paddingVertical="6dp">
+            android:layout_marginStart="6dp"
+            android:fontFamily="@font/merriweathersans_medium"
+            android:text="@string/menu_profile"
+            android:textColor="@color/wine_maroon"
+            android:textSize="12sp" />
+    </LinearLayout>
 
-            <ImageView
-                android:layout_width="14dp"
-                android:layout_height="14dp"
-                android:contentDescription="@null"
-                android:src="@drawable/ic_person"
-                app:tint="@color/wine_maroon" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="6dp"
-                android:fontFamily="@font/merriweathersans_medium"
-                android:text="@string/menu_profile"
-                android:textColor="@color/wine_maroon"
-                android:textSize="12sp" />
-        </LinearLayout>
-
-    </FrameLayout>
-</com.google.android.material.card.MaterialCardView>
+</FrameLayout>
