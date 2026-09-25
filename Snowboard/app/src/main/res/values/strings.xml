@@ -1,0 +1,506 @@
+<resources>
+    <string name="app_name">SnowBoard</string>
+
+    //Menu String
+    <string name="menu_home">Home</string>
+    <string name="menu_history">History</string>
+    <string name="menu_tips">Tips</string>
+    <string name="menu_equipment">Equipment</string>
+    <string name="menu_ski_slopes">Ski Slopes</string>
+    <string name="menu_videos">Videos</string>
+    <string name="menu_weather">Weather</string>
+    <string name="menu_profile">Profile</string>
+
+    //Detail
+    <string name="detail_tips">Tip Detail</string>
+    <string name="detail_equipment">Equipment Detail</string>
+
+    //Main Screen
+    <string name="btn_beginner">Beginner</string>
+    <string name="btn_advance">Advance</string>
+
+    //History Screen
+    <string name="history_header">Snowboard</string>
+    <string name="history_title_history">History</string>
+    <string name="history_title_styles">Styles</string>
+    <string name="history_title_styles_1">Freeride</string>
+    <string name="history_title_styles_2">Freestyle</string>
+    <string name="history_title_styles_3">Boardercross</string>
+    <string name="history_title_tricks">Tricks</string>
+
+    <string name="paragraph_history_1">A snowboard (in English: snowboard, in literal translation a snow board) is a flat structure designed for descending on snowy slopes in the mountains. It is seen as the winter equivalent of skateboarding. The snowboard has a wooden base and layers of fiberglass on top and bottom. There are foot pegs on the board. Its length varies from 140 to 165 cm, and its width from 24 to 27 cm.</string>
+    <string name="paragraph_history_2">The history of snowboarding began around 1960 with the attempt of several American surfers to make a surfboard that would move on the snowy slopes. The new sport is developing rapidly, as its technique is learned more easily and in a shorter time than that of skiing. In the late 70s and early 80s snowboarding began to establish itself as an alternative to skiing. Racing and experimentation began to lead to the present day, when about 50% of the US population owns a personal snowboard.</string>
+    <string name="paragraph_history_3">There are several styles in snowboarding - freeride, freestyle, boardercross and "alpine style" descents (which are performed in front of a large audience and judged by a jury). Freestyle is often practiced by skaters because many movements in this style are borrowed from skateboarding and surfing.</string>
+    <string name="paragraph_history_4">Freeride is off-piste riding on both skis and snowboards in pristine snow. The term comes from English and can be translated as "free ride". While in other styles everything depends on certain prerequisites - in freestyle from man-made jumps, ramps, etc., and in track skiing there is a special preparation of the snow, the focus of freeriding is, by descending, you take advantage of the random and uncertain conditions of the natural terrain. We cannot talk about specific styles, as the way of riding is completely individual. The only difference is off-piste riding away from a resort (backcountry) and on the territory of a given resort, near the slopes.</string>
+    <string name="paragraph_history_5">Freestyle or the so-called Freestyle is expressed in doing different tricks with the help of ramps, half-pipes, rails and others.</string>
+    <string name="paragraph_history_6">In boardercross, four snowboarders (or a different number, but mostly four) go down a heavily groomed track.</string>
+    <string name="paragraph_history_7">Here are some tricks performed by freestylers:
+        \n \t- 50/50 - when you point the board parallel to the beam/railing and slide along it.
+        \n \t- board slide - the opposite of 50/50, the board is directed perpendicular to the beam, the slide is faster here.
+        \n \t- 5/о(файв оу) - the initial position is 50/50, but when performing it, the weight is concentrated on the back leg (tail press).
+        \n \t- nose slide - the starting position is a board slide, but the slide takes place on the front of the board (the nose).
+        \n \t- tail slide - same as nose slide, but sliding is done with the rear leg and the tail of the board.
+        \nWax is often used to perform tricks - for easier sliding.</string>
+
+    //Tips Screen
+    <string name="title_detail_tip_1">Make Sure You Have The Right Board</string>
+    <string name="title_detail_tip_2">Make Sure You Have Proper Gear (And It Fits Well</string>
+    <string name="title_detail_tip_3">Take a Snowboarding Lesson</string>
+    <string name="title_detail_tip_4">Always Look Forward and Watch Where You Want To Go</string>
+    <string name="title_detail_tip_5">Bend Your Knees</string>
+    <string name="title_detail_tip_6">Ride Across The Slope</string>
+    <string name="title_detail_tip_7">Practice on the Bunny Slopes</string>
+    <string name="title_detail_tip_8">Observe All Resort Rider/Skier Safety Conduct</string>
+    <string name="title_detail_tip_9">Be Patient and Don’t Rush Yourself</string>
+    <string name="title_detail_tip_10">Have Fun!</string>
+
+    <string name="description_detail_tip_1">There are a lot of different types of snowboards for a reason. When you walk into a snowboard shop and wonder how there can be so many different boards, it’s because they all ride differently.
+        \n \nAs a beginner, look for a board that has rocker camber. Rocker camber places rocker in between your feet, and camber underneath each foot. Rocker between your feet will make the board more catch free, so that you won’t catch your edges as much when you are learning to turn. Camber is to help the edge dig while initiating turns. Rocker camber in combination is great for learning to turn, because it will allow you to engage in turns easier, and make you less prone to catching your edge.
+        \n \nAll-Mountain boards are great for beginners because you can use them on the entire mountain. Freestyle boards will be better in the parks, and freeride boards are what you’ll take to the top of the mountain. All of these board types are available in rocker camber.</string>
+    <string name="description_detail_tip_2">Riding with the wrong gear is not worth the potential danger it could get you into. We’d rather have you spend your first winter riding the slopes every day, not in a cast, because your boots were too small and you couldn’t maneuver correctly. Having comfortable feet is the most important part to enjoying a long day in the snow.
+        \n \nYour boot fit is crucial for your gear. Your toes should feel the end of the boot but not be curled or pressed tightly against it. If your boot is too big, your heels will lift too much, and it’ll be hard to control your board (that’s when injuries happen). You’ll also want to make sure that your clothes are keeping you warm but not making you feel like you’re wrapped in a personal sauna. If your pants and jacket are too warm, you’ll fog up your goggles and spend the entire time wishing to be cold instead. Make sure you grab the right gloves, goggles, and beanies too!</string>
+    <string name="description_detail_tip_3">Lessons might not feel cool, but they’ll feel a lot cooler when you’re not the one sitting in the lodge with a broken wrist. Lessons will help you learn the foundations of boarding and give you the confidence to take that ski lift up to the top of the mountain. Instructors will help move your learning curve faster while giving you little tips that would have taken you a few runs to figure out.
+        \n \nTake a snowboarding lesson the first time you go to a mountain so that you can learn the basics of how to maneuver your board and what to expect on your first ride down. That lesson will help you become a better boarder faster and is always worth the investment.</string>
+    <string name="description_detail_tip_4">We’re going to help you avoid a common mistake we see a lot of newbie boarders make. When you’re riding down the mountain, your body and board will naturally follow where you’re looking. This means that if you keep looking down directly at your feet, you’re not going to go far, and you’re going to fall. Or, if you keep looking at trees nervous that you’ll run into them—you’re going to head that way. Classic object fixation.
+        \n \nAlways look forward and keep your focus on where you want to go. This will make sure you stay on the path that you want to be on and don’t end up somewhere that you don’t. And remember…enjoy the view.</string>
+    <string name="description_detail_tip_5">With your eyes up and looking forward, the other thing you want to remember is to bend your knees. Bent knees are going to absorb contours in the snow and help you keep control of your board. If your knees are too straight, you’re not going to be able to maneuver the way you need to.
+        \n \nYour knees don’t need to be at a full 90-degree angle, but keeping them slightly bent will allow you to always be ready for obstacles and quick decisions. Keep a loose bend in them and let them adjust as needed based on what you’re riding over. Your knee position will be a huge help in getting better at boarding faster, so put a lot of focus on finding the best positions for specific points of the run. Keeping your knees and body relaxed will also prevent injury if things don’t work out the way you planned. Stay relaxed and mentally sharp!</string>
+    <string name="description_detail_tip_6">If you’re scared that you’re going to get off the ski lift and lose control of your board as you speed down the mountain, this is going to save you. The key is to make sure that you’re not boarding directly down the mountain. Instead, you want to be riding across the slope.
+        \n \nThis means that you’re going from the left of the ride to the right, back to the left, and back to the right. You’ve seen this movement in videos of people skiing and snowboarding before. As long as you maintain that, you’re going to keep control of your board. The larger you make your ride from one side of the slope to the other, the slower you’ll go. Make sure to always pay attention to your surroundings. When you are cutting across the slope, it’s extremely important to look up the hill and make sure no one from above is about to zoom by. This will help you avoid collisions, and unwanted confrontation with fellow skiers and boarders.</string>
+    <string name="description_detail_tip_7">When you first get to the mountain, we know some of you will take a look at the bunny hill and think, “Eh, I don’t need it.” Well, you definitely do. We’re not saying that you couldn’t handle going down the slopes first run (we’re also not advocating for you to do that). Going down the bunny hill gives you something the slopes can’t—more freedom to learn.
+        \n \nWhen you’re on the slopes, there are going to be a lot of people zooming by you. Since there are expert skiers and snowboarders up there, you’re going to have to pay a lot of attention to your surroundings. And, you’re going to have to try to stay upright and moving as fast as you are comfortable down the mountain. It’s better to do a few runs down the bunny slope to get an idea of what you’re doing so that once you’re on the slopes, you’re more confident in your skills.</string>
+    <string name="description_detail_tip_8">Again, this is why you want to start on the bunny slope. Once you’re on the mountain, you’re going to have a lot more to worry about than not falling. You’ll always need to be looking up the mountain when you cross the slope and never (ever!) stopping in blind spots.
+        \n \nMake sure you’re confident enough in your boarding skills to be able to take a few looks up the mountain as you’re crossing the slope and that if you’re in a blind spot, you’re comfortable to keep moving forward at whatever speed is necessary.</string>
+    <string name="description_detail_tip_9">It’s really tempting to jump right onto the slopes and just see what happens. Especially if you’re going with more experienced riders, you can feel pressure to stay with your group of friends and just try going down the mountain or a more experienced run than you’re ready.
+        \n \nPatience is going to be key in your boarding journey. You want to have a fun time, so give yourself the time to learn the foundations. Then, you can start to get into the fancier stuff (like hitting the park or those black diamonds).</string>
+    <string name="description_detail_tip_10">We can’t end this article without the most important part of your snowboarding experience. Just have fun. There’s a reason Never Summer lives, breathes, and eats the snowboarding life. We love it. And so will you. Once the ski lift brings you to the top of your first mountain, and you see the panoramic views as you’re floating down the pow—you’re going to be hooked. We’re excited to bring you into the boarding family, and we’ll be looking out for you on the slopes in your Never Summer gear.
+        \n \nAs a new rider, it’s normal to feel overwhelmed and unsure about yourself. Just remember, the only thing between where you are today and where the pros are is just how much time they’ve spent on the slopes.
+        \n \nGet out there and start practicing, and you’ll be running up and down the slopes in no time.</string>
+
+    //Equipment Screen
+    <string name="equipment_instruction">Click to see details</string>
+    <string name="equipment_instruction_google">"Search for brands at &lt;a href='https://www.google.com'&gt;Google&lt;/a&gt;"</string>
+
+    <string name="equipment_title_1">Snowboard</string>
+    <string name="equipment_title_2">Bindings</string>
+    <string name="equipment_title_3">Boots</string>
+    <string name="equipment_title_4">Helmet</string>
+    <string name="equipment_title_5">Goggles</string>
+    <string name="equipment_title_6">Jacket</string>
+    <string name="equipment_title_7">Pants</string>
+    <string name="equipment_title_8">Gloves</string>
+    <string name="equipment_title_9">Base Layers</string>
+    <string name="equipment_title_10">Socks</string>
+
+    <string name="equipment_desc_detail_1">Snowboard – The main equipment used to ride on snow; designed for control, balance, and movement on different terrains.</string>
+    <string name="equipment_desc_detail_2">Bindings – Connect your boots to the snowboard, giving you control and stability while riding.</string>
+    <string name="equipment_desc_detail_3">Boots – Provide comfort, support, and proper fit, helping you control the board efficiently.</string>
+    <string name="equipment_desc_detail_4">Helmet – Protects your head from injuries during falls or collisions.</string>
+    <string name="equipment_desc_detail_5">Goggles – Improve visibility by protecting your eyes from wind, snow, and sunlight.</string>
+    <string name="equipment_desc_detail_6">Snowboard jacket – Keeps you warm and dry while protecting against wind and snow.</string>
+    <string name="equipment_desc_detail_7">Snowboard pants – Provide insulation and waterproofing, keeping your lower body dry and comfortable.</string>
+    <string name="equipment_desc_detail_8">Gloves or mittens – Keep your hands warm and protect them from cold, wind, and moisture.</string>
+    <string name="equipment_desc_detail_9">Base layers (thermal) – Help regulate body temperature and keep sweat away from your skin.</string>
+    <string name="equipment_desc_detail_10">Snowboard socks – Designed for warmth, comfort, and better fit inside boots, reducing friction and blisters.</string>
+
+    //Brands
+    //Snowboards
+    <string name="brands_snowboards">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: &lt;a href="https://www.lib-tech.com/snowboard"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        GNU: &lt;a href="https://www.gnu.com/snowboard"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: &lt;a href="https://ridesnowboards.com/en-bg/c/snowboards/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboards/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Jones: &lt;a href="https://eu.jonessnowboards.com/collections/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Capita: &lt;a href="https://capitasnowboarding.com/collections/all-snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Arbor: &lt;a href="https://www.arborcollective.eu/collections/featured-snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Nitro: &lt;a href="https://www.nitrosnowboards.com/collections/snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+    </string>
+    //Bindings
+    <string name="brands_bindings">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboarding-bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: &lt;a href="https://www.lib-tech.com/catalogsearch/result/?q=+Snowboard+bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        GNU: &lt;a href="https://www.gnu.com/bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: &lt;a href="https://ridesnowboards.com/en-bg/c/snowboard-bindings/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboard-bindings/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Jones: &lt;a href="https://eu.jonessnowboards.com/collections/bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: &lt;a href="https://www.arborcollective.eu/collections/bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Nitro: &lt;a href="https://www.nitrosnowboards.com/collections/bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+
+    </string>
+    //Boots
+    <string name="brands_boots">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboarding-boots"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/boots"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: &lt;a href="https://ridesnowboards.com/en-bg/c/snowboard-boots/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboard-boots/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: &lt;a href="https://www.nitrosnowboards.com/collections/boots"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+    </string>
+    //Helmets
+    <string name="brands_helmets">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/anon-optics-helmets"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/helmets-and-back-protection"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: This brand don\'t sell it &lt;br&gt;
+        K2: &lt;a href="https://k2snow.com/en-bg/c/gear/helmets/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+    //Goggles
+    <string name="brands_goggles">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/anon-optics-goggles"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/goggles"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: This brand don\'t sell it &lt;br&gt;
+        K2: This brand don\'t sell it &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+    //Jackets
+    <string name="brands_jackets">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/jackets"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/clothing/tops"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: This brand don\'t sell it &lt;br&gt;
+        K2: This brand don\'t sell it &lt;br&gt;
+        Jones: &lt;a href="https://eu.jonessnowboards.com/collections/mens-snow-jacket"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+    //Pants
+    <string name="brands_pants">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboard-pants"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/clothing/bottoms"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: This brand don\'t sell it  &lt;br&gt;
+        K2: This brand don\'t sell it &lt;br&gt;
+        Jones: &lt;a href="https://eu.jonessnowboards.com/collections/mens-snow-pants"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+    //Gloves
+    <string name="brands_gloves">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/gloves"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/s/shopby/apparelActivities-snowboarding?q=glvoes"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: This brand don\'t sell it &lt;br&gt;
+        K2: This brand don\'t sell it &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+    //Base Layers
+    <string name="brands_base_layers">
+        Burton: &lt;a href="https://www.burton.com/bg/en/search?q=base%20layer"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: This brand don\'t sell it &lt;br&gt;
+        Ride: This brand don\'t sell it &lt;br&gt;
+        K2: This brand don\'t sell it &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+    //Socks
+    <string name="brands_socks">
+        Burton: &lt;a href="https://www.burton.com/bg/en/search?q=socks"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: This brand don\'t sell it &lt;br&gt;
+        Ride: &lt;a href="https://ridesnowboards.com/en-bg/c/accessories/?Accessories+Category=Footwear#clp-main"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        K2: &lt;a href="https://k2snow.com/en-bg/c/gear/apparel/?Apparel+Type=Socks#clp-main"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+
+    //Ski Slopes
+    <string name="title_ski_slopes_1">Bansko</string>
+    <string name="title_ski_slopes_2">Borovets</string>
+    <string name="title_ski_slopes_3">Pamporovo</string>
+    <string name="title_ski_slopes_4">Vitosha</string>
+    <string name="title_ski_slopes_5">Chepelare</string>
+    <string name="title_ski_slopes_6">Dobrinishte</string>
+    <string name="title_ski_slopes_7">Malyovitsa</string>
+    <string name="title_ski_slopes_8">Uzana</string>
+    <string name="title_ski_slopes_9">Semkovo</string>
+    <string name="title_ski_slopes_10">Kartala</string>
+
+    <string name="description_ski_slopes_1">The largest ski resort in Bulgaria, known for modern lifts, long slopes, and a lively atmosphere.</string>
+    <string name="description_ski_slopes_2">One of the oldest resorts, offering a mix of beginner and advanced slopes with good nightlife.</string>
+    <string name="description_ski_slopes_3">Famous for sunny weather and wide, easy slopes, ideal for beginners.</string>
+    <string name="description_ski_slopes_4">Located near Sofia, perfect for quick trips with accessible and shorter runs.</string>
+    <string name="description_ski_slopes_5">A quieter resort with well-maintained slopes and fewer crowds.</string>
+    <string name="description_ski_slopes_6">Small and peaceful area, great for beginners and relaxing skiing.</string>
+    <string name="description_ski_slopes_7">Known for more challenging terrain and a focus on experienced skiers.</string>
+    <string name="description_ski_slopes_8">A small resort in central Bulgaria, suitable for families and beginners.</string>
+    <string name="description_ski_slopes_9">A quiet and less crowded destination with basic slopes and natural surroundings.</string>
+    <string name="description_ski_slopes_10">A small resort near Blagoevgrad, offering peaceful skiing and fresh mountain air.</string>
+
+    //Ski Slopes - Links
+    <string name="link_ski_slopes_1">
+        Bansko: &lt;a href="https://www.banskoski.com/bg"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_2">
+        Borovets: &lt;a href="https://www.borovets-bg.com"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_3">
+        Pamporovo: &lt;a href="https://pamporovo.me/bg/winter/home"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_4">
+        Vitosha: &lt;a href="https://www.skivitosha.com"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_5">
+        Chepelare: &lt;a href="https://bghotelite.com/ski-chepelare/"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_6">
+        Dobrinishte: &lt;a href="https://hoteldobrinishte.com"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_7">
+        Malyovitsa: &lt;a href="https://malyovitsa.com/bg/winter/nachalo/"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_8">
+        Uzana: &lt;a href="https://uzana.bg/ski/ski-pista-zavoya/"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_9">
+        Semkovo: &lt;a href="https://semkovo.com/winter.php"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_10">
+        Kartala: &lt;a href="https://kartala.bg"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+
+    //Videos
+    <string name="youtube_key_1">uCAEmjGzKO4</string>
+    <string name="youtube_key_2">PL969NUdTxk</string>
+    <string name="youtube_key_3">eTh9_-6gJIQ</string>
+    <string name="youtube_key_4">Iofrv4rxJcY</string>
+    <string name="youtube_key_5">I9t_ez_utno</string>
+    <string name="youtube_key_6">SQyTWk7OxSI</string>
+    <string name="youtube_key_7">8M1EPEs3Zl0</string>
+    <string name="youtube_key_8">lHmFDPXxJSs</string>
+    <string name="youtube_key_9">VcQEMhLItBo</string>
+    <string name="youtube_key_10">zLFAlw8Nt-w</string>
+
+    <string name="title_videos_1">Why Riding Duck Foot Is Holding You Back</string>
+    <string name="title_videos_2">5 Simple Tips For Your First Snowboard Turn</string>
+    <string name="title_videos_3">Your First Day Riding</string>
+    <string name="title_videos_4">Common Mistakes in Snowboarding</string>
+    <string name="title_videos_5">Beginners Guide - Snowboard type board</string>
+    <string name="title_videos_6">10 Snowboard Tricks to Learn First</string>
+    <string name="title_videos_7">Snowboard Level Explained</string>
+    <string name="title_videos_8">Slow to Fast Turns</string>
+    <string name="title_videos_9">How to Snowboard</string>
+    <string name="title_videos_10">How to Fall on a Snowboard</string>
+
+    <string name="description_videos_1">Shows why angle of the duck foot is important</string>
+    <string name="description_videos_2">Simple Tips for beginners</string>
+    <string name="description_videos_3">Learn How to Snowboard in 20 Minutes</string>
+    <string name="description_videos_4">Fix the Most Common Snowboarding Mistake</string>
+    <string name="description_videos_5">What TYPE of Snowboard Should You Buy?</string>
+    <string name="description_videos_6">This tricks you should know before everything</string>
+    <string name="description_videos_7">You Might Be Better Than You Think</string>
+    <string name="description_videos_8">This will help you to understand the tricks of slowing and going fast</string>
+    <string name="description_videos_9">8 STEPS TO CARVING</string>
+    <string name="description_videos_10">Shows you how to fall without getting hurt</string>
+
+    //Weather
+    <string name="weather_error">Location permission was denied by the user.</string>
+
+    <string name="weather_condition_1">Clouds</string>
+    <string name="weather_condition_2">Windy</string>
+    <string name="weather_condition_3">Rain</string>
+    <string name="weather_condition_4">Snow</string>
+    <string name="weather_condition_5">Clear</string>
+    <string name="weather_condition_6">Sunny</string>
+    <string name="weather_condition_7">Haze</string>
+    <string name="weather_condition_8">Squall</string>
+    <string name="weather_condition_9">Drizzle</string>
+    <string name="weather_condition_10">Thunderstorm</string>
+
+    //Weather TextView
+    <string name="weather_day">Today</string>
+    <string name="weather_min">Min: %1$d °%2$s</string>
+    <string name="weather_max">Max: %1$d °%2$s</string>
+    <string name="weather_humidity">Humidity</string>
+    <string name="weather_wind">Wind Speed</string>
+    <string name="weather_condition">Conditions</string>
+    <string name="weather_sunrise">Sunrise</string>
+    <string name="weather_sunset">Sunset</string>
+    <string name="weather_sea">Sea</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //Login Screen
+    <string name="login_app_name">SnowBoard</string>
+    <string name="login_welcome_back">Welcome Back!</string>
+    <string name="login_subtitle">Log in to continue your ride.</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="continue_with">or continue with</string>
+    <string name="btn_google">Google</string>
+    <string name="btn_facebook">Facebook</string>
+
+    <!-- TODO: replace with the values from your Facebook Developer app -->
+    <string name="facebook_app_id">FACEBOOK_APP_ID</string>
+    <string name="facebook_client_token">FACEBOOK_CLIENT_TOKEN</string>
+    <string name="fb_login_protocol_scheme">fbFACEBOOK_APP_ID</string>
+    <string name="no_account">Don\'t have an account? </string>
+    <string name="sign_up">Sign Up</string>
+
+    //Register Screen
+    <string name="register_welcome_title">Create Account</string>
+    <string name="register_subtitle">Sign up to start your ride.</string>
+    <string name="hint_full_name">Username</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="btn_register">SIGN UP</string>
+    <string name="have_account">Already have an account? </string>
+    <string name="log_in">Login</string>
+    <string name="choose_level">Choose Your Level</string>
+
+    //Profile Screen
+    <string name="profile_title">Profile</string>
+    <string name="profile_stat_trips">Trips</string>
+    <string name="profile_stat_points">Points</string>
+    <string name="profile_stat_level">Level</string>
+    <string name="level_beginner_label">Beginner</string>
+    <string name="level_advanced_label">Advanced</string>
+    <string name="menu_personal_information">Personal Information</string>
+    <string name="menu_my_stats">My Stats</string>
+    <string name="menu_achievements">Achievements</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_help_support">Help &amp; Support</string>
+    <string name="btn_log_out">Log Out</string>
+    <string name="change_profile_photo">Change profile photo</string>
+
+    //Auth Validation
+    <string name="error_full_name_required">Please enter your full name</string>
+    <string name="error_email_required">Please enter your email</string>
+    <string name="error_email_invalid">Please enter a valid email</string>
+    <string name="error_password_required">Please enter your password</string>
+    <string name="error_password_too_short">Password must be at least 6 characters</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_email_already_in_use">An account with this email already exists</string>
+    <string name="msg_verification_email_sent">A verification email has been sent to %1$s. Please verify your email.</string>
+    <string name="error_email_not_verified">Please verify your email before logging in</string>
+
+    //Forgot Password Screen
+    <string name="forgot_password_title">Reset Password</string>
+    <string name="forgot_password_subtitle">Enter your email and we\'ll send you a link to reset your password.</string>
+    <string name="btn_send_reset_link">SEND RESET LINK</string>
+    <string name="back_to_log_in">Back to Login</string>
+    <string name="msg_reset_email_sent">A password reset link has been sent to %1$s.</string>
+    <string name="error_no_account_for_email">No account found with this email. The password cannot be changed.</string>
+
+    //Change Password Screen
+    <string name="change_password_title">Change Password</string>
+    <string name="change_password_subtitle">Enter your current password and choose a new one.</string>
+    <string name="hint_current_password">Current Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="hint_confirm_new_password">Confirm New Password</string>
+    <string name="btn_change_password">CHANGE PASSWORD</string>
+    <string name="error_current_password_required">Please enter your current password</string>
+    <string name="error_new_password_required">Please enter a new password</string>
+    <string name="error_new_password_same_as_old">New password must be different from the current password</string>
+    <string name="error_current_password_incorrect">Current password is incorrect</string>
+    <string name="msg_password_changed">Your password has been changed</string>
+
+    //Personal Information Screen
+    <string name="btn_save_changes">SAVE CHANGES</string>
+    <string name="msg_profile_updated">Profile updated</string>
+
+    //Settings Screen
+    <string name="settings_section_preferences">Preferences</string>
+    <string name="settings_section_account">Account</string>
+    <string name="settings_units">Units</string>
+    <string name="settings_units_metric">Metric</string>
+    <string name="settings_units_imperial">Imperial</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_dark_mode">Dark Theme</string>
+    <string name="settings_change_password">Change Password</string>
+    <string name="settings_change_email">Change Email</string>
+
+    //Help and Support Screen
+    <string name="help_faq_title">Frequently Asked Questions</string>
+    <string name="help_faq_q1">How do I reset my password?</string>
+    <string name="help_faq_a1">Go to Settings → Change Password, or use \"Forgot Password?\" on the login screen.</string>
+    <string name="help_faq_q2">How do I change my skill level?</string>
+    <string name="help_faq_a2">Open Profile → Personal Information and pick a new level.</string>
+    <string name="help_faq_q3">The app can\'t find my location for weather.</string>
+    <string name="help_faq_a3">Make sure location permission is granted to SnowBoard in your device settings.</string>
+    <string name="help_faq_q4">How do I log out?</string>
+    <string name="help_faq_a4">Open your Profile and tap Log Out at the bottom of the menu.</string>
+    <string name="help_contact_support">Contact Support</string>
+    <string name="help_contact_subtitle">Have a question or found a bug? Send us an email.</string>
+    <string name="help_email_subject">SnowBoard Support</string>
+    <string name="error_no_email_app">No email app found on this device</string>
+    <string name="help_app_version_value">Version %1$s</string>
+    <string name="help_terms_title">Terms &amp; Privacy</string>
+    <string name="help_terms_body">Terms of Service and Privacy Policy are not published yet for this app.</string>
+
+    //Support Email Screen
+    <string name="support_email">damyants.work@gmail.com</string>
+
+    //Change Email Screen
+    <string name="change_email_title">Change Email</string>
+    <string name="change_email_subtitle">Enter your current password and the new email address.</string>
+    <string name="hint_new_email">New Email</string>
+    <string name="btn_update_email">UPDATE EMAIL</string>
+    <string name="msg_verification_email_sent_new_address">A verification link has been sent to %1$s. Confirm it to finish changing your email.</string>
+    <string name="error_new_email_same_as_old">New email must be different from the current one</string>
+
+    //Main Screen - Home Design
+    <string name="home_greeting_morning">Good Morning,</string>
+    <string name="home_user_name">Sandra!</string>
+    <string name="home_user_name_format">%1$s!</string>
+    <string name="home_subtitle">Ready for your next adventure?</string>
+    <string name="home_temp">-2°C</string>
+    <string name="home_condition">Light Snow</string>
+    <string name="home_location_placeholder">Locating…</string>
+    <string name="view_all">View All</string>
+    <string name="quick_actions_title">Quick Actions</string>
+    <string name="quick_actions_edit_title">Edit Quick Actions</string>
+    <string name="quick_actions_edit_subtitle">Choose up to 4 shortcuts for your home screen</string>
+    <string name="quick_actions_max_reached">You can select up to 4 quick actions</string>
+    <string name="nearby_slopes_title">Nearby Slopes</string>
+
+    <string name="location_bansko">Blagoevgrad Province</string>
+    <string name="location_borovets">Sofia Province</string>
+    <string name="location_pamporovo">Smolyan Province</string>
+    <string name="location_vitosha">Sofia</string>
+    <string name="location_chepelare">Smolyan Province</string>
+    <string name="location_dobrinishte">Blagoevgrad Province</string>
+    <string name="location_malyovitsa">Sofia Province</string>
+    <string name="location_uzana">Gabrovo Province</string>
+    <string name="location_semkovo">Blagoevgrad Province</string>
+    <string name="location_kartala">Blagoevgrad Province</string>
+    <string name="distance_km_format">%1$.1f km</string>
+    <string name="distance_placeholder">-- km</string>
+    <string name="rating_placeholder">—</string>
+    <string name="difficulty_advanced">Advanced</string>
+    <string name="difficulty_intermediate">Intermediate</string>
+    <string name="difficulty_beginner">Beginner</string>
+</resources>

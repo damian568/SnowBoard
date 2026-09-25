@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Сноуборд</string>
+
+    //Menu String
+    <string name="menu_home">Начало</string>
+    <string name="menu_history">История</string>
+    <string name="menu_tips">Съвети</string>
+    <string name="menu_equipment">Екипировка</string>
+    <string name="menu_ski_slopes">Писти</string>
+    <string name="menu_videos">Видеа</string>
+    <string name="menu_weather">Време</string>
+
+    //Detail
+    <string name="detail_tips">Подробности за върха</string>
+    <string name="detail_equipment">Подробности за оборудването</string>
+
+    //Main Screen
+    <string name="btn_beginner">Начинаещ</string>
+    <string name="btn_advance">Напреднал</string>
+
+    //History Screen
+    <string name="history_header">Сноуборд</string>
+    <string name="history_title_history">История</string>
+    <string name="history_title_styles">Стилове</string>
+    <string name="history_title_styles_1">Фрийрайдът</string>
+    <string name="history_title_styles_2">Фрийстайл</string>
+    <string name="history_title_styles_3">Бордъркрос</string>
+    <string name="history_title_tricks">Трикове</string>
+
+    <string name="paragraph_history_1">Сноуборд (на английски: snowboard, в буквален превод снежна дъска) представлява плоска конструкция, предназначена за спускане по снежни наклони в планината. Разглежда се като зимния еквивалент на скейтборда. Сноубордът има дървена основа, а отгоре и отдолу слоеве от стъклопласт. Върху дъската има закрепвания за краката. Дължината му варира от 140 до 165 см, а ширината му от 24 до 27 см.</string>
+    <string name="paragraph_history_2">Историята на сноуборда започва около 1960 г. с опита на няколко американски сърфисти да направят сърф, който да се движи по снежните склонове. Новият спорт се развива бързо, тъй като техниката му се усвоява по-лесно и за по-кратко време от тази на ските. В края на 70-те и началото на 80-те сноубордът започнал да се утвърждава като алтернатива на ските. Започват състезания и експериментиране, за да се стигне до наши дни, когато около 50% от населението на САЩ разполагат с личен сноуборд.</string>
+    <string name="paragraph_history_3">В сноуборда има няколко стила – фриирайд, фриистайл, бордъркрос и спускания в „алпийски стил“ (които стават пред много публика и се оценяват от жури). Фриистайлът често се практикува от скейтъри, защото много движения в този стил са заети от скейтборда и сърфа.</string>
+    <string name="paragraph_history_4">Фрийрайдът е извънпистово каране както на ски, така и на сноуборд в непокътнат сняг. Терминът идва от английски и може да се преведе като „свободно каране“. Докато при другите стилове всичко зависи от определени предпоставки – при фрийстайла от направените от човека скокове, рампи и др., а при пистовото каране има специална подготовка на снега, фокусът при фрийрайда е, спускайки се, използваш произволните и несигурни условия на естествения терен. Не може да се говори за конкретни стилове, тъй като начинът на каране е изцяло индивидуален. Различават се единствено извънпистово каране далеч от курорт (backcountry) и на територията на даден курорт, в близост до пистите.</string>
+    <string name="paragraph_history_5">Свободният стил или така нареченият Фриистайл се изразява в правенето на различни трикове с помощта на рампи, халф-пайп, релси и други.</string>
+    <string name="paragraph_history_6">В бордъркроса четирима сноубордисти (или различен брой, но най-вече четири) се пускат по силно пресечена писта.</string>
+    <string name="paragraph_history_7">Ето някои трикове изпълнявани от фриистайлърите:
+        \n \t- 50/50-когато насочиш дъската успоредно на гредата/парапета и плъзгаш по нея.
+        \n \t- board slide-обратното на 50/50, дъската е насочена перпендикулярно на гредата, плъзгането тук става по-бързо.
+        \n \t- 5/о(файв оу)- началната позиция е 50/50, но при изпълнението му тежестта се съсредоточава на задния крак (tail press)
+        \n \t- nose slide- началната позиция е board slide, но плъзгането става на предната част на борда (носът)
+        \n \t- tail slide-същото като nose slide, но плъзгането става м/у задния крак и опашката на борда.
+        \nЗа изпълнението на триковете често се използва вакса – за по лесно плъзгане.</string>
+
+    //Tips Screen
+    <string name="title_detail_tip_1">Уверете се, че имате правилната дъска</string>
+    <string name="title_detail_tip_2">Уверете се, че имате подходяща екипировка (и че ви пасва добре)</string>
+    <string name="title_detail_tip_3">Вземете урок по сноуборд</string>
+    <string name="title_detail_tip_4">Винаги гледайте напред и следете накъде искате да отидете</string>
+    <string name="title_detail_tip_5">Свивайте коленете</string>
+    <string name="title_detail_tip_6">Карайте напречно по склона</string>
+    <string name="title_detail_tip_7">Тренирайте на лесните писти</string>
+    <string name="title_detail_tip_8">Спазвайте всички правила за безопасност на пистата</string>
+    <string name="title_detail_tip_9">Бъдете търпеливи и не бързайте</string>
+    <string name="title_detail_tip_10">Забавлявайте се!</string>
+
+    <string name="description_detail_tip_1">Има много различни видове сноуборд с причина. Когато влезете в магазин за сноуборд и се чудите как може да има толкова много различни дъски, това е, защото всички карат по различен начин.
+        \n \nКато начинаещ, потърсете дъска, която има рокер. Rocker camber поставя рокера между краката ви и camber под всеки крак. Рокерът между краката ви ще направи дъската по-свободна от захващане, така че да не хващате ръбовете си толкова много, когато се учите да завивате. Camber е да помогне на ръба да копае, докато започвате завои. Rocker camber в комбинация е чудесен за учене да завивате, защото ще ви позволи да участвате в завоите по-лесно и ще ви направи по-малко склонни да хванете ръба.
+        \n \nAll-Mountain дъските са чудесни за начинаещи, защото можете да ги използвате на цялата планина. Дъските за свободен стил ще бъдат по-добри в парковете, а дъските за фрийрайд са това, което ще вземете на върха на планината. Всички тези типове дъски се предлагат в рокерски наклон.</string>
+    <string name="description_detail_tip_2">Карането с грешна предавка не си заслужава потенциалната опасност, в която може да ви въвлече. Предпочитаме да прекарате първата си зима карайки пистите всеки ден, а не в гипс, защото ботушите ви са били твърде малки и не можете да маневрирате правилно. Да имате удобни крака е най-важната част от насладата на дълъг ден в снега.
+        \n \nВашата обувка е от решаващо значение за вашата екипировка. Пръстите на краката ви трябва да усещат края на ботуша, но не и да са свити или притиснати плътно към него. Ако ботушът ви е твърде голям, петите ви ще се повдигнат твърде много, и ще бъде трудно да контролирате дъската си (тогава се случват наранявания). Също така ще искате да се уверите, че дрехите ви топлят, но не ви карат да се чувствате като увити в лична сауна. Ако панталоните и якето ви са твърде топли, ще замъглите очилата си и вместо това ще прекарате цялото време в желание да ви е студено. Уверете се, че сте взели и правилните ръкавици, очила и шапки!</string>
+    <string name="description_detail_tip_3">Уроците може да не изглеждат готини, но ще се чувстват много по-готини, когато не сте този, който седи в ложата със счупена китка. Уроците ще ви помогнат да научите основите на борда и ще ви дадат увереността да вземете този ски лифт до върха на планината. Инструкторите ще ви помогнат да преместите кривата си на обучение по-бързо, като същевременно ще ви дадат малки съвети, които биха ви отнели няколко бягания, за да разберете.
+        \n \nВземете урок по сноуборд първия път, когато отидете на планина, за да можете да научите основите на това как да маневрирате с борда си и какво да очаквате при първото си спускане. Този урок ще ви помогне да станете по-добър бордер по-бързо и винаги си заслужава инвестицията.</string>
+    <string name="description_detail_tip_4">Ние ще ви помогнем да избегнете често срещана грешка, която виждаме да правят много начинаещи бордери. Когато карате надолу по планината, тялото и дъската ви естествено ще следват накъдето гледате. Това означава, че ако продължавате да гледате надолу директно към краката си, няма да стигнете далеч и ще паднете. Или, ако продължавате да гледате дървета, нервни, че ще се натъкнете на тях - ще се насочите натам. Класическа фиксация на предмети.
+        \n \nВинаги гледайте напред и се фокусирайте върху това, където искате да стигнете. Това ще гарантира, че ще останете на пътя, по който искате да вървите, и няма да стигнете до някъде, където не сте. И помнете…насладете се на гледката.</string>
+    <string name="description_detail_tip_5">С вдигнати очи и гледащи напред, другото нещо, което искате да запомните, е да свиете коленете си. Свитите колене ще поемат контурите в снега и ще ви помогнат да запазите контрола над борда си. Ако коленете ви са твърде прави, няма да можете да маневрирате по начина, по който трябва.
+        \n \nНе е необходимо коленете ви да са под пълен ъгъл от 90 градуса, но ако ги държите леко свити, ще ви позволи винаги да сте готови за препятствия и бързи решения. Поддържайте хлабав завой в тях и ги оставете да се регулират, ако е необходимо, въз основа на това, върху което карате. Позицията на коленете ви ще бъде голяма помощ за по-добро качване по-бързо, така че съсредоточете се много върху намирането на най-добрите позиции за конкретни точки от бягането. Поддържането на коленете и тялото ви отпуснати също ще предотврати нараняване, ако нещата не се развият по начина, по който сте планирали. Бъдете спокойни и умствено остри!</string>
+    <string name="description_detail_tip_6">Ако се страхувате, че ще слезете от ски лифта и ще загубите контрол над борда си, докато бързо се спускате по планината, това ще ви спаси. Ключът е да се уверите, че не се качвате директно надолу по планината. Вместо това искате да карате през склона.
+        \n \nТова означава, че се движите отляво на превозното средство надясно, обратно наляво и обратно надясно. Виждали сте това движение във видеоклипове на хора, каращи ски и сноуборд преди. Докато поддържате това, ще запазите контрола върху дъската си. Колкото по-голямо карате от едната страна на склона до другата, толкова по-бавно ще вървите. Уверете се, че винаги обръщате внимание на заобикалящата ви среда. Когато пресичате склона, изключително важно е да погледнете нагоре по хълма и да се уверите, че никой отгоре няма да се приближи. Това ще ви помогне да избегнете сблъсъци и нежелана конфронтация с други скиори и бордисти.</string>
+    <string name="description_detail_tip_7">Когато за първи път стигнете до планината, знаем, че някои от вас ще погледнат хълма на зайците и ще си помислят: „Ех, не ми трябва.“ Е, определено го правиш. Не казваме, че не бихте могли да се справите със слизането по склоновете от първото бягане (също така не ви препоръчваме да правите това). Слизането по хълма на зайците ви дава нещо, което склоновете не могат – повече свобода да учите.
+        \n \nКогато сте на пистите, ще има много хора, които се приближават до вас. Тъй като там има опитни скиори и сноубордисти, ще трябва да обърнете много внимание на заобикалящата ви среда. и, ще трябва да се опитате да останете изправени и да се движите толкова бързо, колкото ви е удобно надолу по планината. По-добре е да направите няколко бягания надолу по склона на зайчето, за да добиете представа какво правите, така че след като сте на склоновете, да сте по-уверени в уменията си.</string>
+    <string name="description_detail_tip_8">Отново, ето защо искате да започнете по склона на зайчето. След като сте на планината, ще имате много повече грижи, отколкото да не паднете. Винаги ще трябва да гледате нагоре към планината, когато пресичате склона и никога (никога!) да не спирате на слепи места.
+        \n \nУверете се, че сте достатъчно уверени в уменията си за качване, за да можете да хвърлите няколко погледа нагоре към планината, докато пресичате склона, и че ако сте в мъртва точка, ви е удобно да продължите да се движите напред с каквато скорост е необходима.</string>
+    <string name="description_detail_tip_9">Наистина е изкушаващо да скочиш направо върху склоновете и просто да видиш какво ще се случи. Особено ако тръгвате с по-опитни ездачи, може да почувствате натиск да останете с групата си приятели и просто да опитате да слезете по планината или по-опитно бягане, отколкото сте готови.
+        \n \nТърпението ще бъде ключово при вашето пътуване на борда. Искате да си прекарате забавно, така че си дайте време да научите основите. След това можете да започнете да навлизате в по-луксозните неща (като ходене в парка или онези черни диаманти).</string>
+    <string name="description_detail_tip_10">Не можем да приключим тази статия без най-важната част от вашето преживяване със сноуборд. Просто се забавлявай. Има причина Never Summer да живее, диша и яде живота на сноуборда. Обичаме го. И вие също. След като ски лифтът ви отведе до върха на първата ви планина, и виждате панорамните гледки, докато се носите надолу по пауна - ще бъдете увлечени. Ние сме развълнувани да ви привлечем към семейството на пансиона и ще се грижим за вас на пистите с вашата екипировка Never Summer.
+        \n \nКато нов ездач е нормално да се чувствате претоварени и неуверени в себе си. Просто запомни, единственото нещо между това къде се намирате днес и къде са професионалистите е колко време са прекарали на пистите.
+        \n \nИзлезте и започнете да тренирате и за нула време ще тичате нагоре и надолу по склоновете.</string>
+
+    //Equipment Screen
+    <string name="equipment_instruction">Натиснете за детайли</string>
+    <string name="equipment_instruction_google">Търсете марки в &lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</string>
+
+    <string name="equipment_title_1">Сноуборд</string>
+    <string name="equipment_title_2">Автомати</string>
+    <string name="equipment_title_3">Обувки</string>
+    <string name="equipment_title_4">Каска</string>
+    <string name="equipment_title_5">Очила</string>
+    <string name="equipment_title_6">Яке</string>
+    <string name="equipment_title_7">Панталон</string>
+    <string name="equipment_title_8">Ръкавици</string>
+    <string name="equipment_title_9">Термо Бельо</string>
+    <string name="equipment_title_10">Чорапи</string>
+
+    <string name="equipment_desc_detail_1">Сноуборд – Основната екипировка за каране върху сняг. designed for control, balance, and movement on different terrains.</string>
+    <string name="equipment_desc_detail_2">Автомати – Свързват обувките с дъската и дават контрол.</string>
+    <string name="equipment_desc_detail_3">Обувки – Осирурява ви комфорт, опора и подходящо прилягане, помагайки ви да контролирате дъската ефективно.</string>
+    <string name="equipment_desc_detail_4">Каска – Предпазва главата ви от наранявания при падане или сблъсък.</string>
+    <string name="equipment_desc_detail_5">Очила – Подобряват видимостта и защитават очите ви от вятър, сняг и слънчева светлина.</string>
+    <string name="equipment_desc_detail_6">Яке – Поддържа ви топло и сухо, като същевременно предпазва от вятър и сняг.</string>
+    <string name="equipment_desc_detail_7">Панталон – Осигурява изолация и хидроизолация, поддържайки долната част на тялото ви суха и удобна.</string>
+    <string name="equipment_desc_detail_8">Ръкавици – Държи ръцете ви топли и ги предпазва от студ, вятър и влага.</string>
+    <string name="equipment_desc_detail_9">Термо Бельо – Помогнете за регулиране на телесната температура и предпазете потта от кожата си.</string>
+    <string name="equipment_desc_detail_10">Чорапи – Проектиран за топлина, комфорт и по-добро прилягане в ботушите, намалявайки триенето и образуването на мехури.</string>
+
+    //Brands
+    //Snowboards
+    <string name="brands_snowboards">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: &lt;a href="https://www.lib-tech.com/snowboard"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        GNU: &lt;a href="https://www.gnu.com/snowboard"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: &lt;a href="https://ridesnowboards.com/en-bg/c/snowboards/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboards/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Jones: &lt;a href="https://eu.jonessnowboards.com/collections/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Capita: &lt;a href="https://capitasnowboarding.com/collections/all-snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Arbor: &lt;a href="https://www.arborcollective.eu/collections/featured-snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Nitro: &lt;a href="https://www.nitrosnowboards.com/collections/snowboards"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+    </string>
+    //Bindings
+    <string name="brands_bindings">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboarding-bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: &lt;a href="https://www.lib-tech.com/catalogsearch/result/?q=+Snowboard+bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        GNU: &lt;a href="https://www.gnu.com/bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: &lt;a href="https://ridesnowboards.com/en-bg/c/snowboard-bindings/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboard-bindings/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Jones: &lt;a href="https://eu.jonessnowboards.com/collections/bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: &lt;a href="https://www.arborcollective.eu/collections/bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Nitro: &lt;a href="https://www.nitrosnowboards.com/collections/bindings"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+
+    </string>
+    //Boots
+    <string name="brands_boots">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboarding-boots"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/boots"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: &lt;a href="https://ridesnowboards.com/en-bg/c/snowboard-boots/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        K2: &lt;a href="https://k2snow.com/en-bg/c/snowboard-boots/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: &lt;a href="https://www.nitrosnowboards.com/collections/boots"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+    </string>
+    //Helmets
+    <string name="brands_helmets">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/anon-optics-helmets"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/helmets-and-back-protection"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: This brand don\'t sell it &lt;br&gt;
+        K2: &lt;a href="https://k2snow.com/en-bg/c/gear/helmets/"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+    //Goggles
+    <string name="brands_goggles">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/anon-optics-goggles"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/goggles"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: This brand don\'t sell it &lt;br&gt;
+        K2: This brand don\'t sell it &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+    //Jackets
+    <string name="brands_jackets">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/jackets"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/clothing/tops"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: This brand don\'t sell it &lt;br&gt;
+        K2: This brand don\'t sell it &lt;br&gt;
+        Jones: &lt;a href="https://eu.jonessnowboards.com/collections/mens-snow-jacket"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+    //Pants
+    <string name="brands_pants">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/snowboard-pants"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/c/sports/snowboarding/clothing/bottoms"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: This brand don\'t sell it  &lt;br&gt;
+        K2: This brand don\'t sell it &lt;br&gt;
+        Jones: &lt;a href="https://eu.jonessnowboards.com/collections/mens-snow-pants"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+    //Gloves
+    <string name="brands_gloves">
+        Burton: &lt;a href="https://www.burton.com/bg/en/c/gloves"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: &lt;a href="https://www.salomon.com/en-us/s/shopby/apparelActivities-snowboarding?q=glvoes"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Ride: This brand don\'t sell it &lt;br&gt;
+        K2: This brand don\'t sell it &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+    //Base Layers
+    <string name="brands_base_layers">
+        Burton: &lt;a href="https://www.burton.com/bg/en/search?q=base%20layer"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: This brand don\'t sell it &lt;br&gt;
+        Ride: This brand don\'t sell it &lt;br&gt;
+        K2: This brand don\'t sell it &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+    //Socks
+    <string name="brands_socks">
+        Burton: &lt;a href="https://www.burton.com/bg/en/search?q=socks"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Lib Tech: This brand don\'t sell it &lt;br&gt;
+        GNU: This brand don\'t sell it &lt;br&gt;
+        Salomon: This brand don\'t sell it &lt;br&gt;
+        Ride: &lt;a href="https://ridesnowboards.com/en-bg/c/accessories/?Accessories+Category=Footwear#clp-main"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        K2: &lt;a href="https://k2snow.com/en-bg/c/gear/apparel/?Apparel+Type=Socks#clp-main"&gt;Sourcing Link&lt;/a&gt; &lt;br&gt;
+        Jones: This brand don\'t sell it &lt;br&gt;
+        Capita: This brand don\'t sell it &lt;br&gt;
+        Arbor: This brand don\'t sell it &lt;br&gt;
+        Nitro: This brand don\'t sell it &lt;br&gt;
+    </string>
+
+    //Ski Slopes
+    <string name="title_ski_slopes_1">Банско</string>
+    <string name="title_ski_slopes_2">Боровец</string>
+    <string name="title_ski_slopes_3">Пампорово</string>
+    <string name="title_ski_slopes_4">Витоша</string>
+    <string name="title_ski_slopes_5">Чепеларе</string>
+    <string name="title_ski_slopes_6">Добринище</string>
+    <string name="title_ski_slopes_7">Мальовица</string>
+    <string name="title_ski_slopes_8">Узана</string>
+    <string name="title_ski_slopes_9">Семково</string>
+    <string name="title_ski_slopes_10">Картала</string>
+
+    <string name="description_ski_slopes_1">Най-големият ски курорт в България, известен с модерни лифтове, дълги писти и оживена атмосфера.</string>
+    <string name="description_ski_slopes_2">Един от най-старите курорти, предлагащ комбинация от начинаещи и напреднали писти с добър нощен живот.</string>
+    <string name="description_ski_slopes_3">Известен със слънчево време и широки, лесни писти, идеални за начинаещи.</string>
+    <string name="description_ski_slopes_4">Намира се в близост до София, идеален за бързи пътувания с достъпни и по-кратки разстояния.</string>
+    <string name="description_ski_slopes_5">По-спокоен курорт с добре поддържани писти и по-малко тълпи.</string>
+    <string name="description_ski_slopes_6">Малък и спокоен район, чудесен за начинаещи и спокойно каране на ски.</string>
+    <string name="description_ski_slopes_7">Известен с по-предизвикателния терен и фокус върху опитни скиори.</string>
+    <string name="description_ski_slopes_8">Малък курорт в Централна България, подходящо за семейства и начинаещи.</string>
+    <string name="description_ski_slopes_9">Тиха и по-малко претъпкана дестинация с основни писти и естествена среда.</string>
+    <string name="description_ski_slopes_10">Малък курорт близо до Благоевград, предлагащ спокойно каране на ски и чист планински въздух.</string>
+
+    //Ski Slopes - Links
+    <string name="link_ski_slopes_1">
+        Банско: &lt;a href="https://www.banskoski.com/bg"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_2">
+        Боровец: &lt;a href="https://www.borovets-bg.com"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_3">
+        Пампорово: &lt;a href="https://pamporovo.me/bg/winter/home"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_4">
+        Витоша: &lt;a href="https://www.skivitosha.com"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_5">
+        Чепеларе: &lt;a href="https://bghotelite.com/ski-chepelare/"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_6">
+        Добринище: &lt;a href="https://hoteldobrinishte.com"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_7">
+        Мальовица: &lt;a href="https://malyovitsa.com/bg/winter/nachalo/"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_8">
+        Узана: &lt;a href="https://uzana.bg/ski/ski-pista-zavoya/"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_9">
+        Семково: &lt;a href="https://semkovo.com/winter.php"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+    <string name="link_ski_slopes_10">
+        Картала: &lt;a href="https://kartala.bg"&gt;Sourcing Link&lt;/a&gt;
+    </string>
+
+    //Videos
+    <string name="youtube_key_1">uCAEmjGzKO4</string>
+    <string name="youtube_key_2">PL969NUdTxk</string>
+    <string name="youtube_key_3">eTh9_-6gJIQ</string>
+    <string name="youtube_key_4">Iofrv4rxJcY</string>
+    <string name="youtube_key_5">I9t_ez_utno</string>
+    <string name="youtube_key_6">SQyTWk7OxSI</string>
+    <string name="youtube_key_7">8M1EPEs3Zl0</string>
+    <string name="youtube_key_8">lHmFDPXxJSs</string>
+    <string name="youtube_key_9">VcQEMhLItBo</string>
+    <string name="youtube_key_10">zLFAlw8Nt-w</string>
+
+    <string name="title_videos_1">Why Riding Duck Foot Is Holding You Back</string>
+    <string name="title_videos_2">5 Simple Tips For Your First Snowboard Turn</string>
+    <string name="title_videos_3">Your First Day Riding</string>
+    <string name="title_videos_4">Common Mistakes in Snowboarding</string>
+    <string name="title_videos_5">Beginners Guide - Snowboard type board</string>
+    <string name="title_videos_6">10 Snowboard Tricks to Learn First</string>
+    <string name="title_videos_7">Snowboard Level Explained</string>
+    <string name="title_videos_8">Slow to Fast Turns</string>
+    <string name="title_videos_9">How to Snowboard</string>
+    <string name="title_videos_10">How to Fall on a Snowboard</string>
+
+    <string name="description_videos_1">Показва защо ъгълът на кракът на дъската е важен</string>
+    <string name="description_videos_2">Прости съвети за начинаещи</string>
+    <string name="description_videos_3">Как да научим да караме сноуборд за 20 минути</string>
+    <string name="description_videos_4">Коригирайте най-честата грешка при каране на сноуборд</string>
+    <string name="description_videos_5">Какъв ТИП сноуборд трябва да купите?</string>
+    <string name="description_videos_6">Тези трикове трябва да знаете преди всичко</string>
+    <string name="description_videos_7">Може да сте по-добри, отколкото си мислите</string>
+    <string name="description_videos_8">Това ще ви помогне да разберете триковете за забавянето и бързото движение</string>
+    <string name="description_videos_9">8 СТЪПКИ В КАК ДА ЗАВИВАШ</string>
+    <string name="description_videos_10">Показва как да паднеш без да се нараниш</string>
+
+    //Weather
+    <string name="weather_error">Разрешението за локация е отказана.</string>
+
+    <string name="weather_condition_1">Облачно</string>
+    <string name="weather_condition_2">Ветровито</string>
+    <string name="weather_condition_3">Дъждовно</string>
+    <string name="weather_condition_4">Сняг</string>
+    <string name="weather_condition_5">Чисто</string>
+    <string name="weather_condition_6">Слънчево</string>
+    <string name="weather_condition_7">Мъгла</string>
+    <string name="weather_condition_8">Вихрушка</string>
+    <string name="weather_condition_9">Дъжд</string>
+    <string name="weather_condition_10">Гръмотевична Буря</string>
+
+    //Weather TextView
+    <string name="weather_day">Днес</string>
+    <string name="weather_min">Мин: %d °C</string>
+    <string name="weather_max">Макс: %d °C</string>
+    <string name="weather_humidity">Влажност</string>
+    <string name="weather_wind">Скорост на вятъра</string>
+    <string name="weather_condition">Условия</string>
+    <string name="weather_sunrise">Изгрев</string>
+    <string name="weather_sunset">Залез</string>
+    <string name="weather_sea">Морско Равнище</string>
+</resources>

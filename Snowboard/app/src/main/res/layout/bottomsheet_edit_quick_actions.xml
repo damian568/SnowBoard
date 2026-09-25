@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_sheet"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/merriweathersans_bold"
+                android:text="@string/quick_actions_edit_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/home_section_title_text" />
+
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_close"
+                app:tint="@color/grey" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/merriweathersans_regular"
+            android:text="@string/quick_actions_edit_subtitle"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/home_card_subtitle_text" />
+
+        <LinearLayout
+            android:id="@+id/row_action_ski_slopes"
+            style="@style/QuickActionEditRow">
+
+            <ImageView
+                style="@style/QuickActionEditRowIcon"
+                android:src="@drawable/ic_slopes" />
+
+            <TextView
+                style="@style/QuickActionEditRowLabel"
+                android:text="@string/menu_ski_slopes" />
+
+            <CheckBox
+                android:id="@+id/chk_ski_slopes"
+                style="@style/QuickActionEditRowCheckbox" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_action_equipment"
+            style="@style/QuickActionEditRow">
+
+            <ImageView
+                style="@style/QuickActionEditRowIcon"
+                android:src="@drawable/ic_equipment" />
+
+            <TextView
+                style="@style/QuickActionEditRowLabel"
+                android:text="@string/menu_equipment" />
+
+            <CheckBox
+                android:id="@+id/chk_equipment"
+                style="@style/QuickActionEditRowCheckbox" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_action_tips"
+            style="@style/QuickActionEditRow">
+
+            <ImageView
+                style="@style/QuickActionEditRowIcon"
+                android:src="@drawable/ic_tips" />
+
+            <TextView
+                style="@style/QuickActionEditRowLabel"
+                android:text="@string/menu_tips" />
+
+            <CheckBox
+                android:id="@+id/chk_tips"
+                style="@style/QuickActionEditRowCheckbox" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_action_videos"
+            style="@style/QuickActionEditRow">
+
+            <ImageView
+                style="@style/QuickActionEditRowIcon"
+                android:src="@drawable/ic_video" />
+
+            <TextView
+                style="@style/QuickActionEditRowLabel"
+                android:text="@string/menu_videos" />
+
+            <CheckBox
+                android:id="@+id/chk_videos"
+                style="@style/QuickActionEditRowCheckbox" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_action_weather"
+            style="@style/QuickActionEditRow">
+
+            <ImageView
+                style="@style/QuickActionEditRowIcon"
+                android:src="@drawable/ic_weather" />
+
+            <TextView
+                style="@style/QuickActionEditRowLabel"
+                android:text="@string/menu_weather" />
+
+            <CheckBox
+                android:id="@+id/chk_weather"
+                style="@style/QuickActionEditRowCheckbox" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_action_history"
+            style="@style/QuickActionEditRow">
+
+            <ImageView
+                style="@style/QuickActionEditRowIcon"
+                android:src="@drawable/ic_history" />
+
+            <TextView
+                style="@style/QuickActionEditRowLabel"
+                android:text="@string/menu_history" />
+
+            <CheckBox
+                android:id="@+id/chk_history"
+                style="@style/QuickActionEditRowCheckbox" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

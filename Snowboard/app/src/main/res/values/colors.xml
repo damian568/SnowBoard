@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lavender">#8692f7</color>
+    <color name="cinder">#1E2B2F</color>
+    <color name="flame">#FF7F50</color>
+    <color name="blush">#F2DFD8</color>
+    <color name="midnight">#211D2D</color>
+    <color name="shadow_black">#1A1A1A</color>
+    <color name="crimson_red">#A4133C</color>
+    <color name="grey">#757575</color>
+    <color name="bordeaux_velvet">#53161D</color>
+    <color name="ivory_whisper">#FFFBF0</color>
+    <color name="cotton_white">#EDE8DD</color>
+    <color name="ghost_white">#F7F7FF</color>
+    <color name="nav_menu_background">#FDFDFD</color>
+
+    <!-- Login/Register/Profile -->
+    <color name="wine_maroon">#720423</color>
+    <color name="blush_deep">#E3D0C9</color>
+    <color name="pearl_background">#F9F7F8</color>
+    <color name="field_stroke">#E0DCDC</color>
+</resources>

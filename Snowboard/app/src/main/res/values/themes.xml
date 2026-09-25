@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SnowBoard" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/crimson_red</item>
+        <item name="colorPrimaryVariant">@color/bordeaux_velvet</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/shadow_black</item>
+        <item name="colorSecondaryVariant">@color/shadow_black</item>
+        <!-- Status bar color. -->
+        <item name="colorAccent">@color/crimson_red</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
