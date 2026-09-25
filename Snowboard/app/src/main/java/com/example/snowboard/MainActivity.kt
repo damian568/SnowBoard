@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.databinding.DataBindingUtil
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination
 import androidx.navigation.fragment.NavHostFragment
@@ -19,6 +20,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.snowboard.User.Settings.AppPreferences
 import com.example.snowboard.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 class MainActivity : AppCompatActivity() {
 
@@ -65,6 +67,7 @@ class MainActivity : AppCompatActivity() {
         drawerMenu()
         handleDrawerMenuClicks()
         navControllerDestinationChanged()
+        loadNavHeaderProfile()
     }
 
     private fun drawerMenu() {
@@ -72,6 +75,13 @@ class MainActivity : AppCompatActivity() {
         binding.bottomAppBar.setNavigationOnClickListener {
             binding.drawerLayout.openDrawer(GravityCompat.START)
         }
+
+        // 1b. Keep the drawer header in sync with the signed-in profile
+        binding.drawerLayout.addDrawerListener(object : DrawerLayout.SimpleDrawerListener() {
+            override fun onDrawerOpened(drawerView: View) {
+                loadNavHeaderProfile()
+            }
+        })
     }
 
     private fun handleDrawerMenuClicks() {
@@ -100,8 +110,32 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun loadNavHeaderProfile() {
+        val nameView = binding.navDrawerContent.findViewById<TextView>(R.id.txt_nav_header_name)
+        val emailView = binding.navDrawerContent.findViewById<TextView>(R.id.txt_nav_header_email)
+
+        val user = FirebaseAuth.getInstance().currentUser
+        if (user == null) {
+            nameView.text = ""
+            emailView.text = ""
+            return
+        }
+
+        emailView.text = user.email.orEmpty()
+        nameView.text = user.displayName.orEmpty()
+
+        FirebaseFirestore.getInstance().collection("users").document(user.uid).get()
+            .addOnSuccessListener { document ->
+                val fullName = document.getString("fullName")
+                if (!fullName.isNullOrBlank()) {
+                    nameView.text = fullName
+                }
+            }
+    }
+
     private fun logOut() {
         FirebaseAuth.getInstance().signOut()
+        loadNavHeaderProfile()
         navController.navigate(
             R.id.loginScreenFragment,
             null,

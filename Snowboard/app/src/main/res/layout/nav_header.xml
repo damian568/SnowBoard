@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/header_layout">
 
@@ -35,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/merriweathersans_bold"
-            android:text="Sandra Adams"
+            tools:text="Sandra Adams"
             android:textColor="@android:color/black"
             android:textSize="@dimen/header_title"
             android:textStyle="bold" />
@@ -49,7 +50,7 @@
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="6"
-            android:text="sandra_a88@gmail.com"
+            tools:text="sandra_a88@gmail.com"
             android:textColor="@color/wine_maroon"
             android:textSize="@dimen/header_email" />
     </LinearLayout>
