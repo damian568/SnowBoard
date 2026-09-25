@@ -11,6 +11,13 @@
     <dimen name="arrow_down">32dp</dimen>
     <dimen name="header_mer_pad">16dp</dimen>
     <dimen name="header_img_profile">64dp</dimen>
+    <dimen name="nav_row_height">46dp</dimen>
+    <dimen name="nav_row_icon">20dp</dimen>
+    <dimen name="nav_row_chevron">18dp</dimen>
+    <dimen name="nav_row_accent_width">4dp</dimen>
+    <dimen name="nav_row_horizontal_pad">18dp</dimen>
+    <dimen name="nav_drawer_width">300dp</dimen>
+    <dimen name="nav_footer_height">140dp</dimen>
 
     //CardView
     <dimen name="card_corner_equip">4dp</dimen>
@@ -29,7 +36,7 @@
     <dimen name="main_logo">450dp</dimen>
     <dimen name="equip_img">180dp</dimen>
     <dimen name="ski_map">300dp</dimen>
-    <dimen name="header_layout">176dp</dimen>
+    <dimen name="header_layout">188dp</dimen>
 
     //Margin
     <dimen name="contain_margin">8dp</dimen>
