@@ -80,6 +80,11 @@
     <dimen name="history_row_title">21sp</dimen>
     <dimen name="history_row_body">14sp</dimen>
     <dimen name="history_freeride_photo">170dp</dimen>
+    <dimen name="tip_badge">58dp</dimen>
+    <dimen name="tip_badge_icon">32dp</dimen>
+    <dimen name="tip_badge_corner">14dp</dimen>
+    <dimen name="tip_card_title">17sp</dimen>
+    <dimen name="tip_card_body">13sp</dimen>
     <dimen name="home_card_corner_lg">12dp</dimen>
     <dimen name="home_quick_icon">48dp</dimen>
     <dimen name="home_nearby_card_width">156dp</dimen>
